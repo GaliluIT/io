@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% from "_macros.html" import todo, video with context %}
 
+{% block head %}
+{% if project.model %}
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+{% endif %}
+{% endblock %}
+
 {% block main %}
 <article class="project">
   <p class="back"><a href="{{ root }}projects.html">All projects</a></p>
@@ -12,7 +18,18 @@
     {% if drafts %}{{ todo(project.check) }}{% endif %}
   </header>
 
+  <div class="project-media{% if project.model %} has-model{% endif %}">
   {% for v in project.videos %}{{ video(v, "video-" ~ loop.index) }}{% endfor %}
+
+  {% if project.model %}
+  <figure class="project-model">
+    <model-viewer src="{{ project.model.src }}" alt="{{ project.model.alt }}" camera-controls disable-pan
+      touch-action="pan-y" interaction-prompt="none" camera-orbit="0deg 40deg auto" environment-image="neutral"
+      shadow-intensity="0.8" exposure="1"><div slot="progress-bar"></div></model-viewer>
+    <figcaption>{% if project.model.caption %}{{ project.model.caption }} {% endif %}Drag it, or use the arrow keys, to turn it.</figcaption>
+  </figure>
+  {% endif %}
+  </div>
 
   <div class="project-grid">
     {% if project.details %}
@@ -30,6 +47,12 @@
       {% if project.links %}
       <ul class="link-list">
         {% for link in project.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if project.downloads %}
+      <h2 class="downloads-title">Download</h2>
+      <ul class="link-list">
+        {% for d in project.downloads %}<li><a href="{{ d.url }}" download>{{ d.label }}</a> <span class="file-type">({{ d.kind }}{% if d.size %}, {{ d.size }}{% endif %})</span>{% if d.note %} <span class="file-note">{{ d.note }}</span>{% endif %}</li>{% endfor %}
       </ul>
       {% endif %}
     </div>

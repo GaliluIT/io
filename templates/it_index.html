@@ -23,15 +23,6 @@
   </div>
 </section>
 
-{% if programa.students.es %}
-<section class="band" aria-labelledby="it-students">
-  <div class="band-head"><h2 id="it-students">{{ t('Estudiantes', 'Students') }}</h2></div>
-  <div class="band-body">
-    <p class="prose it-students">{{ bi(programa.students) }}</p>
-  </div>
-</section>
-{% endif %}
-
 {% if projects %}
 <section class="band" aria-labelledby="it-projects">
   <div class="band-head"><h2 id="it-projects">{{ t('Proyectos', 'Projects') }}</h2></div>

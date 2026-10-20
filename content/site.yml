@@ -1,7 +1,7 @@
 # Site-wide settings. Text here appears on every page.
 
 name: Gala Lucia Gonzalez Barrios
-tagline: Artist-researcher working with voice, singing and technology.
+tagline: Interdisciplinary researcher and artist, moving from critique to building futures.
 place: Blacksburg, Virginia, and Buenos Aires
 description: Gala Lucia Gonzalez Barrios is an artist-researcher working across HCI, science and technology studies and participatory design, with a focus on voice and singing.
 
@@ -36,7 +36,7 @@ cv_pdf: assets/cv/Gala-Lucia-Gonzalez-Barrios-CV.pdf
 
 # Your photo on the About page, and its description for people who can't see it.
 portrait: assets/about/portrait.jpg
-portrait_alt: Portrait of Gala Lucia Gonzalez Barrios, smiling, with short dark hair, leaning in a doorway.
+portrait_alt: Portrait of Gala Lucia Gonzalez Barrios in violet light, with short dark hair, a white geometric earring and a dark sweater with pins.
 
 # The 3D object on the home page. Delete this whole block to remove it.
 fono:

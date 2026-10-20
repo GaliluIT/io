@@ -58,7 +58,7 @@
 
   // The 3D object turns slowly, unless the visitor prefers reduced motion.
   // A button stops and restarts it.
-  var viewer = document.querySelector("model-viewer");
+  var viewer = document.querySelector(".specimen model-viewer");
   if (!viewer) return;
   var rotateButton = document.querySelector("[data-rotate-toggle]");
   if (!media("(prefers-reduced-motion: reduce)").matches) {

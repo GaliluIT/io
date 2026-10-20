@@ -191,6 +191,18 @@ def project_view(p, root):
     links = []
     for link in m.get("links") or []:
         links.append({"label": link.get("label") or link.get("url"), "url": asset(link.get("url"), root, where)})
+    downloads = []
+    for d in m.get("downloads") or []:
+        path = ROOT / str(d.get("url", "")).lstrip("/")
+        size = f"{path.stat().st_size / 1e6:.1f} MB" if path.exists() else ""
+        downloads.append({"label": d.get("label") or path.name, "url": asset(d.get("url"), root, where),
+                          "kind": path.suffix.lstrip(".").upper(), "size": size, "note": d.get("note") or ""})
+    model = None
+    if m.get("model"):
+        model = {"src": asset(m["model"].get("src"), root, where), "alt": m["model"].get("alt") or "",
+                 "caption": md_inline(m["model"].get("caption"))}
+        if not model["alt"]:
+            note(where, "add an alt to the 3D model")
     return {
         "slug": p["slug"],
         "title": title,
@@ -203,6 +215,8 @@ def project_view(p, root):
         "images": images,
         "details": [(k, md_inline(v)) for k, v in (m.get("details") or {}).items()],
         "links": links,
+        "downloads": downloads,
+        "model": model,
         "body": rewrite_body_links(md_block(p["body"]), root),
         "check": m.get("check"),
         "draft": m.get("draft"),
@@ -285,7 +299,6 @@ def build_intercambios(render, drafts):
     render("it_index.html", "intercambios/index.html", root, page_kind="it-home",
            page_title=title, description=plain(meta.get("lede")),
            programa={"lede": bi(meta, "lede"), "body": bi_body(body, root),
-                     "students": bi(meta, "students"),
                      "recognition": [{"es": md_inline(r.get("es")), "en": md_inline(r.get("en"))}
                                      for r in meta.get("recognition") or []]},
            team=team_groups, projects=projects, **common)

@@ -35,7 +35,7 @@ python make_cv_pdf.py --save
 
 ## Intercambios Transorgánicos page (Spanish and English)
 
-galalucia.com/intercambios is one page that introduces the program and sends visitors to its own website, intercambiostransorganicos.org. Its content lives in `content/intercambios/`:
+galalucia.com/intercambios is one page that introduces the program and sends visitors to its own website, intercambiostransorganicos.xyz. Its content lives in `content/intercambios/`:
 
 | To change | Edit |
 |---|---|
