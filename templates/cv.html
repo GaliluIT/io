@@ -2,12 +2,16 @@
 {% from "_macros.html" import publication, todo with context %}
 
 {% block main %}
+<div class="print-head">
+  <p class="print-name">{{ site.name }}</p>
+  <p>Curriculum vitae · {{ site.url | replace("https://", "") }}{% for link in site.links or [] %}{% if link.label == "LinkedIn" %} · {{ link.url | replace("https://www.", "") | replace("https://", "") | trim("/") }}{% endif %}{% endfor %} · Updated {{ updated }}</p>
+</div>
 <div class="cv-head">
   <h1 class="page-title">CV</h1>
   {% if cv_pdf %}
-  <a class="button" href="{{ cv_pdf }}">Download PDF</a>
+  <a class="button" href="{{ cv_pdf }}" download>Download the CV (PDF)</a>
   {% elif drafts %}
-  {{ todo("Put your CV PDF at the path set as cv_pdf in content/site.yml to show a download button here.") }}
+  {{ todo("Run python make_cv_pdf.py --save to create the PDF and show a download button here.") }}
   {% endif %}
 </div>
 

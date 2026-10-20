@@ -8,24 +8,35 @@
 
 title: Project title
 years: 2024 – present
-summary: One or two sentences. Shown on the projects list and at the top of the page.
-order: 10            # lower numbers come first on the projects list
+summary: One or two sentences. Shown on the Projects page and at the top of the page.
+order: 10            # lower numbers come first on the Projects page
 draft: false         # true = hidden on the live site, shown with --drafts
+status: ""           # optional label next to the years, e.g. Work in progress
 
-cover: assets/projects/my-project/cover.jpg   # image for the projects list (optional)
+# The picture on the Projects page is the first image below.
+# To use a different one, set cover and describe it in cover_alt.
+# cover: assets/projects/my-project/cover.jpg
+# cover_alt: What the cover shows.
 
-# A YouTube or Vimeo link, or a short .mp4 in assets/ (GitHub rejects files over 100 MB).
-video: https://www.youtube.com/watch?v=XXXXXXXXXXX
-# For several videos, use a list instead:
-# videos:
-#   - https://vimeo.com/123456789
-#   - assets/projects/my-project/clip.mp4
+# Videos: YouTube or Vimeo links, or a short silent .mp4 in assets/.
+# Give each one a title. A file also needs a poster (a still) and a description of what happens in it.
+videos:
+  - url: https://www.youtube.com/watch?v=XXXXXXXXXXX
+    title: What the video is
+#  - url: assets/projects/my-project/clip.mp4
+#    poster: assets/projects/my-project/clip-poster.jpg
+#    title: What the clip is
+#    description: What happens in it, for people who can't see it.
 
+# alt: what the picture shows, for people who can't see it (required).
+# caption: optional context under the picture: what, where, when, credit.
 images:
   - src: assets/projects/my-project/01.jpg
-    caption: What the picture shows, and credit if needed.
+    alt: Two people play a laptop instrument on a dark stage.
+    caption: Premiere, Blacksburg, 2025. Photo by Name.
   - src: assets/projects/my-project/02.jpg
-    caption: Another one.
+    alt: Another description.
+    caption: Another caption.
 
 # Short facts shown next to the text. Any labels you like.
 details:

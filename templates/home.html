@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import publication, todo with context %}
+{% from "_macros.html" import publication, lang_switch, todo with context %}
 
 {% block head %}
 {% if fono %}
@@ -34,30 +34,27 @@
       {% if fono.sound_url %}data-sound="{{ fono.sound_url }}"{% endif %}><div slot="progress-bar"></div></model-viewer>
     <figcaption>
       {% if fono.link_url %}<a class="fono-title" href="{{ fono.link_url }}">{{ fono.title }}</a>{% else %}<span class="fono-title">{{ fono.title }}</span>{% endif %}{% if fono.credit %}, {{ fono.credit }}{% endif %}.
-      <span class="fono-hint">Drag to turn it.</span>
-      {% if fono.sound_url %}<button type="button" class="fono-play" data-play>Play its sound</button>{% endif %}
+      <span class="fono-hint">Drag it, or use the arrow keys, to turn it.</span>
+      <span class="fono-buttons">
+        <button type="button" class="pill" data-rotate-toggle hidden>Stop turning</button>
+        {% if fono.sound_url %}<button type="button" class="pill" data-play>Play its sound</button>{% endif %}
+      </span>
       {% if drafts %}{{ todo(fono.check) }}{% endif %}
     </figcaption>
   </figure>
   {% endif %}
 </section>
 
-{% if about_en or about_es %}
-<section class="band about" aria-labelledby="about-heading">
+{% if about.en.intro or about.es.intro %}
+<section class="band intro" aria-labelledby="intro-heading">
   <div class="band-head">
-    <h2 id="about-heading">
-      <span data-lang-show="en">About</span><span data-lang-show="es" lang="es">Sobre mí</span>
-    </h2>
-    {% if about_en and about_es %}
-    <div class="lang-switch" role="group" aria-label="Language">
-      <button type="button" data-set-lang="en" aria-pressed="true">English</button>
-      <button type="button" data-set-lang="es" aria-pressed="false" lang="es">Español</button>
-    </div>
-    {% endif %}
+    <h2 id="intro-heading"><span data-lang-show="en">About</span><span data-lang-show="es" lang="es">Sobre mí</span></h2>
+    {% if about.en.intro and about.es.intro %}{{ lang_switch("en") }}{% endif %}
   </div>
   <div class="band-body">
-    {% if about_en %}<div class="prose about-text" lang="en" data-lang-show="en">{{ about_en }}</div>{% endif %}
-    {% if about_es %}<div class="prose about-text" lang="es" data-lang-show="es">{{ about_es }}</div>{% endif %}
+    {% if about.en.intro %}<div class="prose about-text" lang="en" data-lang-show="en">{{ about.en.intro }}</div>{% endif %}
+    {% if about.es.intro %}<div class="prose about-text" lang="es" data-lang-show="es">{{ about.es.intro }}</div>{% endif %}
+    <p class="more"><a href="about.html"><span data-lang-show="en">More about me</span><span data-lang-show="es" lang="es">Más sobre mí</span></a></p>
   </div>
 </section>
 {% endif %}

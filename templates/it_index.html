@@ -1,68 +1,52 @@
 {% extends "it_base.html" %}
-{% from "_macros.html" import bi, t, project_cards with context %}
+{% from "_macros.html" import bi, t, it_card with context %}
 
 {% block main %}
 <section class="it-hero">
   <h1 class="page-title">Intercambios Transorgánicos</h1>
   <p class="it-lede">{{ bi(programa.lede) }}</p>
+  {% if it_website %}
+  <p class="it-cta"><a class="button" href="{{ it_website }}">{{ t('Visitar el sitio de Intercambios Transorgánicos', 'Visit the Intercambios Transorgánicos website') }}</a></p>
+  {% endif %}
 </section>
 
-<section class="band">
-  <div class="band-head"><h2>{{ t('El programa', 'The program') }}</h2></div>
+<section class="band" aria-labelledby="it-program">
+  <div class="band-head"><h2 id="it-program">{{ t('El programa', 'The program') }}</h2></div>
   <div class="band-body">
     {{ bi(programa.body, 'div', 'prose') }}
-    {% if programa.quote.es %}
-    <blockquote class="it-quote">
-      <p>{{ bi(programa.quote) }}</p>
-      <footer>{{ programa.quote_by }}</footer>
-    </blockquote>
+    {% if programa.recognition %}
+    <h3 class="it-subhead">{{ t('Reconocimientos', 'Recognition') }}</h3>
+    <ul class="it-list">
+      {% for r in programa.recognition %}<li>{{ bi(r) }}</li>{% endfor %}
+    </ul>
     {% endif %}
   </div>
 </section>
 
-<section class="band">
-  <div class="band-head"><h2>{{ t('Proyectos', 'Projects') }}</h2></div>
+{% if programa.students.es %}
+<section class="band" aria-labelledby="it-students">
+  <div class="band-head"><h2 id="it-students">{{ t('Estudiantes', 'Students') }}</h2></div>
   <div class="band-body">
-    {{ project_cards(projects, 'proyectos/') }}
-  </div>
-</section>
-
-{% if programa.questions %}
-<section class="band">
-  <div class="band-head"><h2>{{ t('Preguntas', 'Questions') }}</h2></div>
-  <div class="band-body">
-    <ul class="it-questions" lang="es"{% if programa.questions_en %} data-lang-show="es"{% endif %}>
-      {% for q in programa.questions %}<li>{{ q }}</li>{% endfor %}
-    </ul>
-    {% if programa.questions_en %}
-    <ul class="it-questions" lang="en" data-lang-show="en">
-      {% for q in programa.questions_en %}<li>{{ q }}</li>{% endfor %}
-    </ul>
-    {% endif %}
+    <p class="prose it-students">{{ bi(programa.students) }}</p>
   </div>
 </section>
 {% endif %}
 
-{% if recent %}
-<section class="band">
-  <div class="band-head"><h2>{{ t('Actividades', 'Activities') }}</h2></div>
+{% if projects %}
+<section class="band" aria-labelledby="it-projects">
+  <div class="band-head"><h2 id="it-projects">{{ t('Proyectos', 'Projects') }}</h2></div>
   <div class="band-body">
-    <ul class="it-recent">
-      {% for a in recent %}
-      <li>
-        <span class="it-recent-when">{{ bi(a.when) }}</span>
-        <span class="it-recent-title">{{ bi(a.title) }}</span>
-      </li>
-      {% endfor %}
+    <ul class="cards is-compact">
+      {% for p in projects %}{{ it_card(p) }}{% endfor %}
     </ul>
-    <p class="more"><a href="actividades.html">{{ t('Todas las actividades desde 2015', 'All activities since 2015') }}</a></p>
+    {% if it_website %}<p class="more"><a href="{{ it_website }}">{{ t('Todos los proyectos y actividades, en el sitio de Intercambios Transorgánicos', 'All projects and activities, on the Intercambios Transorgánicos website') }}</a></p>{% endif %}
   </div>
 </section>
 {% endif %}
 
 {% if team %}
-<section class="band" id="equipo">
-  <div class="band-head"><h2>{{ t('Equipo', 'Team') }}</h2></div>
+<section class="band" id="equipo" aria-labelledby="it-team">
+  <div class="band-head"><h2 id="it-team">{{ t('Equipo', 'Team') }}</h2></div>
   <div class="band-body it-team">
     {% for g in team %}
     <div class="it-team-group">
@@ -77,4 +61,14 @@
   </div>
 </section>
 {% endif %}
+
+<section class="band" aria-labelledby="it-read">
+  <div class="band-head"><h2 id="it-read">{{ t('Para leer', 'Read') }}</h2></div>
+  <div class="band-body">
+    <ul class="it-list">
+      <li><a href="textos/transdisciplina.html">{{ t('Transdisciplina en Intercambios Transorgánicos', 'Transdisciplinarity at Intercambios Transorgánicos') }}</a> (2021)</li>
+      {% if it_website %}<li><a href="{{ it_website }}">{{ it_website | replace("https://", "") }}</a></li>{% endif %}
+    </ul>
+  </div>
+</section>
 {% endblock %}

@@ -13,22 +13,30 @@
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:description" content="{{ description or site.description }}">
 <meta property="og:type" content="website">
-{% if og_image %}
-<meta property="og:image" content="{{ og_image }}">
+{% set og = og_image_override or og_image %}
+{% if og %}
+<meta property="og:image" content="{{ og }}">
 {% endif %}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap">
+<meta name="color-scheme" content="light dark">
+<link rel="preload" href="{{ root }}assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ root }}assets/style.css">
 <link rel="icon" href="{{ root }}assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="{{ root }}assets/favicon-32.png">
 <link rel="apple-touch-icon" href="{{ root }}assets/apple-touch-icon.png">
 <script>
-  /* Pick the language (English / Español) before the page paints:
-     the visitor's saved choice, then the page's own default, then the browser language. */
+  /* Before the page paints, apply the visitor's saved choices:
+     display (light, dark or high contrast; otherwise their device setting) and
+     language (English / Español; otherwise the page's default, then the browser language). */
   (function () {
-    var root = document.documentElement, lang = null;
-    try { lang = localStorage.getItem("site-lang"); } catch (e) {}
+    var root = document.documentElement, lang = null, theme = null;
+    root.className += " js";
+    try {
+      lang = localStorage.getItem("site-lang");
+      theme = localStorage.getItem("site-theme");
+    } catch (e) {}
+    if (theme === "light" || theme === "dark" || theme === "contrast") {
+      root.setAttribute("data-theme", theme);
+    }
     if (lang !== "en" && lang !== "es") {
       lang = root.getAttribute("data-default-lang") ||
         ((navigator.language || "").toLowerCase().slice(0, 2) === "es" ? "es" : "en");
@@ -46,27 +54,41 @@
 {% endif %}
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header wrap">
-  <a class="site-name" href="{{ root or './' }}">{{ site.name }}</a>
+<header>
+<div class="utility">
+  <div class="wrap utility-inner">
+    <div class="display-switch" role="group" aria-labelledby="display-label">
+      <span id="display-label" class="display-label">Display</span>
+      <button type="button" data-set-theme="light" aria-pressed="false">Light</button>
+      <button type="button" data-set-theme="dark" aria-pressed="false">Dark</button>
+      <button type="button" data-set-theme="contrast" aria-pressed="false">High contrast</button>
+    </div>
+  </div>
+</div>
+
+<div class="site-header wrap">
+  <a class="site-name" href="{{ root or './' }}"{% if page_kind == 'home' %} aria-current="page"{% endif %}>{{ site.name }}</a>
   <nav class="site-nav" aria-label="Main">
     <ul>
-      <li><a href="{{ root or './' }}"{% if page_kind == 'home' %} aria-current="page"{% endif %}>About</a></li>
+      <li><a href="{{ root }}about.html"{% if page_kind == 'about' %} aria-current="page"{% endif %}>About</a></li>
       <li><a href="{{ root }}projects.html"{% if page_kind == 'projects' %} aria-current="page"{% elif page_kind == 'project' %} aria-current="true"{% endif %}>Projects</a></li>
+      <li><a href="{{ root }}index.html#publications">Publications</a></li>
       <li><a href="{{ root }}intercambios/index.html"{% if section == 'it' %} aria-current="true"{% endif %}>Intercambios</a></li>
       <li><a href="{{ root }}cv.html"{% if page_kind == 'cv' %} aria-current="page"{% endif %}>CV</a></li>
     </ul>
   </nav>
+</div>
 </header>
 {% block subheader %}{% endblock %}
 
-<main id="main" class="wrap">
+<main id="main" class="wrap" tabindex="-1">
 {% block main %}{% endblock %}
 </main>
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p>{{ site.name }}{% if site.place %}<br>{{ site.place }}{% endif %}</p>
-    <ul class="footer-links">
+    <ul class="footer-links" aria-label="Profiles">
       {% if site.email %}
       <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       {% endif %}

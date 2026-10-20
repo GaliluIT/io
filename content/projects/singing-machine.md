@@ -10,11 +10,13 @@ details:
   Support: CFWPP Future of Work Student Summer Research Grant, Virginia Tech (2025)
   Shown at: ICAT Playdates, Virginia Tech; CMMR 2025, London; DRS2026, Edinburgh
 links:
+  - label: "Play the Singing Machine in your browser (it needs a webcam; it is online under its earlier name, Song of the Voiceless)"
+    url: https://l2ork.bukvic.net:3000/Song-of-the-Voiceless/
   - label: "Paper: Singing without a Larynx (CMMR 2025)"
     url: https://cmmr2025.prism.cnrs.fr/demos/
   - label: "Paper: Re-voicing Identity (DRS2026)"
     url: https://doi.org/10.21606/drs.2026.1993
-check: Add a video or photos.
+check: Add photos or a short video of the Singing Machine being played (a screen recording works).
 ---
 After a total laryngectomy, most voice technology aims at one thing: bringing speech back to a functional standard. The Singing Machine starts from a different question. What would it take to sing?
 

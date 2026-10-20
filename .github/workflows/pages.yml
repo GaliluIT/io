@@ -26,6 +26,11 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python build.py
+      # The CV PDF, printed from the CV page with the Chrome that GitHub provides.
+      # If this step fails, the copy saved in assets/cv/ is published instead.
+      - name: Make the CV PDF
+        run: python make_cv_pdf.py
+        continue-on-error: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

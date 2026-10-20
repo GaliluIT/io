@@ -1,64 +1,28 @@
 ---
-# Página principal de la sección Intercambios Transorgánicos.
-# El texto en español va primero; después de la línea <!-- en --> va la versión en inglés.
+# The Intercambios Transorgánicos page (intercambios/index.html), in Spanish and English.
+# Spanish text goes first; the English version goes after the line <!-- en -->.
+# The full program lives on its own website, set below.
+website: https://intercambiostransorganicos.org
 lede: Un programa de investigación dedicado al desarrollo de interfaces interactivas que funcionan como estrategias para abordar problemáticas del campo de la salud.
 lede_en: A research program that develops interactive interfaces as strategies for working on problems in the field of health.
-quote: "Debemos generar una ampliación en la cultura del desarrollo de conocimiento hacia la producción de nuevos métodos, ideas y formas de pensar y expresar narrativas sobre el mundo contemporáneo."
-quote_en: "We need to widen the culture of knowledge production toward new methods, ideas and ways of thinking about and telling stories of the contemporary world."
-quote_by: Gala Lucia Gonzalez Barrios
-questions:
-  - ¿Cómo tipificar metodologías de trabajo en proyectos del campo Arte, Ciencia y Tecnología?
-  - ¿Dónde hacer circular los proyectos de arte y ciencia que no son obras de arte ni devienen en artículos académicos?
-  - ¿Cómo desarrollar tecnologías en Argentina que cumplan sus funciones y además sean accesibles para su propio mercado interno?
-  - ¿Cómo ver a los pacientes como un todo en lugar de como una enumeración de cosas a tratar o resolver? ¿Cómo pensar más allá del aparato de asistencia y, a la vez, incluirlo?
-  - ¿Cómo trabajar con las problemáticas de la voz, su transformación o su amputación, en términos de identidad y construcción social?
-questions_en:
-  - How can working methods in art, science and technology projects be described and classified?
-  - Where can art and science projects circulate when they are neither artworks nor academic articles?
-  - How can technologies be developed in Argentina that do their job and are also affordable for the local market?
-  - How can patients be seen as whole people rather than a list of things to treat or fix? How can we think beyond the assistive device while still including it?
-  - How can we work with the problems of voice, its transformation or its loss, in terms of identity and social life?
+students: "IT recibe alumnxs de investigación de muchas carreras de la UNTREF: Artes Electrónicas, Ingeniería en Sonido, Psicomotricidad, Historia, Comunicación Social, Producción Audiovisual, Física, Ingeniería en Computación y Estadística. Desde 2021 funciona también como Trayecto Formativo Alternativo de la Licenciatura en Artes Electrónicas, y los proyectos más recientes, como Archivoz, se construyen con estudiantes de grado de distintas disciplinas."
+students_en: "IT takes research students from many UNTREF degree programs: electronic arts, sound engineering, psychomotricity, history, social communication, audiovisual production, physics, computer engineering and statistics. Since 2021 it has also been an alternative training track within the bachelor's degree in electronic arts, and recent projects such as Archivoz are built with undergraduates from several disciplines."
+recognition:
+  - es: Premio Nacional de Inteligencia Artificial INARIA, por Archivoz (2025)
+    en: INARIA National Artificial Intelligence Award, for Archivoz (2025)
+  - es: Premio De la Ciencia al Impacto Social, Ministerio de Ciencia y Tecnología de la Nación e INVAP (2018)
+    en: From Science to Social Impact Award, Argentina's Ministry of Science and Technology and INVAP (2018)
+  - es: Fondo Metropolitano de la Cultura, las Artes y las Ciencias, Buenos Aires (2017)
+    en: Metropolitan Fund of Arts, Culture and Science, Buenos Aires (2017)
+  - es: Premio a la Innovación en Investigación en Tecnologías Críticas, UNTREF (2017)
+    en: Innovation in Critical Technology Research Award, UNTREF (2017)
 ---
-Intercambios Transorgánicos (IT) fue fundado en 2015 por Gala Lucia Gonzalez Barrios en el MUNTREF Centro de Arte y Ciencia de la Universidad Nacional de Tres de Febrero (UNTREF), en Buenos Aires. Se inserta en el campo Arte, Ciencia y Tecnología y recibe alumnxs de investigación de distintas carreras: Artes Electrónicas, Ingeniería en Sonido, Psicomotricidad, Historia, Comunicación Social, Producción Audiovisual, Física, Ingeniería en Computación y Estadística. Desde 2021 funciona también como Trayecto Formativo Alternativo de la Licenciatura en Artes Electrónicas.
+Intercambios Transorgánicos (IT) fue fundado en 2015 por Gala Lucia Gonzalez Barrios, que lo dirige, en el MUNTREF Centro de Arte y Ciencia de la Universidad Nacional de Tres de Febrero (UNTREF), en Buenos Aires.
 
-## Enfoque
-
-Trabajamos desde la transdisciplina, entendida con Basarab Nicolescu como aquello que está entre, a través y más allá de toda disciplina. Nos interesa la colaboración entre disciplinas y el estudio riguroso de lo que cada una aporta a un mismo problema, y creemos que eso implica también acercarnos con nuestra humanidad y subjetividad.
-
-Nuestra mirada crítica sobre los avances y los límites de la tecnología funcional nos llevó a producir dispositivos e interfaces que estimulan, con el lenguaje simbólico del arte electrónico, aspectos creativos, sensoriales, adaptativos y exploratorios de quienes participan. Trabajamos con comunidades que viven distintas problemáticas, o con problemas que nos plantea una institución o un colega, y dedicamos un proceso de investigación transdisciplinaria a comprender el problema antes de imaginar estrategias tecno-culturales para abordarlo.
-
-## Misión
-
-Nos interesa contribuir al empoderamiento de las personas con discapacidad, a comprender la dimensión cultural de la salud y a las transformaciones sociales en torno a la salud, la independencia personal, la comunidad, la soberanía tecnológica y la soberanía sanitaria.
-
-Lo hacemos vinculando al MUNTREF con instituciones interesadas en integrar medios y tecnologías a su trabajo, y a través de conferencias, encuentros, exposiciones y talleres en ciudades e instituciones de América Latina y Europa.
-
-## Reconocimientos
-
-- Premio Nacional de Inteligencia Artificial INARIA, por Archivoz (2025)
-- Premio De la Ciencia al Impacto Social, Ministerio de Ciencia y Tecnología de la Nación e INVAP (2018)
-- Fondo Metropolitano de la Cultura, las Artes y las Ciencias, Buenos Aires (2017)
-- Premio a la Innovación en Investigación en Tecnologías Críticas, UNTREF (2017)
+Trabajamos desde la transdisciplina, en el campo Arte, Ciencia y Tecnología. Con comunidades que viven distintas problemáticas, o con problemas que nos plantea una institución o un colega, dedicamos un proceso de investigación a comprender el problema antes de imaginar estrategias tecno-culturales para abordarlo, y producimos dispositivos e interfaces que estimulan, con el lenguaje del arte electrónico, aspectos creativos, sensoriales y exploratorios de quienes participan. Nos interesa contribuir al empoderamiento de las personas con discapacidad, a comprender la dimensión cultural de la salud y a la soberanía tecnológica y sanitaria.
 
 <!-- en -->
 
-Intercambios Transorgánicos (IT) was founded in 2015 by Gala Lucia Gonzalez Barrios at MUNTREF Centro de Arte y Ciencia, the art and science center of the Universidad Nacional de Tres de Febrero (UNTREF) in Buenos Aires. It belongs to the field of art, science and technology and takes research students from many degree programs: electronic arts, sound engineering, psychomotricity, history, social communication, audiovisual production, physics, computer engineering and statistics. Since 2021 it has also been an alternative training track within the bachelor's degree in electronic arts.
+Intercambios Transorgánicos (IT) was founded in 2015 by Gala Lucia Gonzalez Barrios, who directs it, at MUNTREF Centro de Arte y Ciencia, the art and science center of the Universidad Nacional de Tres de Febrero (UNTREF) in Buenos Aires.
 
-## Approach
-
-We work transdisciplinarily, in Basarab Nicolescu's sense of what lies between, across and beyond all disciplines. We care about collaboration between disciplines and about rigorously studying what each one brings to a shared problem, and we believe that also means approaching it with our own humanity and subjectivity.
-
-A critical view of what functional technology can and cannot do led us to build devices and interfaces that use the symbolic language of electronic art to engage the creative, sensory, adaptive and exploratory capacities of the people who take part. We work with communities facing particular problems, or with problems brought to us by an institution or a colleague, and we spend a transdisciplinary research process understanding the problem before imagining techno-cultural strategies to address it.
-
-## Mission
-
-We want to contribute to the empowerment of disabled people, to understanding the cultural dimension of health, and to social change around health, personal independence, community, technological sovereignty and health sovereignty.
-
-We do this by connecting MUNTREF with institutions that want to bring media and technology into their work, and through conferences, meetings, exhibitions and workshops in cities and institutions across Latin America and Europe.
-
-## Recognition
-
-- INARIA National Artificial Intelligence Award, for Archivoz (2025)
-- From Science to Social Impact Award, Argentina's Ministry of Science and Technology and INVAP (2018)
-- Metropolitan Fund of Arts, Culture and Science, Buenos Aires (2017)
-- Innovation in Critical Technology Research Award, UNTREF (2017)
+We work transdisciplinarily, in the field of art, science and technology. With communities facing particular problems, or with problems brought to us by an institution or a colleague, we spend a research process understanding the problem before imagining techno-cultural strategies to address it, and we build devices and interfaces that use the language of electronic art to engage the creative, sensory and exploratory capacities of the people who take part. We want to contribute to the empowerment of disabled people, to understanding the cultural dimension of health, and to technological and health sovereignty.

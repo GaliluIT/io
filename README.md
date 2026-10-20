@@ -6,39 +6,62 @@ A small static site for GitHub Pages. All the text lives in `content/`, the imag
 
 | To change | Edit |
 |---|---|
-| Name, tagline, links, the 3D object | `content/site.yml` |
-| About text | `content/about.en.md` and `content/about.es.md` |
+| Name, tagline, profile links (LinkedIn, Instagram…), the 3D object | `content/site.yml` |
+| About text | `content/about.en.md` and `content/about.es.md` (the home page shows the first paragraph, the About page all of it) |
+| Your photo on the About page | `assets/about/portrait.jpg`, and its description `portrait_alt` in `content/site.yml` |
 | Publications (home page and CV) | `content/publications.yml` (`lang: en` or `lang: es` picks the column) |
-| CV | `content/cv.yml`, and your PDF at `assets/cv/cv.pdf` |
+| CV | `content/cv.yml` (the PDF is made from it, see below) |
 | Projects | one file per project in `content/projects/` |
-| Colors and fonts | `assets/style.css` (the variables at the top) |
+| Colors and fonts | `assets/style.css` (the variables at the top; fonts are in `assets/fonts/`) |
 
-## Intercambios Transorgánicos section (Spanish and English)
+## Accessibility
 
-Everything for galalucia.com/intercambios lives in `content/intercambios/`:
+- Every page has a **Display** bar at the top: Light, Dark or High contrast. Until a visitor picks one, the site follows their device settings (dark mode, more contrast). The choice is remembered.
+- Every image needs an `alt`: a sentence describing what it shows, for people who can't see it. The build lists any image without one. Describe what is in the picture; the caption can add the context.
+- Videos need a `title`. A video file (not YouTube or Vimeo) also needs a `description` of what happens in it.
+- The 3D object turns slowly, with a button to stop it; it stays still for visitors who ask their device for reduced motion, and it can be turned with the arrow keys.
+- Links to PDFs say "(PDF)".
+
+## The CV PDF
+
+The "Download the CV (PDF)" button gives a PDF printed from the CV page, so it always matches `content/cv.yml`. GitHub makes it each time it publishes. To make it yourself (you need Chrome):
+
+```
+python build.py
+python make_cv_pdf.py --save
+```
+
+`--save` updates the copy kept in `assets/cv/`. The PDF shows your name, website and LinkedIn at the top, and never a phone number or email.
+
+## Intercambios Transorgánicos page (Spanish and English)
+
+galalucia.com/intercambios is one page that introduces the program and sends visitors to its own website, intercambiostransorganicos.org. Its content lives in `content/intercambios/`:
 
 | To change | Edit |
 |---|---|
-| Program page (intro, approach, questions) | `content/intercambios/programa.md` |
+| Introduction, students, recognition, the website address | `content/intercambios/programa.md` |
+| Projects (a picture, a line, and a link or video) | `content/intercambios/proyectos.yml` |
 | Team | `content/intercambios/equipo.yml` |
-| Projects | one file per project in `content/intercambios/proyectos/` (copy `_plantilla.md`) |
-| Activities timeline | `content/intercambios/actividades.yml` |
-| Publications | `content/intercambios/publicaciones.yml`, PDFs in `assets/intercambios/pdf/` |
 | Long texts | `content/intercambios/textos/` |
-| Images | `assets/intercambios/<project-or-activity>/` |
 
-Every text field can have an English version with the same name plus `_en` (`title` / `title_en`). In Markdown files, the Spanish text comes first, then a line `<!-- en -->`, then the English text. If there is no English version, the Spanish text shows in both languages. Visitors switch language with the Español / English buttons; the section opens in Spanish.
+Every text field can have an English version with the same name plus `_en` (`title` / `title_en`). In Markdown files, the Spanish text comes first, then a line `<!-- en -->`, then the English text. If there is no English version, the Spanish text shows in both languages. Visitors switch language with the Español / English buttons; the page opens in Spanish.
 
-Before adding photos, check they don't show children's faces, and resize them to about 1600 px wide.
+Before adding photos, check they don't show children's faces, and resize them to about 1600 px wide. Photos from a phone carry the place they were taken; resizing them with the method in the next section removes it.
 
 ## Add a project
 
 1. Copy `content/projects/_template.md` to `content/projects/your-project.md`.
 2. Make a folder `assets/projects/your-project/` and put the images there.
-3. Fill in the fields at the top of the file and write the text underneath.
+3. Fill in the fields at the top of the file and write the text underneath. The first image is the picture on the Projects page, unless you set `cover`.
 4. Commit and push. The page appears at `projects/your-project.html`.
 
-Videos: a YouTube or Vimeo link is best. Short `.mp4` clips can go in `assets/`, but GitHub rejects any file over 100 MB.
+Videos: a YouTube or Vimeo link is best. Short, silent `.mp4` clips can go in `assets/` (keep them under a few MB).
+
+To make photos web-ready (smaller, upright, and without the camera's location data):
+
+```
+python -c "from PIL import Image, ImageOps; im = ImageOps.exif_transpose(Image.open('photo.jpg')).convert('RGB'); im.thumbnail((1600, 1600)); im.save('01.jpg', quality=82)"
+```
 
 To keep a project hidden while you work on it, set `draft: true`.
 
@@ -67,4 +90,4 @@ The site is served at https://galalucia.com. The domain is set in **Settings →
 
 ## The 3D object
 
-`assets/fono/fono.glb` is FonoAldo, reduced from the original STL (about 500,000 triangles, 24 MB) to about 76,000 triangles (1 MB) so it loads quickly. `poster.webp` is the still image shown while it loads. To remove the object, delete the `fono:` block in `content/site.yml`.
+`assets/fono/fono.glb` is Fonocosa Aldo, reduced from the original STL (about 500,000 triangles, 24 MB) to about 76,000 triangles (1 MB) so it loads quickly. `poster.webp` is the still image shown while it loads. Its color changes with the display: graphite on light backgrounds, pale on dark ones (`assets/site.js`). To remove the object, delete the `fono:` block in `content/site.yml`.

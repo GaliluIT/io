@@ -1,0 +1,76 @@
+# Projects of Intercambios Transorgánicos, shown briefly on intercambios/index.html.
+# Any field can have an English version in a field of the same name ending in _en.
+# link: a page on this site (from the site root). video: a YouTube or Vimeo link.
+# image + alt: a picture and its description for people who can't see it.
+
+- title: Fonocosa
+  years: 2019 – presente
+  years_en: 2019 – present
+  summary: Una interfaz para el habla de personas laringectomizadas que se convirtió en una investigación sobre la voz como rasgo identitario.
+  summary_en: A speech interface for people who have had a laryngectomy that grew into research on the voice as a marker of identity.
+  image: assets/projects/fonocosa/01.jpg
+  alt: "Tres imágenes de una laringe: un modelo 3D de la tráquea, un dibujo anatómico con una flor en el centro y un modelo 3D rojo y negro."
+  alt_en: "Three images of a larynx: a 3D model of the windpipe, an anatomical drawing with a flower at its center, and a red and black 3D model."
+  link: projects/fonocosa.html
+
+- title: Fonocosa Aldo
+  years: "2023"
+  summary: Una escultura impresa en 3D a partir de deformaciones de la laringe, con una pieza sonora.
+  summary_en: A 3D-printed sculpture based on deformations of the larynx, with a sound piece.
+  image: assets/projects/fonocosa-aldo/01.jpg
+  alt: Fonocosa Aldo, una impresión 3D gris oscura con boquilla, un cuerpo con anillos como una garganta, cuernos y zarcillos.
+  alt_en: Fonocosa Aldo, a dark grey 3D print with a mouthpiece, a ribbed, throat-like body, horns and tendrils.
+  link: projects/fonocosa-aldo.html
+
+- title: Archivoz
+  years: 2019 – presente
+  years_en: 2019 – present
+  summary: Un archivo de voces diversas y locales modeladas con inteligencia artificial. Premio Nacional de Inteligencia Artificial INARIA 2025.
+  summary_en: An archive of diverse, local voices modeled with artificial intelligence. INARIA National Artificial Intelligence Award, 2025.
+  image: assets/projects/archivoz/01.jpg
+  alt: La pantalla de inicio de Archivoz, «Archivo de voces diversas», sobre un degradé verde y violeta.
+  alt_en: The Archivoz title screen, “Archivo de voces diversas”, over a green and purple gradient.
+  link: projects/archivoz.html
+
+- title: C3D
+  years: 2016 – 2019
+  summary: Un controlador inalámbrico que genera imagen y sonido espacializados a partir del movimiento, pensado para la neurorrehabilitación. Premios nacionales en 2017 y 2018.
+  summary_en: A wireless controller that turns movement into spatialized image and sound, designed for neurorehabilitation. National awards in 2017 and 2018.
+  image: assets/intercambios/c3d/01.jpg
+  alt: Renders del C3D, una esfera blanca con aberturas pentagonales y las letras IT.
+  alt_en: Renderings of the C3D, a white sphere with pentagonal openings and the letters IT.
+  video: https://youtu.be/s8OdWUvlXhc
+
+- title: Eterófono
+  title_en: Etherphone
+  years: "2015"
+  summary: Un instrumento que se toca sin contacto físico, en una versión simplificada para la terapia ocupacional.
+  summary_en: An instrument played without touching it, in a simplified version for occupational therapy.
+  image: assets/intercambios/eterofono/01.jpg
+  alt: El Minimum Theremin, una pequeña caja metálica con una antena vertical.
+  alt_en: The Minimum Theremin, a small metal box with an upright antenna.
+  video: https://youtu.be/p4tzIqZKGrU
+
+- title: Juego de Ingenio
+  years: "2016"
+  summary: Un rompecabezas electrónico de lógica, creado por estudiantes de Artes Electrónicas, para la estimulación cognitiva.
+  summary_en: An electronic logic puzzle, created by electronic arts students, for cognitive stimulation.
+  image: assets/intercambios/juego-de-ingenio/01.jpg
+  alt: Un tablero ilustrado con un castillo, interruptores, luces y acertijos numerados.
+  alt_en: An illustrated castle board with switches, lights and numbered puzzles.
+
+- title: El espectro de la voz
+  title_en: The Spectrum of the Voice
+  years: "2021"
+  summary: Una instalación interactiva, junto con AudioStellar, que recolectó las voces del público de Tecnópolis.
+  summary_en: An interactive installation, made with AudioStellar, that collected the voices of visitors to Tecnópolis.
+  image: assets/intercambios/espectro-de-la-voz/01.jpg
+  alt: El panel de presentación de Intercambios Transorgánicos en la instalación, con el logo verde del programa.
+  alt_en: The Intercambios Transorgánicos introduction panel at the installation, with the program's green logo.
+
+- title: Orquesta de laptops telemática
+  title_en: Telematic laptop orchestra
+  years: 2022 – 2023
+  summary: Piezas compuestas y tocadas en simultáneo por estudiantes y docentes de la UNTREF y de Virginia Tech.
+  summary_en: Pieces composed and played at the same time by students and faculty at UNTREF and Virginia Tech.
+  link: projects/l2ork.html

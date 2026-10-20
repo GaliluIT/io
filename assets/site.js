@@ -1,33 +1,99 @@
 (function () {
-  // Language switch (Español / English). The starting language is set in the page head.
   var root = document.documentElement;
-  var buttons = document.querySelectorAll("[data-set-lang]");
+  function store(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+  function media(query) {
+    return window.matchMedia ? window.matchMedia(query) : { matches: false };
+  }
 
+  // Display: light, dark or high contrast. Until the visitor picks one, the site
+  // follows their device settings. The choice is set in the page head before it paints.
+  var themeButtons = document.querySelectorAll("[data-set-theme]");
+  function currentTheme() {
+    var chosen = root.getAttribute("data-theme");
+    if (chosen) return chosen;
+    if (media("(prefers-contrast: more)").matches) return "contrast";
+    return media("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  function markTheme() {
+    var theme = currentTheme();
+    themeButtons.forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-set-theme") === theme));
+    });
+  }
+  themeButtons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var theme = b.getAttribute("data-set-theme");
+      root.setAttribute("data-theme", theme);
+      store("site-theme", theme);
+      markTheme();
+    });
+  });
+  ["(prefers-color-scheme: dark)", "(prefers-contrast: more)"].forEach(function (q) {
+    var m = media(q);
+    if (m.addEventListener) m.addEventListener("change", markTheme);
+  });
+  markTheme();
+
+  // Language: English / Español. Image descriptions follow the language too.
+  var langButtons = document.querySelectorAll("[data-set-lang]");
   function showLang(lang) {
     root.setAttribute("data-lang", lang);
-    buttons.forEach(function (b) {
+    langButtons.forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
     });
-    // Image descriptions follow the language too.
     document.querySelectorAll("img[data-alt-" + lang + "]").forEach(function (img) {
       img.setAttribute("alt", img.getAttribute("data-alt-" + lang));
     });
   }
-
   showLang(root.getAttribute("data-lang") || "en");
-  buttons.forEach(function (b) {
+  langButtons.forEach(function (b) {
     b.addEventListener("click", function () {
       var lang = b.getAttribute("data-set-lang");
       showLang(lang);
-      try { localStorage.setItem("site-lang", lang); } catch (e) {}
+      store("site-lang", lang);
     });
   });
 
-  // The 3D object: turn slowly unless the visitor prefers reduced motion.
+  // The 3D object turns slowly, unless the visitor prefers reduced motion.
+  // A button stops and restarts it.
   var viewer = document.querySelector("model-viewer");
   if (!viewer) return;
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!reduce) viewer.setAttribute("auto-rotate", "");
+  var rotateButton = document.querySelector("[data-rotate-toggle]");
+  if (!media("(prefers-reduced-motion: reduce)").matches) {
+    viewer.setAttribute("auto-rotate", "");
+    if (rotateButton) {
+      rotateButton.hidden = false;
+      rotateButton.addEventListener("click", function () {
+        if (viewer.hasAttribute("auto-rotate")) {
+          viewer.removeAttribute("auto-rotate");
+          rotateButton.textContent = "Start turning";
+        } else {
+          viewer.setAttribute("auto-rotate", "");
+          rotateButton.textContent = "Stop turning";
+        }
+      });
+    }
+  }
+
+  // The model's color follows the display: graphite, like the printed piece,
+  // on light backgrounds, and pale on dark ones, so it always stands out.
+  function paintModel() {
+    if (!viewer.model) return;
+    var dark = currentTheme() === "dark";
+    viewer.model.materials.forEach(function (m) {
+      var pbr = m.pbrMetallicRoughness;
+      pbr.setBaseColorFactor(dark ? [0.9, 0.9, 0.88, 1] : [0.2, 0.2, 0.21, 1]);
+      pbr.setMetallicFactor(dark ? 0 : 0.35);
+      pbr.setRoughnessFactor(dark ? 0.75 : 0.45);
+    });
+  }
+  viewer.addEventListener("load", paintModel);
+  if (viewer.loaded) paintModel();
+  themeButtons.forEach(function (b) { b.addEventListener("click", paintModel); });
+  var darkQuery = media("(prefers-color-scheme: dark)");
+  if (darkQuery.addEventListener) darkQuery.addEventListener("change", paintModel);
 
   // Optional sound: set fono.sound in content/site.yml. A click (not a drag) plays it.
   var soundSrc = viewer.getAttribute("data-sound");

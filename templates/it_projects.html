@@ -1,7 +1,0 @@
-{% extends "it_base.html" %}
-{% from "_macros.html" import t, project_cards with context %}
-
-{% block main %}
-<h1 class="page-title">{{ t('Proyectos', 'Projects') }}</h1>
-{{ project_cards(projects, 'proyectos/') }}
-{% endblock %}

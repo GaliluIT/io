@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import todo with context %}
+{% from "_macros.html" import todo, video with context %}
 
 {% block main %}
 <article class="project">
@@ -7,21 +7,12 @@
 
   <header class="project-head">
     <h1>{{ project.title }}</h1>
-    {% if project.years %}<p class="project-years">{{ project.years }}</p>{% endif %}
+    {% if project.years or project.status %}<p class="project-years">{{ project.years }}{% if project.status %} <span class="card-status">{{ project.status }}</span>{% endif %}</p>{% endif %}
     {% if project.summary %}<p class="lede">{{ project.summary }}</p>{% endif %}
     {% if drafts %}{{ todo(project.check) }}{% endif %}
   </header>
 
-  {% for v in project.videos %}
-  <div class="video{% if v.kind == 'iframe' %} is-embed{% endif %}">
-    {% if v.kind == 'iframe' %}
-    <iframe src="{{ v.src }}" title="Video: {{ project.title }}" loading="lazy"
-            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    {% else %}
-    <video src="{{ v.src }}" controls preload="metadata" playsinline></video>
-    {% endif %}
-  </div>
-  {% endfor %}
+  {% for v in project.videos %}{{ video(v, "video-" ~ loop.index) }}{% endfor %}
 
   <div class="project-grid">
     {% if project.details %}
@@ -45,14 +36,18 @@
   </div>
 
   {% if project.images %}
-  <div class="gallery">
-    {% for im in project.images %}
-    <figure>
-      <img src="{{ im.src }}" alt="{{ im.alt }}" loading="lazy">
-      {% if im.caption %}<figcaption>{{ im.caption }}</figcaption>{% endif %}
-    </figure>
-    {% endfor %}
-  </div>
+  <section class="gallery-section" aria-label="Images">
+    <ul class="gallery">
+      {% for im in project.images %}
+      <li>
+        <figure>
+          <a href="{{ im.src }}"><img src="{{ im.src }}" alt="{{ im.alt }}" loading="lazy"></a>
+          {% if im.caption %}<figcaption>{{ im.caption }}</figcaption>{% endif %}
+        </figure>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
 
   {% if previous or next %}

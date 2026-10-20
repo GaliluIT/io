@@ -15,7 +15,12 @@ url: "https://galalucia.com"
 # Leave empty to keep your email off the site.
 email: ""
 
+# Profiles. They appear in the footer of every page and on the About page.
 links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/galalucia/
+  - label: Instagram
+    url: https://www.instagram.com/ouheyiuitsmi/
   - label: Google Scholar
     url: https://scholar.google.com/citations?user=GgLFF_MAAAAJ&hl=en
   - label: GitHub
@@ -24,14 +29,20 @@ links:
 # Shown under Publications on the home page.
 scholar: https://scholar.google.com/citations?user=GgLFF_MAAAAJ&hl=en
 
-# Your CV as a PDF. Put the file here and a "Download PDF" button appears on the CV page.
-cv_pdf: assets/cv/cv.pdf
+# Your CV as a PDF, with a "Download PDF" button on the CV and About pages.
+# GitHub makes it from the CV page every time you publish (see README),
+# so it always matches cv.yml. It never includes a phone number or email.
+cv_pdf: assets/cv/Gala-Lucia-Gonzalez-Barrios-CV.pdf
+
+# Your photo on the About page, and its description for people who can't see it.
+portrait: assets/about/portrait.jpg
+portrait_alt: Portrait of Gala Lucia Gonzalez Barrios, smiling, with short dark hair, leaning in a doorway.
 
 # The 3D object on the home page. Delete this whole block to remove it.
 fono:
   title: Fonocosa Aldo
   credit: "2023"
-  link: intercambios/proyectos/fonocosa-aldo.html   # the title links to the work's page
+  link: projects/fonocosa-aldo.html   # the title links to the work's page
   model: assets/fono/fono.glb
   poster: assets/fono/poster.webp
   alt: "Fonocosa Aldo, a 3D-printed sculpture based on deformations of the human larynx: a mouthpiece opens into a ribbed, throat-like body crowned with horns and curling tendrils."

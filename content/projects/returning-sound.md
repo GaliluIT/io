@@ -1,14 +1,16 @@
 ---
-title: Returning Sound
+title: Returning Sound at the Cube
 years: 2026 – 2027
-summary: A new work with singers who have had laryngectomies, made with Shout at Cancer, the Education University of Hong Kong and ICAT at Virginia Tech. It premieres in Hong Kong in March 2027.
-order: 3
+status: Work in progress
+summary: "A spatialized adaptation of Returning Sound, a new work for singers who have had a laryngectomy, for the Cube at Virginia Tech. Work in progress, planned for September 2027."
+order: 2
 details:
-  Role: Collaborator
-  With: Shout at Cancer (UK), the Education University of Hong Kong, ICAT (Virginia Tech)
-  Premiere: Hong Kong Academy for Performing Arts, March 2027
-check: Add credits as they are confirmed, and images or video after the premiere.
+  Status: Work in progress, planned for September 2027
+  Role: Developing the spatialized adaptation for the Cube
+  Organizations: "Shout at Cancer (UK); New Voice Club of Hong Kong; Research Centre for Creative Arts and Public Value (RCCAPV), The Education University of Hong Kong; Hong Kong Baptist University; Institute for Creativity, Arts, and Technology (ICAT), Virginia Tech"
+  Premiere of Returning Sound: Hong Kong Academy for Performing Arts, March 21, 2027
+check: Confirm the full title and the organizations. Add images or video after the Hong Kong premiere.
 ---
-Returning Sound is an international collaboration on a new work with singers who have had laryngectomies. It premieres at the Hong Kong Academy for Performing Arts in March 2027.
+*Returning Sound* is a new work for singers who have had a total laryngectomy, made by Shout at Cancer in the UK and the New Voice Club of Hong Kong with the Research Centre for Creative Arts and Public Value (RCCAPV) at The Education University of Hong Kong and Hong Kong Baptist University. The music is by Eugene Birman and Michael Leung, with Anandi Bhattacharya and Yoyo Sham, and the work is curated and directed by Thomas Moors. It premieres at the Hong Kong Academy for Performing Arts on March 21, 2027.
 
-I am developing a spatialized adaptation of the work for the Cube at ICAT, Virginia Tech's immersive performance space.
+*Returning Sound at the Cube* is its next stage, and it is a work in progress. I am developing a spatialized adaptation for the Cube, the immersive performance space of the Institute for Creativity, Arts, and Technology (ICAT) at Virginia Tech, working from recordings made for the Hong Kong performance and with the teams in London, Hong Kong and Virginia. It is planned for September 2027.

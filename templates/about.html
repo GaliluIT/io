@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% from "_macros.html" import lang_switch %}
+
+{% block main %}
+<h1 class="page-title"><span data-lang-show="en">About</span><span data-lang-show="es" lang="es">Sobre mí</span></h1>
+
+<div class="about-page{% if not portrait %} no-portrait{% endif %}">
+  {% if portrait %}
+  <figure class="portrait">
+    <img src="{{ portrait.src }}" alt="{{ portrait.alt }}">
+  </figure>
+  {% endif %}
+  <div class="about-main">
+    {% if about.en.full and about.es.full %}{{ lang_switch("en") }}{% endif %}
+    {% if about.en.full %}<div class="prose about-text" lang="en" data-lang-show="en">{{ about.en.full }}</div>{% endif %}
+    {% if about.es.full %}<div class="prose about-text" lang="es" data-lang-show="es">{{ about.es.full }}</div>{% endif %}
+  </div>
+</div>
+
+<section class="band" aria-labelledby="find-heading">
+  <div class="band-head">
+    <h2 id="find-heading"><span data-lang-show="en">Find me</span><span data-lang-show="es" lang="es">Dónde encontrarme</span></h2>
+  </div>
+  <div class="band-body">
+    <ul class="profile-links">
+      {% for link in site.links or [] %}
+      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+      {% endfor %}
+      <li><a href="cv.html">CV</a>{% if cv_pdf %} · <a href="{{ cv_pdf }}" download>PDF</a>{% endif %}</li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

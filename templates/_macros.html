@@ -16,26 +16,67 @@
 <span lang="es" data-lang-show="es">{{ es }}</span><span lang="en" data-lang-show="en">{{ en }}</span>
 {%- endmacro %}
 
-{% macro figure(im, cls="") %}
-<figure{% if cls %} class="{{ cls }}"{% endif %}>
-  <a href="{{ im.src }}"><img src="{{ im.src }}" alt="{{ im.alt }}" data-alt-es="{{ im.alt }}" data-alt-en="{{ im.alt_en }}" loading="lazy"></a>
-  {% if im.caption.es %}<figcaption>{{ bi(im.caption) }}</figcaption>{% endif %}
+{# The English / Español buttons. #}
+{% macro lang_switch(first="en") %}
+<div class="lang-switch" role="group" aria-label="Language / Idioma">
+  {% if first == "es" %}
+  <button type="button" data-set-lang="es" lang="es" aria-pressed="false">Español</button>
+  <button type="button" data-set-lang="en" lang="en" aria-pressed="false">English</button>
+  {% else %}
+  <button type="button" data-set-lang="en" lang="en" aria-pressed="false">English</button>
+  <button type="button" data-set-lang="es" lang="es" aria-pressed="false">Español</button>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{# A video: YouTube or Vimeo player, or a file with controls and a written description. #}
+{% macro video(v, id) %}
+<figure class="video{% if v.kind == 'iframe' %} is-embed{% endif %}">
+  {% if v.kind == 'iframe' %}
+  <div class="video-frame">
+    <iframe src="{{ v.src }}" title="{{ v.title }} ({{ v.site }})" loading="lazy"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  {% if v.title %}<figcaption>{{ v.title }}</figcaption>{% endif %}
+  {% else %}
+  <video src="{{ v.src }}"{% if v.poster %} poster="{{ v.poster }}"{% endif %} controls preload="metadata" playsinline
+         aria-label="{{ v.title }}"{% if v.description %} aria-describedby="{{ id }}"{% endif %}></video>
+  <figcaption>{% if v.title %}{{ v.title }}. {% endif %}{% if v.description %}<span id="{{ id }}">{{ v.description }}</span>{% endif %}</figcaption>
+  {% endif %}
 </figure>
 {% endmacro %}
 
-{% macro project_cards(projects, base) %}
-<ul class="it-cards">
-  {% for p in projects %}
-  <li class="it-card">
-    <a href="{{ base }}{{ p.slug }}.html">
-      {% if p.cover %}<img src="{{ p.cover.src }}" alt="" loading="lazy">{% else %}<span class="it-card-blank" aria-hidden="true"></span>{% endif %}
-      <span class="it-card-title">{{ bi(p.title) }}</span>
-      {% if p.years.es %}<span class="it-card-years">{{ bi(p.years) }}</span>{% endif %}
-      {% if p.summary.es %}<span class="it-card-summary">{{ bi(p.summary) }}</span>{% endif %}
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+{# One project on the Projects page: picture and name, then years and one line. #}
+{% macro card(p, base="") %}
+<li class="card">
+  <a class="card-link" href="{{ p.link or (base ~ 'projects/' ~ p.slug ~ '.html') }}">
+    {% if p.cover %}
+    <img class="card-img" src="{{ p.cover.src }}" alt="{{ p.cover.alt }}" loading="lazy">
+    {% else %}
+    <span class="card-img card-blank" aria-hidden="true"></span>
+    {% endif %}
+    <h2 class="card-title">{{ p.title }}</h2>
+  </a>
+  <p class="card-meta">{{ p.years }}{% if p.status %} <span class="card-status">{{ p.status }}</span>{% endif %}{% if drafts and p.draft %} (draft){% endif %}</p>
+  {% if p.summary %}<p class="card-summary">{{ p.summary }}</p>{% endif %}
+</li>
+{% endmacro %}
+
+{# One project on the Intercambios page, in Spanish and English. #}
+{% macro it_card(p) %}
+<li class="card">
+  {% if p.link %}<a class="card-link" href="{{ p.link }}">{% else %}<div class="card-link">{% endif %}
+    {% if p.image %}
+    <img class="card-img" src="{{ p.image }}" alt="{{ p.alt }}" data-alt-es="{{ p.alt }}" data-alt-en="{{ p.alt_en }}" loading="lazy">
+    {% else %}
+    <span class="card-img card-blank" aria-hidden="true"></span>
+    {% endif %}
+    <h3 class="card-title">{{ bi(p.title) }}</h3>
+  {% if p.link %}</a>{% else %}</div>{% endif %}
+  {% if p.years.es %}<p class="card-meta">{{ bi(p.years) }}</p>{% endif %}
+  {% if p.summary.es %}<p class="card-summary">{{ bi(p.summary) }}</p>{% endif %}
+  {% if p.video %}<p class="card-more"><a href="{{ p.video }}">{{ t('Ver el video', 'Watch the video') }}<span class="visually-hidden">: {{ bi(p.title) }}</span></a></p>{% endif %}
+</li>
 {% endmacro %}
 
 {% macro publication(p, show_lang=false) %}
@@ -43,7 +84,7 @@
   <span class="pub-year">{{ p.year or "" }}</span>
   <div class="pub-body">
     <p class="pub-title"{% if p.lang == 'es' %} lang="es"{% endif %}>
-      {% if p.link %}<a href="{{ p.link }}">{{ p.title_html }}</a>{% else %}{{ p.title_html }}{% endif %}
+      {% if p.link %}<a href="{{ p.link }}">{{ p.title_html }}</a>{% else %}{{ p.title_html }}{% endif %}{% if p.link and p.link.endswith('.pdf') %} <span class="file-type">(PDF)</span>{% endif %}
     </p>
     {% if p.authors %}<p class="pub-authors">{{ p.authors_html }}</p>{% endif %}
     {% if p.venue or p.type %}
