@@ -2,11 +2,47 @@
 {% if drafts and text %}<p class="todo-note">{{ text }}</p>{% endif %}
 {% endmacro %}
 
+{# Spanish and English versions of the same text; the language switch shows one of them. #}
+{% macro bi(pair, tag="span", cls="") -%}
+{%- if pair.en -%}
+<{{ tag }}{% if cls %} class="{{ cls }}"{% endif %} lang="es" data-lang-show="es">{{ pair.es }}</{{ tag }}><{{ tag }}{% if cls %} class="{{ cls }}"{% endif %} lang="en" data-lang-show="en">{{ pair.en }}</{{ tag }}>
+{%- else -%}
+<{{ tag }}{% if cls %} class="{{ cls }}"{% endif %}>{{ pair.es }}</{{ tag }}>
+{%- endif -%}
+{%- endmacro %}
+
+{# Fixed interface words in both languages. #}
+{% macro t(es, en) -%}
+<span lang="es" data-lang-show="es">{{ es }}</span><span lang="en" data-lang-show="en">{{ en }}</span>
+{%- endmacro %}
+
+{% macro figure(im, cls="") %}
+<figure{% if cls %} class="{{ cls }}"{% endif %}>
+  <a href="{{ im.src }}"><img src="{{ im.src }}" alt="{{ im.alt }}" data-alt-es="{{ im.alt }}" data-alt-en="{{ im.alt_en }}" loading="lazy"></a>
+  {% if im.caption.es %}<figcaption>{{ bi(im.caption) }}</figcaption>{% endif %}
+</figure>
+{% endmacro %}
+
+{% macro project_cards(projects, base) %}
+<ul class="it-cards">
+  {% for p in projects %}
+  <li class="it-card">
+    <a href="{{ base }}{{ p.slug }}.html">
+      {% if p.cover %}<img src="{{ p.cover.src }}" alt="" loading="lazy">{% else %}<span class="it-card-blank" aria-hidden="true"></span>{% endif %}
+      <span class="it-card-title">{{ bi(p.title) }}</span>
+      {% if p.years.es %}<span class="it-card-years">{{ bi(p.years) }}</span>{% endif %}
+      {% if p.summary.es %}<span class="it-card-summary">{{ bi(p.summary) }}</span>{% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
 {% macro publication(p, show_lang=false) %}
 <li class="pub{% if p.placeholder %} is-placeholder{% endif %}">
   <span class="pub-year">{{ p.year or "" }}</span>
   <div class="pub-body">
-    <p class="pub-title">
+    <p class="pub-title"{% if p.lang == 'es' %} lang="es"{% endif %}>
       {% if p.link %}<a href="{{ p.link }}">{{ p.title_html }}</a>{% else %}{{ p.title_html }}{% endif %}
     </p>
     {% if p.authors %}<p class="pub-authors">{{ p.authors_html }}</p>{% endif %}

@@ -64,7 +64,8 @@ def asset(path, root, where):
     if is_external(path):
         return path
     path = path.lstrip("/")
-    if not (ROOT / path).exists():
+    generated = path.endswith((".html", "/"))  # pages are built, not stored in the repo
+    if not generated and not (ROOT / path).exists():
         note(where, f"file not found: {path}")
     return root + path
 
@@ -79,7 +80,7 @@ def rewrite_body_links(html, root):
 
 def video_for(src, root, where):
     src = str(src)
-    m = re.search(r"(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/|youtube\.com/shorts/)([\w-]{11})", src)
+    m = re.search(r"(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/|youtube\.com/shorts/|youtube\.com/live/)([\w-]{11})", src)
     if m:
         return {"kind": "iframe", "src": f"https://www.youtube-nocookie.com/embed/{m.group(1)}"}
     m = re.search(r"vimeo\.com/(?:video/)?(\d+)", src)
@@ -181,7 +182,217 @@ def project_view(p, root):
         "body": rewrite_body_links(md_block(p["body"]), root),
         "check": m.get("check"),
         "draft": m.get("draft"),
+        # A project can point somewhere else instead of having its own page
+        "link": asset(m.get("link"), root, where) if m.get("link") else "",
     }
+
+
+# ---------------------------------------------------------------------------
+# Intercambios Transorgánicos section (content/intercambios/), in Spanish and English.
+# Any text field can have an English version in a field of the same name ending in _en.
+# Markdown files hold Spanish text first, then a line <!-- en -->, then the English text.
+# ---------------------------------------------------------------------------
+IT = CONTENT / "intercambios"
+MONTHS_ES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
+             "septiembre", "octubre", "noviembre", "diciembre"]
+MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August",
+             "September", "October", "November", "December"]
+
+
+def plain(text):
+    return re.sub(r"[*_`\[\]]|\(http[^)]*\)", "", str(text or "")).strip()
+
+
+def split_langs(text):
+    parts = re.split(r"^[ \t]*<!--\s*en\s*-->[ \t]*$", text or "", maxsplit=1, flags=re.M)
+    return parts[0].strip(), (parts[1].strip() if len(parts) > 1 else "")
+
+
+def bi(obj, key):
+    """Spanish and English versions of an inline field, e.g. title / title_en."""
+    return {"es": md_inline(obj.get(key)), "en": md_inline(obj.get(key + "_en"))}
+
+
+def bi_body(text, root):
+    es, en = split_langs(text)
+    return {"es": rewrite_body_links(md_block(es), root),
+            "en": rewrite_body_links(md_block(en), root) if en else Markup("")}
+
+
+def date_labels(value):
+    s = str(value or "")
+    m = re.fullmatch(r"(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?", s)
+    if not m:
+        return {"es": s, "en": s}
+    y, mo, d = m.groups()
+    if not mo:
+        return {"es": y, "en": y}
+    mo = int(mo)
+    if d:
+        return {"es": f"{int(d)} de {MONTHS_ES[mo - 1]} de {y}", "en": f"{MONTHS_EN[mo - 1]} {int(d)}, {y}"}
+    return {"es": f"{MONTHS_ES[mo - 1]} de {y}", "en": f"{MONTHS_EN[mo - 1]} {y}"}
+
+
+def it_media(items, root, where):
+    out = []
+    for im in items or []:
+        if isinstance(im, str):
+            im = {"src": im}
+        alt_es = plain(im.get("alt") or im.get("caption"))
+        out.append({
+            "src": asset(im.get("src"), root, where),
+            "caption": bi(im, "caption"),
+            "alt": alt_es,
+            "alt_en": plain(im.get("alt_en") or im.get("caption_en")) or alt_es,
+        })
+    return out
+
+
+def it_links(items, root, where):
+    return [{"label": bi(l, "label"), "url": asset(l.get("url"), root, where)} for l in items or []]
+
+
+def it_load_projects(drafts):
+    items = []
+    for path in sorted((IT / "proyectos").glob("*.md")):
+        if path.name.startswith("_"):
+            continue
+        meta, body = read_page(path)
+        where = f"intercambios/proyectos/{path.name}"
+        if meta.get("draft") and not drafts:
+            continue
+        if meta.get("check"):
+            note(where, meta["check"])
+        items.append({"slug": path.stem, "meta": meta, "body": body, "where": where})
+    items.sort(key=lambda p: (p["meta"].get("order", 999), p["slug"]))
+    return items
+
+
+def it_project_view(p, root):
+    m, where = p["meta"], p["where"]
+    videos = m.get("videos") or ([m["video"]] if m.get("video") else [])
+    images = it_media(m.get("images"), root, where)
+    return {
+        "slug": p["slug"],
+        "title": bi(m, "title"),
+        "title_text": plain(m.get("title")),
+        "years": bi(m, "years"),
+        "summary": bi(m, "summary"),
+        "summary_text": plain(m.get("summary")),
+        "cover": images[0] if images else None,
+        "images": images,
+        "videos": [video_for(v, root, where) for v in videos],
+        "details": [{"label": bi(d, "label"), "value": bi(d, "value")} for d in m.get("details") or []],
+        "links": it_links(m.get("links"), root, where),
+        "body": bi_body(p["body"], root),
+        "check": m.get("check"),
+    }
+
+
+def it_load_list(name, drafts):
+    entries = load_yaml(IT / name) or []
+    out = []
+    for i, e in enumerate(entries, 1):
+        if e.get("check"):
+            note(f"intercambios/{name}, entry {i}", e["check"])
+        if e.get("draft") and not drafts:
+            continue
+        out.append(e)
+    return out
+
+
+def build_intercambios(render, drafts):
+    if not IT.exists():
+        return
+    programa_meta, programa_body = read_page(IT / "programa.md")
+    projects = it_load_projects(drafts)
+    by_slug = {p["slug"]: p for p in projects}
+    common = {"page_lang": "es", "default_lang": "es", "section": "it"}
+
+    # Activities
+    activities = []
+    for a in it_load_list("actividades.yml", drafts):
+        root = "../"
+        where = "intercambios/actividades.yml"
+        proj = a.get("project")
+        if proj and proj not in by_slug:
+            note(where, f"project '{proj}' not found")
+        activities.append({
+            "date": str(a.get("date", "")),
+            "year": str(a.get("date", ""))[:4],
+            "when": date_labels(a.get("date")),
+            "title": bi(a, "title"),
+            "place": bi(a, "place"),
+            "text": {"es": md_block(a.get("text")), "en": md_block(a.get("text_en")) if a.get("text_en") else Markup("")},
+            "links": it_links(a.get("links"), root, where),
+            "images": it_media(a.get("images"), root, where),
+            "project": proj if proj in by_slug else "",
+            "project_title": bi(by_slug[proj]["meta"], "title") if proj in by_slug else None,
+            "check": a.get("check"),
+        })
+    activities.sort(key=lambda a: a["date"], reverse=True)
+    seen = {}
+    for a in activities:  # unique anchors, e.g. 2015-12 and 2015-12-2
+        seen[a["date"]] = seen.get(a["date"], 0) + 1
+        a["anchor"] = a["date"] if seen[a["date"]] == 1 else f"{a['date']}-{seen[a['date']]}"
+    years = []
+    for a in activities:
+        if not years or years[-1]["year"] != a["year"]:
+            years.append({"year": a["year"], "items": []})
+        years[-1]["items"].append(a)
+
+    # Publications
+    pubs = []
+    for p in it_load_list("publicaciones.yml", drafts):
+        where = "intercambios/publicaciones.yml"
+        pubs.append({
+            "year": p.get("year") or "",
+            "authors": p.get("authors") or "",
+            "title": md_inline(p.get("title")),
+            "title_en": md_inline(p.get("title_en")),
+            "venue": bi(p, "venue"),
+            "pdf": asset(p.get("pdf"), "../", where) if p.get("pdf") else "",
+            "page": f"textos/{p['page']}.html" if p.get("page") else "",
+            "url": p.get("url") or "",
+            "check": p.get("check"),
+        })
+    pubs.sort(key=lambda e: year_key(e) if e["year"] else 0, reverse=True)  # undated last
+
+    team = load_yaml(IT / "equipo.yml") or []
+    team_groups = [{"title": bi(g, "title"),
+                    "people": [{"name": x.get("name"), "role": bi(x, "role")} for x in g.get("people") or []]}
+                   for g in team]
+
+    title = "Intercambios Transorgánicos"
+    list_views = [it_project_view(p, "../") for p in projects]
+    render("it_index.html", "intercambios/index.html", "../", page_kind="it-home",
+           page_title=title, description=plain(programa_meta.get("lede")),
+           programa={"lede": bi(programa_meta, "lede"), "quote": bi(programa_meta, "quote"),
+                     "quote_by": programa_meta.get("quote_by", ""),
+                     "questions": programa_meta.get("questions") or [],
+                     "questions_en": programa_meta.get("questions_en") or [],
+                     "body": bi_body(programa_body, "../")},
+           team=team_groups, projects=list_views, recent=activities[:4], **common)
+    render("it_projects.html", "intercambios/proyectos.html", "../", page_kind="it-projects",
+           page_title=f"Proyectos | {title}", projects=list_views, **common)
+    views = [it_project_view(p, "../../") for p in projects]
+    for i, v in enumerate(views):
+        related = [a for a in activities if a["project"] == v["slug"]]
+        render("it_project.html", f"intercambios/proyectos/{v['slug']}.html", "../../",
+               page_kind="it-project", page_title=f"{v['title_text']} | {title}",
+               description=v["summary_text"], project=v, related=related,
+               previous=views[i - 1] if i > 0 else None,
+               next=views[i + 1] if i + 1 < len(views) else None, **common)
+    render("it_activities.html", "intercambios/actividades.html", "../", page_kind="it-activities",
+           page_title=f"Actividades | {title}", years=years, **common)
+    render("it_publications.html", "intercambios/publicaciones.html", "../", page_kind="it-publications",
+           page_title=f"Publicaciones | {title}", pubs=pubs, **common)
+    for path in sorted((IT / "textos").glob("*.md")):
+        meta, body = read_page(path)
+        render("it_text.html", f"intercambios/textos/{path.stem}.html", "../../", page_kind="it-text",
+               page_title=f"{plain(meta.get('title'))} | {title}", description=plain(meta.get("summary")),
+               text={"title": bi(meta, "title"), "author": meta.get("author", ""), "date": meta.get("date", ""),
+                     "note": bi(meta, "note"), "body": bi_body(body, "../../")}, **common)
 
 
 def main():
@@ -212,6 +423,7 @@ def main():
         fono["model_url"] = asset(fono.get("model"), "", "site.yml (fono)")
         fono["poster_url"] = asset(fono.get("poster"), "", "site.yml (fono)") if fono.get("poster") else ""
         fono["sound_url"] = asset(fono.get("sound"), "", "site.yml (fono)") if fono.get("sound") else ""
+        fono["link_url"] = asset(fono.get("link"), "", "site.yml (fono)") if fono.get("link") else ""
         if fono.get("check"):
             note("site.yml (fono)", fono["check"])
 
@@ -257,7 +469,7 @@ def main():
     render("projects.html", "projects.html", "",
            page_kind="projects", page_title=f"Projects | {site.get('name', '')}",
            projects=[project_view(p, "") for p in projects])
-    views = [project_view(p, "../") for p in projects]
+    views = [v for v in (project_view(p, "../") for p in projects) if not v["link"]]
     for i, view in enumerate(views):
         render("project.html", f"projects/{view['slug']}.html", "../",
                page_kind="project", page_title=f"{view['title']} | {site.get('name', '')}",
@@ -293,6 +505,9 @@ def main():
             note("site.yml (cv_pdf)", f"add your CV as {site['cv_pdf']} to show the download button")
     render("cv.html", "cv.html", "", page_kind="cv", page_title=f"CV | {site.get('name', '')}",
            sections=sections, cv_pdf=cv_pdf)
+
+    # Intercambios Transorgánicos section
+    build_intercambios(render, args.drafts)
 
     print(f"Built {pages} pages into _site/")
     unique = list(dict.fromkeys(NOTES))

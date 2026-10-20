@@ -1,0 +1,33 @@
+{% extends "it_base.html" %}
+{% from "_macros.html" import bi, t, figure, todo with context %}
+
+{% block main %}
+<h1 class="page-title">{{ t('Actividades', 'Activities') }}</h1>
+
+{% for y in years %}
+<section class="band act-year" aria-labelledby="y{{ y.year }}">
+  <div class="band-head"><h2 id="y{{ y.year }}">{{ y.year }}</h2></div>
+  <div class="band-body">
+    <ol class="act-list">
+      {% for a in y["items"] %}
+      <li class="act" id="{{ a.anchor }}">
+        <p class="act-when">{{ bi(a.when) }}{% if a.place.es %}<span class="act-place">{{ bi(a.place) }}</span>{% endif %}</p>
+        <h3 class="act-title">{{ bi(a.title) }}</h3>
+        {% if a.text.es %}{{ bi(a.text, 'div', 'prose act-text') }}{% endif %}
+        {% if a.links or a.project %}
+        <ul class="act-links">
+          {% for link in a.links %}<li><a href="{{ link.url }}">{{ bi(link.label) }}</a></li>{% endfor %}
+          {% if a.project %}<li><a href="proyectos/{{ a.project }}.html">{{ t('Proyecto: ', 'Project: ') }}{{ bi(a.project_title) }}</a></li>{% endif %}
+        </ul>
+        {% endif %}
+        {% if a.images %}
+        <div class="act-images">{% for im in a.images %}{{ figure(im) }}{% endfor %}</div>
+        {% endif %}
+        {{ todo(a.check) }}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

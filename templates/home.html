@@ -31,9 +31,9 @@
       exposure="0.95"
       shadow-intensity="0.9"
       shadow-softness="1"
-      {% if fono.sound_url %}data-sound="{{ fono.sound_url }}"{% endif %}></model-viewer>
+      {% if fono.sound_url %}data-sound="{{ fono.sound_url }}"{% endif %}><div slot="progress-bar"></div></model-viewer>
     <figcaption>
-      <span class="fono-title">{{ fono.title }}</span>{% if fono.credit %}, {{ fono.credit }}{% endif %}.
+      {% if fono.link_url %}<a class="fono-title" href="{{ fono.link_url }}">{{ fono.title }}</a>{% else %}<span class="fono-title">{{ fono.title }}</span>{% endif %}{% if fono.credit %}, {{ fono.credit }}{% endif %}.
       <span class="fono-hint">Drag to turn it.</span>
       {% if fono.sound_url %}<button type="button" class="fono-play" data-play>Play its sound</button>{% endif %}
       {% if drafts %}{{ todo(fono.check) }}{% endif %}

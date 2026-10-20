@@ -1,0 +1,14 @@
+{% extends "it_base.html" %}
+{% from "_macros.html" import bi, t with context %}
+
+{% block main %}
+<article class="it-text">
+  <p class="back"><a href="../publicaciones.html">{{ t('Publicaciones', 'Publications') }}</a></p>
+  <header class="project-head">
+    <h1>{{ bi(text.title) }}</h1>
+    <p class="project-years">{{ text.author }}{% if text.date %}, {{ text.date }}{% endif %}</p>
+    {% if text.note.es %}<p class="it-note">{{ bi(text.note) }}</p>{% endif %}
+  </header>
+  {{ bi(text.body, 'div', 'prose text-body') }}
+</article>
+{% endblock %}

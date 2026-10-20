@@ -1,0 +1,75 @@
+{% extends "it_base.html" %}
+{% from "_macros.html" import bi, t, figure, todo with context %}
+
+{% block main %}
+<article class="project">
+  <p class="back"><a href="../proyectos.html">{{ t('Todos los proyectos', 'All projects') }}</a></p>
+
+  <header class="project-head">
+    <h1>{{ bi(project.title) }}</h1>
+    {% if project.years.es %}<p class="project-years">{{ bi(project.years) }}</p>{% endif %}
+    {% if project.summary.es %}<p class="lede">{{ bi(project.summary) }}</p>{% endif %}
+    {{ todo(project.check) }}
+  </header>
+
+  {% for v in project.videos %}
+  <div class="video{% if v.kind == 'iframe' %} is-embed{% endif %}">
+    {% if v.kind == 'iframe' %}
+    <iframe src="{{ v.src }}" title="Video: {{ project.title_text }}" loading="lazy"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    {% else %}
+    <video src="{{ v.src }}" controls preload="metadata" playsinline></video>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="project-grid">
+    {% if project.details %}
+    <dl class="details">
+      {% for d in project.details %}
+      <div><dt>{{ bi(d.label) }}</dt><dd>{{ bi(d.value) }}</dd></div>
+      {% endfor %}
+    </dl>
+    {% else %}
+    <div></div>
+    {% endif %}
+
+    <div class="project-text">
+      {{ bi(project.body, 'div', 'prose') }}
+      {% if project.links %}
+      <ul class="link-list">
+        {% for link in project.links %}<li><a href="{{ link.url }}">{{ bi(link.label) }}</a></li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if project.images %}
+  <div class="gallery">
+    {% for im in project.images %}{{ figure(im) }}{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if related %}
+  <section class="related">
+    <h2>{{ t('En actividades', 'In activities') }}</h2>
+    <ul class="it-recent">
+      {% for a in related %}
+      <li><span class="it-recent-when">{{ bi(a.when) }}</span> <a class="it-recent-title" href="../actividades.html#{{ a.anchor }}">{{ bi(a.title) }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if previous or next %}
+  <nav class="pager" aria-label="{{ 'Más proyectos' }}">
+    {% if previous %}
+    <a class="pager-prev" href="{{ previous.slug }}.html"><small>{{ t('Anterior', 'Previous') }}</small><span>{{ bi(previous.title) }}</span></a>
+    {% else %}<span></span>{% endif %}
+    {% if next %}
+    <a class="pager-next" href="{{ next.slug }}.html"><small>{{ t('Siguiente', 'Next') }}</small><span>{{ bi(next.title) }}</span></a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</article>
+{% endblock %}

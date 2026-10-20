@@ -1,0 +1,36 @@
+# Publicaciones de Intercambios Transorgánicos. Se ordenan por año.
+# title: título original (en español). title_en: traducción del título, que se muestra en inglés.
+# pdf: archivo en assets/intercambios/pdf/. page: nombre de un texto en content/intercambios/textos/ (sin .md).
+
+- year: 2021
+  authors: Gala Lucía González Barrios
+  title: Transdisciplina en Intercambios Transorgánicos
+  title_en: Transdisciplinarity at Intercambios Transorgánicos
+  page: transdisciplina
+
+- year: 2016
+  authors: "Intercambios Transorgánicos: Gala González (dir.), Martín Aranda, Nicolás Stavorengo (coord.), Agustina Las Peñas, Juan Martín Sesali Maydana, Leandro Escortell"
+  title: Prótesis electromecánicas no funcionales
+  title_en: Non-functional electromechanical prostheses
+  venue: "Encuentro «Estudios Posthumanistas y Tecnologías del Control. Bioarte, performance y arte de nuevos medios», Universidad Complutense de Madrid"
+  venue_en: "“Posthumanist Studies and Technologies of Control: Bioart, performance and new media art”, Universidad Complutense de Madrid"
+  pdf: assets/intercambios/pdf/protesis-electromecanicas-no-funcionales-2016.pdf
+
+- year: 2015
+  authors: Gala Lucía González Barrios
+  title: Nuevas estrategias de resistencia y reinvención tecnológica frente al poder cibernético e informacional
+  title_en: New strategies of resistance and technological reinvention in the face of cybernetic and informational power
+  pdf: assets/intercambios/pdf/nuevas-estrategias-2015.pdf
+
+- year: 2015
+  authors: Gala Lucía González Barrios
+  title: La función del arte en un modelo de neurorrehabilitación transdisciplinario
+  title_en: The role of art in a transdisciplinary neurorehabilitation model
+  pdf: assets/intercambios/pdf/la-funcion-del-arte-2015.pdf
+
+- year: ""
+  authors: Camila Godoy
+  title: "Intercambios Transorgánicos. La función de la mirada y los modos de observar en un equipo transdisciplinario que aborda la salud desde el arte y las nuevas tecnologías. Un aporte desde la psicomotricidad como disciplina que estudia el cuerpo en movimiento"
+  title_en: "Intercambios Transorgánicos. The role of the gaze and ways of observing in a transdisciplinary team that approaches health through art and new technologies: a contribution from psychomotricity, the discipline that studies the body in motion"
+  pdf: assets/intercambios/pdf/godoy-la-funcion-de-la-mirada.pdf
+  check: Agregar el año.

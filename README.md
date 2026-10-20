@@ -13,6 +13,24 @@ A small static site for GitHub Pages. All the text lives in `content/`, the imag
 | Projects | one file per project in `content/projects/` |
 | Colors and fonts | `assets/style.css` (the variables at the top) |
 
+## Intercambios Transorgánicos section (Spanish and English)
+
+Everything for galalucia.com/intercambios lives in `content/intercambios/`:
+
+| To change | Edit |
+|---|---|
+| Program page (intro, approach, questions) | `content/intercambios/programa.md` |
+| Team | `content/intercambios/equipo.yml` |
+| Projects | one file per project in `content/intercambios/proyectos/` (copy `_plantilla.md`) |
+| Activities timeline | `content/intercambios/actividades.yml` |
+| Publications | `content/intercambios/publicaciones.yml`, PDFs in `assets/intercambios/pdf/` |
+| Long texts | `content/intercambios/textos/` |
+| Images | `assets/intercambios/<project-or-activity>/` |
+
+Every text field can have an English version with the same name plus `_en` (`title` / `title_en`). In Markdown files, the Spanish text comes first, then a line `<!-- en -->`, then the English text. If there is no English version, the Spanish text shows in both languages. Visitors switch language with the Español / English buttons; the section opens in Spanish.
+
+Before adding photos, check they don't show children's faces, and resize them to about 1600 px wide.
+
 ## Add a project
 
 1. Copy `content/projects/_template.md` to `content/projects/your-project.md`.

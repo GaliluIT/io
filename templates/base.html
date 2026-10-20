@@ -1,6 +1,6 @@
 {% if not fragment %}
 <!doctype html>
-<html lang="en">
+<html lang="{{ page_lang or 'en' }}"{% if default_lang %} data-default-lang="{{ default_lang }}"{% endif %}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -21,23 +21,25 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap">
 <link rel="stylesheet" href="{{ root }}assets/style.css">
 <script>
-  /* Pick the About language before the page paints: saved choice, then browser language. */
+  /* Pick the language (English / Español) before the page paints:
+     the visitor's saved choice, then the page's own default, then the browser language. */
   (function () {
-    var lang = null;
-    try { lang = localStorage.getItem("about-lang"); } catch (e) {}
+    var root = document.documentElement, lang = null;
+    try { lang = localStorage.getItem("site-lang"); } catch (e) {}
     if (lang !== "en" && lang !== "es") {
-      lang = (navigator.language || "").toLowerCase().slice(0, 2) === "es" ? "es" : "en";
+      lang = root.getAttribute("data-default-lang") ||
+        ((navigator.language || "").toLowerCase().slice(0, 2) === "es" ? "es" : "en");
     }
-    document.documentElement.setAttribute("data-about-lang", lang);
+    root.setAttribute("data-lang", lang);
   })();
 </script>
 {% block head %}{% endblock %}
 <script src="{{ root }}assets/site.js" defer></script>
 {% if not fragment %}
 </head>
-<body class="page-{{ page_kind }}{% if drafts %} show-drafts{% endif %}">
+<body class="page-{{ page_kind }}{% if section %} section-{{ section }}{% endif %}{% if drafts %} show-drafts{% endif %}">
 {% else %}
-<div class="page-{{ page_kind }}{% if drafts %} show-drafts{% endif %}">
+<div class="page-{{ page_kind }}{% if section %} section-{{ section }}{% endif %}{% if drafts %} show-drafts{% endif %}">
 {% endif %}
 <a class="skip" href="#main">Skip to content</a>
 
@@ -47,10 +49,12 @@
     <ul>
       <li><a href="{{ root or './' }}"{% if page_kind == 'home' %} aria-current="page"{% endif %}>About</a></li>
       <li><a href="{{ root }}projects.html"{% if page_kind == 'projects' %} aria-current="page"{% elif page_kind == 'project' %} aria-current="true"{% endif %}>Projects</a></li>
+      <li><a href="{{ root }}intercambios/index.html"{% if section == 'it' %} aria-current="true"{% endif %}>Intercambios</a></li>
       <li><a href="{{ root }}cv.html"{% if page_kind == 'cv' %} aria-current="page"{% endif %}>CV</a></li>
     </ul>
   </nav>
 </header>
+{% block subheader %}{% endblock %}
 
 <main id="main" class="wrap">
 {% block main %}{% endblock %}

@@ -10,21 +10,39 @@
 
 - title: Education
   items:
-    - when: Expected 2027
+    - when: 2023 – expected 2027
       what: PhD, Individualized Interdisciplinary PhD Program
       where: Virginia Tech
-      note: Advisor, Ashley Shew
-    - what: Electronic Arts
-      check: Add the degree, institution and year.
+      note: Advisor, Ashley Shew. Admitted with full funding.
+      check: Confirm whether to name the Human-Centered Design program here.
+    - what: BA (Licenciatura) in Electronic Arts
+      where: Universidad Nacional de Tres de Febrero (UNTREF), Buenos Aires
+      check: Add the year.
+    - what: Diploma in Transdisciplinary Neurorehabilitation
+      where: Universidad del Museo Social Argentino (UMSA) – UNESCO
+      check: Add the year.
+    - what: Art therapy
+      where: Primera Escuela Argentina de Arteterapia
+      check: Add the year and the name of the qualification.
+    - what: Music
+      where: Colegio Juan Pedro Esnaola, Buenos Aires
+      check: Add the years and the name of the qualification.
 
 - title: Positions
   items:
-    - what: Director, Intercambios Transorgánicos
+    - when: 2015 – present
+      what: Founder and director, [Intercambios Transorgánicos](intercambios/index.html)
       where: MUNTREF Centro de Arte y Ciencia, Universidad Nacional de Tres de Febrero (UNTREF), Buenos Aires
-      check: Add the start year.
+      note: Arts-science research program developing interactive interfaces for health. Since 2021 also an alternative training track of the BA in Electronic Arts.
     - what: Visiting scholar
       where: Institute for Innovation and Public Purpose (IIPP), University College London
       note: Hosted by Cecilia Rikap
+      check: Add the dates.
+    - what: Adviser
+      where: Ministerio de Cultura de la Nación, Argentina
+      check: Add the dates and role.
+    - what: Art therapist, transdisciplinary neurorehabilitation
+      where: AlunCo, Buenos Aires
       check: Add the dates.
 
 - title: Publications
@@ -32,19 +50,62 @@
 
 - title: Talks
   items:
+    - when: "2016"
+      what: Foro Internacional Metabody, with Jaime del Val
+      where: Centros Culturales de España in Buenos Aires and Montevideo
+    - when: "2016"
+      what: "Estudios Posthumanistas y Tecnologías del Control: desde Nietzsche al trans-, post- y metahumanismo"
+      where: Faculty of Philosophy, Universidad Complutense de Madrid
+    - when: "2015"
+      what: "Symposium ¿Descolonizando cuerpos? Cuerpo común y tecnologías plurales"
+      where: Centro Cultural de España, Santiago de Chile
+    - when: "2015"
+      what: Round table, Ars Electronica Híbrido series
+      where: Centro Cultural Kirchner (CCK), Buenos Aires
     - what: Seminar, UCL Interaction Centre (UCLIC)
       where: University College London
       check: Add the title and date.
     - what: Singing Machine, ICAT Playdates
       where: Institute for Creativity, Arts, and Technology, Virginia Tech
       check: Add the date.
+    - what: ExpoMedical 2020; Informática en Salud, Hospital Italiano de Buenos Aires
+      check: Add titles and dates.
+
+- title: Exhibitions and performances
+  items:
+    - when: "2023"
+      what: Premiere of *Territorio Prismático*, L2Ork fall concert
+      where: Virginia Tech and UNTREF (telematic)
+    - when: "2023"
+      what: "[Fonocosa Aldo](intercambios/proyectos/fonocosa-aldo.html) and Fonocosa Furinge"
+      where: New works in the Fonocosa series
+    - when: "2022"
+      what: "*Transcontinental Grapevines*, telematic laptop orchestra (co-director, with Ivica Ico Bukvic)"
+      where: UNTREF and Virginia Tech
+    - when: "2021"
+      what: "*El espectro de la voz*, interactive installation with AudioStellar"
+      where: Tecnópolis, BIENALSUR, Buenos Aires
+    - when: "2016"
+      what: "*Intercambios Transorgánicos*, exhibition"
+      where: MUNTREF Arte y Ciencia, Tecnópolis, Buenos Aires
+    - when: "2016"
+      what: Installation and performance launching the C3D controller
+      where: Ciclo Delectro, Buenos Aires
+    - what: Composer and performer, Linux Laptop Orchestra (L2Ork)
+      where: Virginia Tech
+      check: List other concerts and pieces with dates.
 
 - title: Grants and awards
   items:
+    - when: "2023"
+      what: Full doctoral funding
+      where: Virginia Tech
     - when: "2025"
       what: INARIA National AI Award, Argentina
       where: Intercambios Transorgánicos
       check: Confirm the award's exact name and who received it.
+    - what: Recognitions for Intercambios Transorgánicos from Fundación INVAP, the Ministry of Productive Development and the Fondo Metropolitano de las Artes
+      check: Add years and the name of each award or grant.
     - what: A2RU annual grant, team award
       where: Alliance for the Arts in Research Universities
       check: Add the year and project title.
@@ -57,25 +118,25 @@
 
 - title: Mentoring and service
   items:
+    - when: "2026"
+      what: Supervisor, two undergraduate research assistants in Computer Science
+      where: Singing Machine, Virginia Tech
+    - when: "2022"
+      what: Organizer, First Young Researchers' Day
+      where: Department of Art and Culture, UNTREF
+    - when: 2022 –
+      what: Coordinator of the Argentine PD-L2Ork community
+      where: UNTREF
     - what: President, Latin American and Iberian Graduate Student Association (LAIGSA)
       where: Virginia Tech
       check: Add the years.
     - what: Graduate school application mentor
       where: Científico Latino
       check: Add the years.
-    - when: "2026"
-      what: Supervisor, two undergraduate research assistants in Computer Science
-      where: Singing Machine, Virginia Tech
     - what: Organizer, PD-L2Ork hackathons
       where: Virginia Tech
       note: Two consecutive years, aimed at increasing participation from HBCUs and minority-serving institutions in the region.
       check: Add the years.
-
-- title: Performance
-  items:
-    - what: Composer and performer, Linux Laptop Orchestra (L2Ork)
-      where: Virginia Tech
-      check: List concerts and pieces with dates.
 
 - title: Certifications
   items:

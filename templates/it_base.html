@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% from "_macros.html" import t %}
+
+{% block subheader %}
+<div class="it-band">
+  <div class="wrap it-band-inner">
+    <a class="it-name" href="{{ root }}intercambios/index.html">Intercambios Transorgánicos</a>
+    <nav class="it-nav" aria-label="Intercambios Transorgánicos">
+      <ul>
+        <li><a href="{{ root }}intercambios/index.html"{% if page_kind == 'it-home' %} aria-current="page"{% endif %}>{{ t('Programa', 'Program') }}</a></li>
+        <li><a href="{{ root }}intercambios/proyectos.html"{% if page_kind == 'it-projects' %} aria-current="page"{% elif page_kind == 'it-project' %} aria-current="true"{% endif %}>{{ t('Proyectos', 'Projects') }}</a></li>
+        <li><a href="{{ root }}intercambios/actividades.html"{% if page_kind == 'it-activities' %} aria-current="page"{% endif %}>{{ t('Actividades', 'Activities') }}</a></li>
+        <li><a href="{{ root }}intercambios/publicaciones.html"{% if page_kind in ('it-publications', 'it-text') %} aria-current="page"{% endif %}>{{ t('Publicaciones', 'Publications') }}</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button type="button" data-set-lang="es" lang="es" aria-pressed="false">Español</button>
+      <button type="button" data-set-lang="en" lang="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+</div>
+{% endblock %}

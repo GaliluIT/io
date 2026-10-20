@@ -1,0 +1,82 @@
+# Equipo de Intercambios Transorgánicos. Cada grupo tiene un título y una lista de personas.
+# role / role_en: una línea corta sobre lo que hace o hizo cada persona (opcional).
+
+- title: Dirección
+  title_en: Director
+  people:
+    - name: Gala Lucía González Barrios
+      role: Fundadora y directora. Licenciada en Artes Electrónicas (UNTREF), diplomada en Neurorrehabilitación Transdisciplinaria (UMSA–UNESCO).
+      role_en: Founder and director. BA in Electronic Arts (UNTREF), diploma in Transdisciplinary Neurorehabilitation (UMSA–UNESCO).
+
+- title: Equipo
+  title_en: Team
+  people:
+    - name: Matilde Lila Grillo
+      role: Escenografía y artes electrónicas
+      role_en: Scenography and electronic arts
+    - name: Leila Simonian
+      role: Artista multimedial, dirección de fotografía
+      role_en: Multimedia artist, cinematographer
+    - name: Paloma Gonzalez
+      role: Diseño y programación del sitio de IT
+      role_en: Design and front-end development of the IT website
+    - name: Agustín Galván
+      role: Ingeniería de Sonido
+      role_en: Sound engineering
+    - name: Camila Santacruz
+      role: Programación web
+      role_en: Web development
+    - name: Alejandro Sosa Welford
+      role: Desarrollo técnico de Archivoz
+      role_en: Technical development of Archivoz
+
+- title: Colaboradores
+  title_en: Collaborators
+  people:
+    - name: Manuel Luna
+    - name: Mathias Gatti
+    - name: Juan Martín Sesali
+
+- title: Integrantes anteriores
+  title_en: Former members
+  people:
+    - name: Martín Aranda
+      role: Integración de nuevas tecnologías en salud y educación
+      role_en: Bringing new technologies into health and education
+    - name: Nicolás Stavorengo
+      role: Electrónica, software, fotografía
+      role_en: Electronics, software, photography
+    - name: Juan Martín Sesali Maydana
+      role: Programación, composición, diseño gráfico
+      role_en: Programming, composition, graphic design
+    - name: Agustina Las Peñas
+      role: Programación, electrónica, diseño sonoro
+      role_en: Programming, electronics, sound design
+    - name: Leandro Escortell
+      role: Gráfica, fotografía, escenografía
+      role_en: Graphics, photography, scenography
+    - name: Claus Gabriel Hesse
+      role: Música, diseño sonoro, producción técnica
+      role_en: Music, sound design, technical production
+    - name: Máximo Signorini
+      role: Música, arte sonoro, programación
+      role_en: Music, sound art, programming
+    - name: Camila Godoy
+      role: Psicomotricidad
+      role_en: Psychomotricity
+    - name: Manuel Bidermann
+      role: Programación y creative coding
+      role_en: Programming and creative coding
+    - name: Juana Molli
+      role: Comunicación y contenidos
+      role_en: Communication and content
+    - name: Merlina Seijas
+      role: Escritura creativa y comunicación
+      role_en: Creative writing and communication
+    - name: Mauro Módica
+    - name: Matías Di Bernardo
+    - name: Cristian De Paoli
+    - name: Alma Laprida
+    - name: Aida Pantano
+    - name: Ezequiel Marano
+    - name: Matías Napoli

@@ -1,25 +1,27 @@
 (function () {
-  // About: English / Español switch. The starting language is set in the page head.
+  // Language switch (Español / English). The starting language is set in the page head.
   var root = document.documentElement;
   var buttons = document.querySelectorAll("[data-set-lang]");
 
   function showLang(lang) {
-    root.setAttribute("data-about-lang", lang);
+    root.setAttribute("data-lang", lang);
     buttons.forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
     });
-  }
-
-  if (buttons.length) {
-    showLang(root.getAttribute("data-about-lang") || "en");
-    buttons.forEach(function (b) {
-      b.addEventListener("click", function () {
-        var lang = b.getAttribute("data-set-lang");
-        showLang(lang);
-        try { localStorage.setItem("about-lang", lang); } catch (e) {}
-      });
+    // Image descriptions follow the language too.
+    document.querySelectorAll("img[data-alt-" + lang + "]").forEach(function (img) {
+      img.setAttribute("alt", img.getAttribute("data-alt-" + lang));
     });
   }
+
+  showLang(root.getAttribute("data-lang") || "en");
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var lang = b.getAttribute("data-set-lang");
+      showLang(lang);
+      try { localStorage.setItem("site-lang", lang); } catch (e) {}
+    });
+  });
 
   // The 3D object: turn slowly unless the visitor prefers reduced motion.
   var viewer = document.querySelector("model-viewer");

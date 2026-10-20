@@ -29,9 +29,28 @@
   url: https://cmmr2025.prism.cnrs.fr/demos/
   check: Confirm the authors and title as printed in the CMMR proceedings, and link the paper if there is one.
 
-# Placeholders are hidden on the live site. Replace this with your real entries.
+# In Spanish. They also appear in the Intercambios Transorgánicos section.
 - lang: es
-  placeholder: true
-  year: ""
-  title: Tus publicaciones en español van acá
-  venue: Agregalas en content/publications.yml con lang es
+  year: 2021
+  authors: G. L. González Barrios
+  title: Transdisciplina en Intercambios Transorgánicos
+  url: intercambios/textos/transdisciplina.html
+
+- lang: es
+  year: 2016
+  authors: "Intercambios Transorgánicos: G. González (dir.), M. Aranda, N. Stavorengo, A. Las Peñas, J. M. Sesali Maydana, L. Escortell"
+  title: Prótesis electromecánicas no funcionales
+  venue: Estudios Posthumanistas y Tecnologías del Control, Universidad Complutense de Madrid
+  url: assets/intercambios/pdf/protesis-electromecanicas-no-funcionales-2016.pdf
+
+- lang: es
+  year: 2015
+  authors: G. L. González Barrios
+  title: Nuevas estrategias de resistencia y reinvención tecnológica frente al poder cibernético e informacional
+  url: assets/intercambios/pdf/nuevas-estrategias-2015.pdf
+
+- lang: es
+  year: 2015
+  authors: G. L. González Barrios
+  title: La función del arte en un modelo de neurorrehabilitación transdisciplinario
+  url: assets/intercambios/pdf/la-funcion-del-arte-2015.pdf

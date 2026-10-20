@@ -7,7 +7,7 @@
 <ul class="project-list">
   {% for p in projects %}
   <li class="project-row{% if p.cover %} has-cover{% endif %}">
-    <a href="projects/{{ p.slug }}.html">
+    <a href="{{ p.link or ('projects/' ~ p.slug ~ '.html') }}">
       {% if p.cover %}<img src="{{ p.cover }}" alt="" loading="lazy">{% endif %}
       <span class="project-main">
         <span class="project-title">{{ p.title }}</span>

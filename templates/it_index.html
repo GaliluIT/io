@@ -1,0 +1,80 @@
+{% extends "it_base.html" %}
+{% from "_macros.html" import bi, t, project_cards with context %}
+
+{% block main %}
+<section class="it-hero">
+  <h1 class="page-title">Intercambios Transorgánicos</h1>
+  <p class="it-lede">{{ bi(programa.lede) }}</p>
+</section>
+
+<section class="band">
+  <div class="band-head"><h2>{{ t('El programa', 'The program') }}</h2></div>
+  <div class="band-body">
+    {{ bi(programa.body, 'div', 'prose') }}
+    {% if programa.quote.es %}
+    <blockquote class="it-quote">
+      <p>{{ bi(programa.quote) }}</p>
+      <footer>{{ programa.quote_by }}</footer>
+    </blockquote>
+    {% endif %}
+  </div>
+</section>
+
+<section class="band">
+  <div class="band-head"><h2>{{ t('Proyectos', 'Projects') }}</h2></div>
+  <div class="band-body">
+    {{ project_cards(projects, 'proyectos/') }}
+  </div>
+</section>
+
+{% if programa.questions %}
+<section class="band">
+  <div class="band-head"><h2>{{ t('Preguntas', 'Questions') }}</h2></div>
+  <div class="band-body">
+    <ul class="it-questions" lang="es"{% if programa.questions_en %} data-lang-show="es"{% endif %}>
+      {% for q in programa.questions %}<li>{{ q }}</li>{% endfor %}
+    </ul>
+    {% if programa.questions_en %}
+    <ul class="it-questions" lang="en" data-lang-show="en">
+      {% for q in programa.questions_en %}<li>{{ q }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if recent %}
+<section class="band">
+  <div class="band-head"><h2>{{ t('Actividades', 'Activities') }}</h2></div>
+  <div class="band-body">
+    <ul class="it-recent">
+      {% for a in recent %}
+      <li>
+        <span class="it-recent-when">{{ bi(a.when) }}</span>
+        <span class="it-recent-title">{{ bi(a.title) }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="more"><a href="actividades.html">{{ t('Todas las actividades desde 2015', 'All activities since 2015') }}</a></p>
+  </div>
+</section>
+{% endif %}
+
+{% if team %}
+<section class="band" id="equipo">
+  <div class="band-head"><h2>{{ t('Equipo', 'Team') }}</h2></div>
+  <div class="band-body it-team">
+    {% for g in team %}
+    <div class="it-team-group">
+      <h3>{{ bi(g.title) }}</h3>
+      <ul>
+        {% for person in g.people %}
+        <li><span class="it-person">{{ person.name }}</span>{% if person.role.es %} <span class="it-role">{{ bi(person.role) }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}
