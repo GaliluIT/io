@@ -24,6 +24,9 @@ details:
     label_en: Origin
     value: "Experimento dentro de [Fonocosa](fonocosa.html)"
     value_en: "An experiment within [Fonocosa](fonocosa.html)"
+links:
+  - label: "Preprint: Evaluation of Preprocessing Pipelines in the Creation of In-the-Wild TTS Datasets (arXiv, 2025)"
+    url: https://arxiv.org/abs/2510.03111
 images:
   - src: assets/intercambios/archivoz/01.jpg
     caption: Archivoz, archivo de voces diversas.

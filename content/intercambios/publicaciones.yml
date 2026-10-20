@@ -2,6 +2,21 @@
 # title: título original (en español). title_en: traducción del título, que se muestra en inglés.
 # pdf: archivo en assets/intercambios/pdf/. page: nombre de un texto en content/intercambios/textos/ (sin .md).
 
+- year: 2025
+  lang: en
+  authors: Matías Di Bernardo, E. Misley, I. Correa, M. G. Iacovelli, S. Mellino, Gala Lucia Gonzalez Barrios
+  title: Evaluation of Preprocessing Pipelines in the Creation of In-the-Wild TTS Datasets
+  venue: Preprint en arXiv (arXiv:2510.03111). Trabajo vinculado a Archivoz.
+  venue_en: arXiv preprint (arXiv:2510.03111). Related to Archivoz.
+  url: https://arxiv.org/abs/2510.03111
+
+- year: 2021
+  authors: Gala Lucia Gonzalez Barrios
+  title: "Intercambios Transorgánicos: nuevos modos de producir conocimiento en el cruce entre «arte, ciencia y tecnología» desde el paradigma de la complejidad"
+  title_en: "Intercambios Transorgánicos: new ways of producing knowledge at the crossroads of art, science and technology from the paradigm of complexity"
+  venue: Tesis de licenciatura en Artes Electrónicas, UNTREF
+  venue_en: Undergraduate thesis in Electronic Arts, UNTREF
+
 - year: 2021
   authors: Gala Lucia Gonzalez Barrios
   title: Transdisciplina en Intercambios Transorgánicos
@@ -12,8 +27,8 @@
   authors: "Intercambios Transorgánicos: Gala Gonzalez (dir.), Martín Aranda, Nicolás Stavorengo (coord.), Agustina Las Peñas, Juan Martín Sesali Maydana, Leandro Escortell"
   title: Prótesis electromecánicas no funcionales
   title_en: Non-functional electromechanical prostheses
-  venue: "Encuentro «Estudios Posthumanistas y Tecnologías del Control. Bioarte, performance y arte de nuevos medios», Universidad Complutense de Madrid"
-  venue_en: "“Posthumanist Studies and Technologies of Control: Bioart, performance and new media art”, Universidad Complutense de Madrid"
+  venue: "8º Congreso Más allá del Humanismo, Universidad Complutense de Madrid. Mesa «Estudios Posthumanistas y Tecnologías del Control. Bioarte, performance y arte de nuevos medios»"
+  venue_en: "8th Beyond Humanism Conference, Universidad Complutense de Madrid. Panel “Posthumanist Studies and Technologies of Control: Bioart, performance and new media art”"
   pdf: assets/intercambios/pdf/protesis-electromecanicas-no-funcionales-2016.pdf
 
 - year: 2015

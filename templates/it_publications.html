@@ -3,14 +3,14 @@
 
 {% block main %}
 <h1 class="page-title">{{ t('Publicaciones', 'Publications') }}</h1>
-<p class="it-note" lang="en" data-lang-show="en">These texts are in Spanish. Their titles are translated below each one.</p>
+<p class="it-note" lang="en" data-lang-show="en">Most of these texts are in Spanish. Their titles are translated below each one.</p>
 
 <ul class="pub-list it-pubs">
   {% for p in pubs %}
   <li class="pub">
     <span class="pub-year">{{ p.year }}</span>
     <div class="pub-body">
-      <p class="pub-title" lang="es">{% if p.page %}<a href="{{ p.page }}">{{ p.title }}</a>{% elif p.pdf %}<a href="{{ p.pdf }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+      <p class="pub-title" lang="{{ p.lang }}">{% if p.page %}<a href="{{ p.page }}">{{ p.title }}</a>{% elif p.pdf %}<a href="{{ p.pdf }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
       {% if p.title_en %}<p class="pub-gloss" lang="en" data-lang-show="en">{{ p.title_en }}</p>{% endif %}
       {% if p.authors %}<p class="pub-authors">{{ p.authors }}</p>{% endif %}
       {% if p.venue.es %}<p class="pub-venue">{{ bi(p.venue) }}</p>{% endif %}

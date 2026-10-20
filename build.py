@@ -348,6 +348,7 @@ def build_intercambios(render, drafts):
         pubs.append({
             "year": p.get("year") or "",
             "authors": p.get("authors") or "",
+            "lang": p.get("lang") or "es",
             "title": md_inline(p.get("title")),
             "title_en": md_inline(p.get("title_en")),
             "venue": bi(p, "venue"),

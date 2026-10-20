@@ -24,11 +24,35 @@
   year: 2025
   authors: G. L. Gonzalez Barrios and I. Bukvic
   title: "Singing without a Larynx: A Vowel-Based Real-Time Interface for Embodied Vocal Performance"
-  venue: CMMR 2025, International Symposium on Computer Music Multidisciplinary Research, London
+  venue: 17th International Symposium on Computer Music Multidisciplinary Research (CMMR 2025), London
   type: Paper
   url: https://cmmr2025.prism.cnrs.fr/demos/
 
+- lang: en
+  year: 2025
+  authors: M. Di Bernardo, E. Misley, I. Correa, M. G. Iacovelli, S. Mellino and G. L. Gonzalez Barrios
+  title: Evaluation of Preprocessing Pipelines in the Creation of In-the-Wild TTS Datasets
+  venue: arXiv preprint arXiv:2510.03111
+  type: Preprint
+  url: https://arxiv.org/abs/2510.03111
+
+- lang: en
+  year: 2024
+  authors: C. Rikap, C. Durand, E. Paraná, P. Gerbaudo, P. Marx et al.
+  title: "Reclaiming Digital Sovereignty: A Roadmap to Build a Digital Stack for People and the Planet"
+  venue: LUT University
+  type: Report
+  placeholder: true   # hidden on the live site until you confirm
+  check: Your name isn't in the author list Scholar shows. Confirm you are a co-author, then delete the placeholder line.
+
 # In Spanish. They also appear in the Intercambios Transorgánicos section.
+- lang: es
+  year: 2021
+  authors: G. L. Gonzalez Barrios
+  title: "Intercambios Transorgánicos: nuevos modos de producir conocimiento en el cruce entre «arte, ciencia y tecnología» desde el paradigma de la complejidad"
+  venue: Universidad Nacional de Tres de Febrero
+  type: Tesis de licenciatura
+
 - lang: es
   year: 2021
   authors: G. L. Gonzalez Barrios
@@ -39,7 +63,7 @@
   year: 2016
   authors: "Intercambios Transorgánicos: G. Gonzalez (dir.), M. Aranda, N. Stavorengo, A. Las Peñas, J. M. Sesali Maydana, L. Escortell"
   title: Prótesis electromecánicas no funcionales
-  venue: Estudios Posthumanistas y Tecnologías del Control, Universidad Complutense de Madrid
+  venue: 8º Congreso Más allá del Humanismo / 8th Beyond Humanism Conference, Universidad Complutense de Madrid
   url: assets/intercambios/pdf/protesis-electromecanicas-no-funcionales-2016.pdf
 
 - lang: es
