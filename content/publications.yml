@@ -38,12 +38,11 @@
 
 - lang: en
   year: 2024
-  authors: C. Rikap, C. Durand, E. Paraná, P. Gerbaudo, P. Marx et al.
+  authors: C. Rikap, C. Durand, E. Paraná, P. Gerbaudo and P. Marx, with contributing authors including G. L. Gonzalez Barrios
   title: "Reclaiming Digital Sovereignty: A Roadmap to Build a Digital Stack for People and the Planet"
   venue: LUT University
-  type: Report
-  placeholder: true   # hidden on the live site until you confirm
-  check: Your name isn't in the author list Scholar shows. Confirm you are a co-author, then delete the placeholder line.
+  type: Report, contributing author
+  url: https://lutpub.lut.fi/handle/10024/168600
 
 # In Spanish. They also appear in the Intercambios Transorgánicos section.
 - lang: es
