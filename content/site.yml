@@ -26,6 +26,10 @@ links:
   - label: GitHub
     url: https://github.com/GaliluIT
 
+# Projects (and the Intercambios projects) are listed by the year they started.
+# true = newest first, false = oldest first.
+projects_newest_first: true
+
 # Shown under Publications on the home page.
 scholar: https://scholar.google.com/citations?user=GgLFF_MAAAAJ&hl=en
 

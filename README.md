@@ -52,7 +52,7 @@ Before adding photos, check they don't show children's faces, and resize them to
 
 1. Copy `content/projects/_template.md` to `content/projects/your-project.md`.
 2. Make a folder `assets/projects/your-project/` and put the images there.
-3. Fill in the fields at the top of the file and write the text underneath. The first image is the picture on the Projects page, unless you set `cover`.
+3. Fill in the fields at the top of the file and write the text underneath. The first image is the picture on the Projects page, unless you set `cover`. Projects are listed by the year in `years`, newest first (`projects_newest_first` in `content/site.yml` flips it); `order` only decides between projects that started the same year.
 4. Commit and push. The page appears at `projects/your-project.html`.
 
 Videos: a YouTube or Vimeo link is best. Short, silent `.mp4` clips can go in `assets/` (keep them under a few MB).

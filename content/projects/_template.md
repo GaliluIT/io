@@ -9,7 +9,7 @@
 title: Project title
 years: 2024 – present
 summary: One or two sentences. Shown on the Projects page and at the top of the page.
-order: 10            # lower numbers come first on the Projects page
+order: 10            # projects are listed by starting year; order only sorts projects that started the same year
 draft: false         # true = hidden on the live site, shown with --drafts
 status: ""           # optional label next to the years, e.g. Work in progress
 

@@ -109,6 +109,20 @@ def read_page(path):
     return yaml.safe_load(m.group(1)) or {}, m.group(2)
 
 
+def start_year(years):
+    """The first year in a field like "2019 – present" or "2023" (0 if there is none)."""
+    m = re.search(r"\d{4}", str(years or ""))
+    return int(m.group()) if m else 0
+
+
+def by_start_year(items, years_of, order_of, newest_first=True):
+    """Sort by starting year; projects that started the same year keep their `order`."""
+    def key(item):
+        y = start_year(years_of(item))
+        return (-y if newest_first else (y or 9999), order_of(item))
+    return sorted(items, key=key)
+
+
 def year_key(entry):
     m = re.search(r"\d{4}", str(entry.get("year") or ""))
     return int(m.group()) if m else 9999  # undated entries (forthcoming) go first
@@ -148,7 +162,7 @@ def load_publications(site, drafts):
     return pubs
 
 
-def load_projects(drafts):
+def load_projects(drafts, newest_first=True):
     projects = []
     for path in sorted((CONTENT / "projects").glob("*.md")):
         if path.name.startswith("_"):
@@ -160,8 +174,10 @@ def load_projects(drafts):
         if meta.get("check"):
             note(where, meta["check"])
         projects.append({"slug": path.stem, "meta": meta, "body": body, "where": where})
-    projects.sort(key=lambda p: (p["meta"].get("order", 999), str(p["meta"].get("title", "")).lower()))
-    return projects
+    # Newest first by starting year (set projects_newest_first: false in site.yml for oldest first)
+    return by_start_year(projects, lambda p: p["meta"].get("years"),
+                         lambda p: (p["meta"].get("order", 999), str(p["meta"].get("title", "")).lower()),
+                         newest_first)
 
 
 def project_view(p, root):
@@ -265,13 +281,15 @@ def bi_body(text, root):
             "en": rewrite_body_links(md_block(en), root) if en else Markup("")}
 
 
-def build_intercambios(render, drafts):
+def build_intercambios(render, drafts, newest_first=True):
     if not IT.exists():
         return
     root = "../"
     meta, body = read_page(IT / "programa.md")
     projects = []
-    for i, p in enumerate(load_yaml(IT / "proyectos.yml") or [], 1):
+    entries = load_yaml(IT / "proyectos.yml") or []
+    entries = by_start_year(entries, lambda p: p.get("years"), lambda p: entries.index(p), newest_first)
+    for i, p in enumerate(entries, 1):
         where = f"intercambios/proyectos.yml, entry {i}"
         if p.get("draft") and not drafts:
             continue
@@ -333,7 +351,8 @@ def main():
         shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
     pubs = load_publications(site, args.drafts)
-    projects = load_projects(args.drafts)
+    newest_first = site.get("projects_newest_first", True)
+    projects = load_projects(args.drafts, newest_first)
 
     fono = dict(site.get("fono") or {})
     if fono:
@@ -441,7 +460,7 @@ def main():
            sections=sections)
 
     # Intercambios Transorgánicos section
-    build_intercambios(render, args.drafts)
+    build_intercambios(render, args.drafts, newest_first)
 
     # Addresses that moved: a small page sends visitors on to the new one
     for path, target in MOVED.items():
