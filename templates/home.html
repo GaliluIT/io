@@ -66,6 +66,7 @@
 <section class="band publications" id="publications" aria-labelledby="pubs-heading">
   <div class="band-head">
     <h2 id="pubs-heading">Publications</h2>
+    {% if site.scholar %}<p class="band-link"><a href="{{ site.scholar }}">Google Scholar</a></p>{% endif %}
   </div>
   <div class="band-body pub-columns{% if pub_groups|length == 1 %} is-single{% endif %}">
     {% for group in pub_groups %}

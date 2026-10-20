@@ -8,7 +8,7 @@ video: https://youtu.be/L-kwkI7Hb78
 details:
   - label: Autora
     label_en: Artist
-    value: Gala Lucía González Barrios
+    value: Gala Lucia Gonzalez Barrios
   - label: Técnica
     label_en: Medium
     value: Modelado digital, impresión 3D y pieza sonora
@@ -33,7 +33,7 @@ images:
     caption: Detalle de la impresión 3D.
     caption_en: Detail of the 3D print.
 ---
-Esta instalación forma parte de una serie de experimentos artísticos que parten de las preguntas que impulsan la investigación de Gala Lucía González Barrios desde 2019: ¿qué hace humana a una voz? ¿Qué la diferencia de una voz artificial? ¿Qué aspectos de la voz forman parte de nuestra identidad? ¿Cuáles son los límites y las posibilidades de la tecnología para reproducir los rasgos identitarios de una voz humana?
+Esta instalación forma parte de una serie de experimentos artísticos que parten de las preguntas que impulsan la investigación de Gala Lucia Gonzalez Barrios desde 2019: ¿qué hace humana a una voz? ¿Qué la diferencia de una voz artificial? ¿Qué aspectos de la voz forman parte de nuestra identidad? ¿Cuáles son los límites y las posibilidades de la tecnología para reproducir los rasgos identitarios de una voz humana?
 
 Fonocosa Aldo es, por un lado, un modelado digital e impresión 3D basado en deformaciones de la anatomía de la laringe humana. Por otro, es una pieza sonora que reproduce la voz de una persona que perdió su laringe y que ahora usa la voz esofágica como estrategia para producir una nueva voz. Es una voz difícil de escuchar, y quienes la usan relatan sistemáticamente el rechazo social que experimentan por las características de su sonido.
 
@@ -43,7 +43,7 @@ La instalación admite varios montajes. El ideal es la escultura en el centro de
 
 <!-- en -->
 
-This installation is part of a series of artistic experiments built on the questions that have driven Gala Lucía González Barrios's research since 2019: what makes a voice human? What sets it apart from an artificial voice? Which aspects of the voice are part of our identity? What are the limits and possibilities of technology for reproducing the traits that make a human voice someone's own?
+This installation is part of a series of artistic experiments built on the questions that have driven Gala Lucia Gonzalez Barrios's research since 2019: what makes a voice human? What sets it apart from an artificial voice? Which aspects of the voice are part of our identity? What are the limits and possibilities of technology for reproducing the traits that make a human voice someone's own?
 
 Fonocosa Aldo is, on one side, a digital model and 3D print based on deformations of the anatomy of the human larynx. On the other, it is a sound piece that plays the voice of a person who lost their larynx and now uses esophageal speech to produce a new voice. It is a voice that is hard to listen to, and the people who use it consistently describe the social rejection they meet because of how it sounds.
 

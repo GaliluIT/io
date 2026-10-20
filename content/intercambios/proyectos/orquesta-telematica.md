@@ -11,8 +11,8 @@ videos:
 details:
   - label: Codirección
     label_en: Co-directors
-    value: Ivica Ico Bukvic y Gala Lucía González Barrios
-    value_en: Ivica Ico Bukvic and Gala Lucía González Barrios
+    value: Ivica Ico Bukvic y Gala Lucia Gonzalez Barrios
+    value_en: Ivica Ico Bukvic and Gala Lucia Gonzalez Barrios
   - label: Con
     label_en: With
     value: UNTREF (Argentina) y Virginia Tech (EE. UU.)
@@ -34,9 +34,9 @@ El 6 de diciembre de 2022 participamos, desde la UNTREF, de la composición y la
 
 Usamos PD-L2Ork, una plataforma construida con Pure Data, el software libre muy usado en producción sonora, y desarrollada por el director de la pieza. La orquesta de laptops tiene doce canales en una interfaz gráfica; cada canal es un sintetizador que se asigna a un músico para crear instrumentos o presets y notaciones en forma de loops. Así se pueden componer piezas definiendo roles y asignando rangos de frecuencia según los aspectos armónicos, melódicos o rítmicos de la obra. PD-L2Ork funcionó bien en Windows, macOS y Linux, se instala fácilmente, y para tocar en vivo solo hace falta una buena conexión a internet.
 
-Desde la UNTREF conformamos el primer grupo argentino de performers y compositores de la comunidad PD-L2Ork, coordinado por Gala Lucía González Barrios.
+Desde la UNTREF conformamos el primer grupo argentino de performers y compositores de la comunidad PD-L2Ork, coordinado por Gala Lucia Gonzalez Barrios.
 
-**Intérpretes.** Codirección: Ivica Ico Bukvic y Gala Lucía González Barrios. UNTREF: David Clausell, Uma Futoransky, Joaquín Montecino, Lautaro Sosa, Victoria Villanueva. Virginia Tech: Sean Curtin, Tyler David Lee Johnson, Christian Koytchev, Zaire Riddick, Dominic Russo, Jacob Alan Smith, Andrew Wickman.
+**Intérpretes.** Codirección: Ivica Ico Bukvic y Gala Lucia Gonzalez Barrios. UNTREF: David Clausell, Uma Futoransky, Joaquín Montecino, Lautaro Sosa, Victoria Villanueva. Virginia Tech: Sean Curtin, Tyler David Lee Johnson, Christian Koytchev, Zaire Riddick, Dominic Russo, Jacob Alan Smith, Andrew Wickman.
 
 ## Territorio Prismático (2023)
 
@@ -50,9 +50,9 @@ On December 6, 2022, our UNTREF group took part in composing and performing live
 
 We used PD-L2Ork, a platform built on Pure Data, the free software widely used in sound production, and developed by the piece's director. The laptop orchestra has twelve channels in a graphical interface; each channel is a synthesizer assigned to one musician to create instruments or presets and notation in the form of loops. Pieces can be composed by defining roles and assigning frequency ranges to the harmonic, melodic or rhythmic parts of the work. PD-L2Ork ran well on Windows, macOS and Linux, is easy to install, and playing live only takes a good internet connection.
 
-At UNTREF we formed the first Argentine group of performers and composers in the PD-L2Ork community, coordinated by Gala Lucía González Barrios.
+At UNTREF we formed the first Argentine group of performers and composers in the PD-L2Ork community, coordinated by Gala Lucia Gonzalez Barrios.
 
-**Performers.** Co-directors: Ivica Ico Bukvic and Gala Lucía González Barrios. UNTREF: David Clausell, Uma Futoransky, Joaquín Montecino, Lautaro Sosa, Victoria Villanueva. Virginia Tech: Sean Curtin, Tyler David Lee Johnson, Christian Koytchev, Zaire Riddick, Dominic Russo, Jacob Alan Smith, Andrew Wickman.
+**Performers.** Co-directors: Ivica Ico Bukvic and Gala Lucia Gonzalez Barrios. UNTREF: David Clausell, Uma Futoransky, Joaquín Montecino, Lautaro Sosa, Victoria Villanueva. Virginia Tech: Sean Curtin, Tyler David Lee Johnson, Christian Koytchev, Zaire Riddick, Dominic Russo, Jacob Alan Smith, Andrew Wickman.
 
 ## Territorio Prismático (2023)
 

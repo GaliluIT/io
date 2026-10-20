@@ -8,7 +8,7 @@ summary_en: An assistive speech interface for people who have had a laryngectomy
 details:
   - label: Dirección
     label_en: Director
-    value: Gala Lucía González Barrios
+    value: Gala Lucia Gonzalez Barrios
   - label: Obras y proyectos
     label_en: Works and projects
     value: "[Fonocosa Aldo](fonocosa-aldo.html), Fonocosa Furinge, [Archivoz](archivoz.html)"

@@ -669,3 +669,5 @@ html[data-lang="es"] [data-lang-show="en"] { display: none; }
   .it-name { margin-right: 0; flex-basis: 100%; }
   .it-recent li { grid-template-columns: minmax(0, 1fr); }
 }
+
+.band-link { margin-top: 0.75rem; font-size: var(--s-1); }

@@ -1,4 +1,4 @@
-# Gala Lucía González Barrios: website
+# Gala Lucia Gonzalez Barrios: website
 
 A small static site for GitHub Pages. All the text lives in `content/`, the images and files in `assets/`. GitHub rebuilds and publishes the site every time you push.
 

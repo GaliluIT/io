@@ -1,7 +1,7 @@
 ---
 title: Transdisciplina en Intercambios Transorgánicos
 title_en: Transdisciplinarity at Intercambios Transorgánicos
-author: Gala Lucía González Barrios
+author: Gala Lucia Gonzalez Barrios
 date: 2021
 summary: El «anillo de las disciplinas», una forma sencilla de presentar las diferencias entre uni, inter y transdisciplina, y la historia del programa.
 note: Texto basado en la tesis de grado de la autora.

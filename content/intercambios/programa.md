@@ -5,7 +5,7 @@ lede: Un programa de investigación dedicado al desarrollo de interfaces interac
 lede_en: A research program that develops interactive interfaces as strategies for working on problems in the field of health.
 quote: "Debemos generar una ampliación en la cultura del desarrollo de conocimiento hacia la producción de nuevos métodos, ideas y formas de pensar y expresar narrativas sobre el mundo contemporáneo."
 quote_en: "We need to widen the culture of knowledge production toward new methods, ideas and ways of thinking about and telling stories of the contemporary world."
-quote_by: Gala Lucía González Barrios
+quote_by: Gala Lucia Gonzalez Barrios
 questions:
   - ¿Cómo tipificar metodologías de trabajo en proyectos del campo Arte, Ciencia y Tecnología?
   - ¿Dónde hacer circular los proyectos de arte y ciencia que no son obras de arte ni devienen en artículos académicos?
@@ -19,7 +19,7 @@ questions_en:
   - How can patients be seen as whole people rather than a list of things to treat or fix? How can we think beyond the assistive device while still including it?
   - How can we work with the problems of voice, its transformation or its loss, in terms of identity and social life?
 ---
-Intercambios Transorgánicos (IT) fue fundado en 2015 por Gala Lucía González Barrios en el MUNTREF Centro de Arte y Ciencia de la Universidad Nacional de Tres de Febrero (UNTREF), en Buenos Aires. Se inserta en el campo Arte, Ciencia y Tecnología y recibe alumnxs de investigación de distintas carreras: Artes Electrónicas, Ingeniería en Sonido, Psicomotricidad, Historia, Comunicación Social, Producción Audiovisual, Física, Ingeniería en Computación y Estadística. Desde 2021 funciona también como Trayecto Formativo Alternativo de la Licenciatura en Artes Electrónicas.
+Intercambios Transorgánicos (IT) fue fundado en 2015 por Gala Lucia Gonzalez Barrios en el MUNTREF Centro de Arte y Ciencia de la Universidad Nacional de Tres de Febrero (UNTREF), en Buenos Aires. Se inserta en el campo Arte, Ciencia y Tecnología y recibe alumnxs de investigación de distintas carreras: Artes Electrónicas, Ingeniería en Sonido, Psicomotricidad, Historia, Comunicación Social, Producción Audiovisual, Física, Ingeniería en Computación y Estadística. Desde 2021 funciona también como Trayecto Formativo Alternativo de la Licenciatura en Artes Electrónicas.
 
 ## Enfoque
 
@@ -35,11 +35,14 @@ Lo hacemos vinculando al MUNTREF con instituciones interesadas en integrar medio
 
 ## Reconocimientos
 
-El programa recibió reconocimientos de la Fundación INVAP, del Ministerio de Desarrollo Productivo de la Nación y del Fondo Metropolitano de las Artes.
+- Premio Nacional de Inteligencia Artificial INARIA, por Archivoz (2025)
+- Premio De la Ciencia al Impacto Social, Ministerio de Ciencia y Tecnología de la Nación e INVAP (2018)
+- Fondo Metropolitano de la Cultura, las Artes y las Ciencias, Buenos Aires (2017)
+- Premio a la Innovación en Investigación en Tecnologías Críticas, UNTREF (2017)
 
 <!-- en -->
 
-Intercambios Transorgánicos (IT) was founded in 2015 by Gala Lucía González Barrios at MUNTREF Centro de Arte y Ciencia, the art and science center of the Universidad Nacional de Tres de Febrero (UNTREF) in Buenos Aires. It belongs to the field of art, science and technology and takes research students from many degree programs: electronic arts, sound engineering, psychomotricity, history, social communication, audiovisual production, physics, computer engineering and statistics. Since 2021 it has also been an alternative training track within the bachelor's degree in electronic arts.
+Intercambios Transorgánicos (IT) was founded in 2015 by Gala Lucia Gonzalez Barrios at MUNTREF Centro de Arte y Ciencia, the art and science center of the Universidad Nacional de Tres de Febrero (UNTREF) in Buenos Aires. It belongs to the field of art, science and technology and takes research students from many degree programs: electronic arts, sound engineering, psychomotricity, history, social communication, audiovisual production, physics, computer engineering and statistics. Since 2021 it has also been an alternative training track within the bachelor's degree in electronic arts.
 
 ## Approach
 
@@ -55,4 +58,7 @@ We do this by connecting MUNTREF with institutions that want to bring media and 
 
 ## Recognition
 
-The program has been recognized by Fundación INVAP, Argentina's Ministry of Productive Development and the Fondo Metropolitano de las Artes.
+- INARIA National Artificial Intelligence Award, for Archivoz (2025)
+- From Science to Social Impact Award, Argentina's Ministry of Science and Technology and INVAP (2018)
+- Metropolitan Fund of Arts, Culture and Science, Buenos Aires (2017)
+- Innovation in Critical Technology Research Award, UNTREF (2017)

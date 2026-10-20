@@ -1,7 +1,6 @@
 ---
 title: C3D
-years: Desde 2016
-years_en: Since 2016
+years: 2016 – 2019
 order: 4
 summary: Un controlador inalámbrico que genera imagen y sonido espacializados a partir del movimiento, pensado como herramienta de asistencia en neurorrehabilitación.
 summary_en: A wireless controller that turns movement into spatialized image and sound, designed as an aid for neurorehabilitation.
@@ -15,6 +14,13 @@ details:
     label_en: Use
     value: Asistencia terapéutica en neurorrehabilitación
     value_en: Therapeutic aid in neurorehabilitation
+  - label: Presentado en
+    label_en: Presented at
+    value: Iberdiscap, INVAP, Metabody
+  - label: Reconocimientos
+    label_en: Recognition
+    value: Premios nacionales en 2017 y 2018
+    value_en: National awards in 2017 and 2018
   - label: Relacionados
     label_en: Related
     value: "[Eterófono](eterofono.html), [Juego de Ingenio](juego-de-ingenio.html)"
@@ -48,7 +54,7 @@ La interfaz combina un enfoque lúdico y creativo con la medición cuantitativa,
 
 Partimos de un problema concreto: la demanda creciente de tratamientos de neurorrehabilitación y la falta de motivación en pacientes y profesionales. El ACV es la principal causa de discapacidad en el mundo, y en la Argentina, según el Estudio Nacional sobre el Perfil de las Personas con Discapacidad (INDEC, 2018), las discapacidades motoras son las más frecuentes.
 
-El C3D se presentó por primera vez en abril de 2016, con una performance abierta al público en el Ciclo Delectro.
+El C3D se presentó por primera vez en abril de 2016, con una performance abierta al público en el Ciclo Delectro, y luego en Iberdiscap, INVAP y Metabody. Fue reconocido con premios nacionales en 2017 y 2018.
 
 <!-- en -->
 
@@ -58,4 +64,4 @@ The interface combines a playful, creative approach with real-time quantitative 
 
 We started from a concrete problem: growing demand for neurorehabilitation and a lack of motivation among patients and professionals. Stroke is the leading cause of disability worldwide, and in Argentina, according to the national study on the profile of people with disabilities (INDEC, 2018), motor disabilities are the most common.
 
-The C3D was first shown in April 2016, with a performance open to the public at the Ciclo Delectro.
+The C3D was first shown in April 2016, with a performance open to the public at the Ciclo Delectro, and later at Iberdiscap, INVAP and Metabody. It received national awards in 2017 and 2018.

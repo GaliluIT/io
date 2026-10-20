@@ -14,43 +14,42 @@
 
 - lang: en
   year: 2026
-  authors: G. L. González Barrios
+  authors: G. L. Gonzalez Barrios
   title: "Re-voicing Identity: Care Ethics and the Politics of Unsilencing After Total Laryngectomy"
-  venue: DRS2026, Design Research Society Conference, Edinburgh
+  venue: Proceedings of DRS2026, Design Research Society, Edinburgh
   type: Paper
   doi: 10.21606/drs.2026.1993
 
 - lang: en
   year: 2025
-  authors: G. L. González Barrios and I. I. Bukvic
-  title: Singing Without a Larynx
+  authors: G. L. Gonzalez Barrios and I. Bukvic
+  title: "Singing without a Larynx: A Vowel-Based Real-Time Interface for Embodied Vocal Performance"
   venue: CMMR 2025, International Symposium on Computer Music Multidisciplinary Research, London
-  type: Demo
+  type: Paper
   url: https://cmmr2025.prism.cnrs.fr/demos/
-  check: Confirm the authors and title as printed in the CMMR proceedings, and link the paper if there is one.
 
 # In Spanish. They also appear in the Intercambios Transorgánicos section.
 - lang: es
   year: 2021
-  authors: G. L. González Barrios
+  authors: G. L. Gonzalez Barrios
   title: Transdisciplina en Intercambios Transorgánicos
   url: intercambios/textos/transdisciplina.html
 
 - lang: es
   year: 2016
-  authors: "Intercambios Transorgánicos: G. González (dir.), M. Aranda, N. Stavorengo, A. Las Peñas, J. M. Sesali Maydana, L. Escortell"
+  authors: "Intercambios Transorgánicos: G. Gonzalez (dir.), M. Aranda, N. Stavorengo, A. Las Peñas, J. M. Sesali Maydana, L. Escortell"
   title: Prótesis electromecánicas no funcionales
   venue: Estudios Posthumanistas y Tecnologías del Control, Universidad Complutense de Madrid
   url: assets/intercambios/pdf/protesis-electromecanicas-no-funcionales-2016.pdf
 
 - lang: es
   year: 2015
-  authors: G. L. González Barrios
+  authors: G. L. Gonzalez Barrios
   title: Nuevas estrategias de resistencia y reinvención tecnológica frente al poder cibernético e informacional
   url: assets/intercambios/pdf/nuevas-estrategias-2015.pdf
 
 - lang: es
   year: 2015
-  authors: G. L. González Barrios
+  authors: G. L. Gonzalez Barrios
   title: La función del arte en un modelo de neurorrehabilitación transdisciplinario
   url: assets/intercambios/pdf/la-funcion-del-arte-2015.pdf

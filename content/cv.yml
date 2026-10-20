@@ -10,66 +10,137 @@
 
 - title: Education
   items:
-    - when: 2023 – expected 2027
-      what: PhD, Individualized Interdisciplinary PhD Program
+    - when: 2023 – May 2027 (expected)
+      what: PhD, Individualized Interdisciplinary PhD Program (IIPD)
       where: Virginia Tech
-      note: Advisor, Ashley Shew. Admitted with full funding.
-      check: Confirm whether to name the Human-Centered Design program here.
-    - what: BA (Licenciatura) in Electronic Arts
+      note: "Dissertation on voice, identity and disability-led technology design after total laryngectomy; preliminary examination passed. Advisor, Dr. Ashley Shew. Committee includes Dr. Fabián Prieto-Ñañez (STS) and Dr. Vrushali Angadi (Communication Sciences and Disorders, Radford University). Graduate certificates in Human-Computer Interaction (Department of Computer Science) and Science, Technology & Engineering in Public Policy (STEP)."
+    - when: Sept – Dec 2025
+      what: Visiting Scholar, Institute for Innovation and Public Purpose (IIPP)
+      where: University College London
+      note: Hosted by Dr. Cecilia Rikap; political economy of AI, data concentration and voice technologies.
+    - when: "2021"
+      what: Licenciatura in Electronic Arts
       where: Universidad Nacional de Tres de Febrero (UNTREF), Buenos Aires
-      check: Add the year.
-    - what: Diploma in Transdisciplinary Neurorehabilitation
-      where: Universidad del Museo Social Argentino (UMSA) – UNESCO
-      check: Add the year.
+      note: "Thesis: *Novel Methods in the Intersection of Art, Science, and Technology from a Complexity Paradigm: The Case of Intercambios Transorgánicos.*"
+    - when: "2017"
+      what: Diploma in Transdisciplinary Integral Neurorehabilitation
+      where: Universidad del Museo Social Argentino (UMSA)
     - what: Art therapy
       where: Primera Escuela Argentina de Arteterapia
-      check: Add the year and the name of the qualification.
+      check: Add the year and qualification, or remove.
     - what: Music
       where: Colegio Juan Pedro Esnaola, Buenos Aires
-      check: Add the years and the name of the qualification.
-
-- title: Positions
-  items:
-    - when: 2015 – present
-      what: Founder and director, [Intercambios Transorgánicos](intercambios/index.html)
-      where: MUNTREF Centro de Arte y Ciencia, Universidad Nacional de Tres de Febrero (UNTREF), Buenos Aires
-      note: Arts-science research program developing interactive interfaces for health. Since 2021 also an alternative training track of the BA in Electronic Arts.
-    - what: Visiting scholar
-      where: Institute for Innovation and Public Purpose (IIPP), University College London
-      note: Hosted by Cecilia Rikap
-      check: Add the dates.
-    - what: Adviser
-      where: Ministerio de Cultura de la Nación, Argentina
-      check: Add the dates and role.
-    - what: Art therapist, transdisciplinary neurorehabilitation
-      where: AlunCo, Buenos Aires
-      check: Add the dates.
+      check: Add the years and qualification, or remove.
 
 - title: Publications
   from: publications
 
-- title: Talks
+- title: Research and creative projects
   items:
+    - when: 2025 – present
+      what: "[Singing Machine](projects/singing-machine.html), lead researcher"
+      note: Browser-based vocal instrument that lets people who have lost their larynx sing through mouth and hand movements captured by an ordinary webcam. Technical collaboration with Dr. Ivica Bukvic (Indiana University).
+    - when: Ongoing
+      what: "[Archivoz](intercambios/proyectos/archivoz.html), director"
+      note: Community-governed voice corpus and speech infrastructure responding to data extraction in speech synthesis. INARIA National AI Award, 2025.
+    - when: 2026 – 2027
+      what: "[Returning Sound](projects/returning-sound.html), collaborator"
+      note: With Shout at Cancer (UK), the Education University of Hong Kong and ICAT (Virginia Tech); premiere at the Hong Kong Academy for Performing Arts, March 2027.
+    - when: "2024"
+      what: "[Shore Thing](projects/shore-thing.html), co-creator"
+      note: Sculptural board game on coastal migration and climate change; A2RU Annual Conference, Rochester Institute of Technology.
+    - when: 2019 – present
+      what: "[Fonocosa](intercambios/proyectos/fonocosa.html), including Fonocosa Aldo and Fonocosa Furinge (2023)"
+    - when: 2017 – 2019
+      what: "[C3D](intercambios/proyectos/c3d.html), lead designer"
+      note: Digital-art tool for physical therapy focused on motivation and identity restoration; national awards in 2017 and 2018.
+
+- title: Awards, fellowships and funding
+  items:
+    - when: "2025"
+      what: INARIA National Artificial Intelligence Award, Argentina
+      where: For Archivoz (project directed)
+    - when: "2025"
+      what: Labs for Liberation Summer Institute Fellow, disability and design
+      note: Selected from 300+ applicants.
+    - when: "2025"
+      what: Visiting Scholarship, UCL Institute for Innovation and Public Purpose
+    - when: "2025"
+      what: CFWPP Future of Work Student Summer Research Grant
+      where: Virginia Tech (Singing Machine)
+    - when: 2024, 2025
+      what: ICAT–ICTAS Grants
+      where: Virginia Tech, PD-L2Ork hackathons for HBCUs and MSIs
+    - when: "2024"
+      what: A2RU Grant for Transformative Cultural Change (team award)
+    - when: "2023"
+      what: Full PhD Scholarship and Graduate Research Assistantship
+      where: Virginia Tech
+    - when: "2018"
+      what: From Science to Social Impact Award
+      where: National Ministry of Science and Technology (INVAP), Argentina
+    - when: "2017"
+      what: Metropolitan Fund of Arts, Culture and Science Award
+      where: Buenos Aires
+    - when: "2017"
+      what: Innovation in Critical Technology Research Award
+      where: UNTREF
+
+- title: Selected presentations
+  items:
+    - when: "2026"
+      what: "Re-voicing identity: Care ethics and the politics of unsilencing after total laryngectomy"
+      where: DRS2026, Edinburgh, UK
+    - when: "2025"
+      what: "Singing without a larynx: A vowel-based real-time interface for embodied vocal performance"
+      where: CMMR 2025, London, UK
+    - when: "2025"
+      what: Invited seminar
+      where: UCL Interaction Centre (UCLIC), University College London, UK
+    - when: "2025"
+      what: "Invited: Reconstituting Voice: Identity and Justice from Community Design"
+      where: INIGEM Seminar Series, CONICET, Argentina
+    - when: "2025"
+      what: "Invited: Ungovernable Soldiers of Utopia & The Anger that Liberates: Speculative Design and Relational Art"
+      where: Conceptual Design Seminar, UNTREF, Argentina
+    - when: "2024"
+      what: "Harmonizing Identities: A Conceptual Proposal for an Interdisciplinary Approach to Voice Restoration"
+      where: Fall Voice Conference, Phoenix, AZ
+    - when: "2024"
+      what: "Harmonizing Humanity: Developing an Interdisciplinary Approach to Voice Restoration Through Human-Centered Design"
+      where: IIPPE Conference, Istanbul, Türkiye
+    - when: 2017 – 2019
+      what: "C3D: A Novel Tool for Physical Therapy Focused on Motivation and Identity Restoration Through Digital Art"
+      where: Iberdiscap; INVAP; Metabody
+    - when: "2016"
+      what: "Electromechanical Non-functional Prosthetics: Augmented Post-humanities"
+      where: Friedrich Nietzsche International Conference, Universidad Complutense de Madrid, Spain
     - when: "2016"
       what: Foro Internacional Metabody, with Jaime del Val
       where: Centros Culturales de España in Buenos Aires and Montevideo
-    - when: "2016"
-      what: "Estudios Posthumanistas y Tecnologías del Control: desde Nietzsche al trans-, post- y metahumanismo"
-      where: Faculty of Philosophy, Universidad Complutense de Madrid
     - when: "2015"
       what: "Symposium ¿Descolonizando cuerpos? Cuerpo común y tecnologías plurales"
       where: Centro Cultural de España, Santiago de Chile
     - when: "2015"
       what: Round table, Ars Electronica Híbrido series
       where: Centro Cultural Kirchner (CCK), Buenos Aires
-    - what: Seminar, UCL Interaction Centre (UCLIC)
-      where: University College London
-      check: Add the title and date.
-    - what: Singing Machine, ICAT Playdates
-      where: Institute for Creativity, Arts, and Technology, Virginia Tech
-      check: Add the date.
-    - what: ExpoMedical 2020; Informática en Salud, Hospital Italiano de Buenos Aires
-      check: Add titles and dates.
+
+- title: Positions
+  items:
+    - when: 2015 – present
+      what: Director, [Intercambios Transorgánicos](intercambios/index.html)
+      where: MUNTREF Centro de Arte y Ciencia (UNTREF), Buenos Aires
+      note: Lead a transdisciplinary arts–science research program (projects include Archivoz and Fonocosa); supervised 40+ interdisciplinary students; facilitate international workshops on technology, art and social justice.
+    - when: 2023 – present
+      what: Graduate Research Assistant
+      where: Virginia Tech
+    - when: 2021 – 2022
+      what: Science & Technology Consultant, Tecnópolis
+      where: Ministry of Culture, Argentina
+      note: Produced large-scale public science exhibitions for 50,000+ daily visitors; coordinated Argentina–China and Argentina–France cultural and scientific cooperation projects.
+    - what: Art therapist, transdisciplinary neurorehabilitation
+      where: AlunCo, Buenos Aires
+      check: Add the dates, or remove.
 
 - title: Exhibitions and performances
   items:
@@ -78,7 +149,6 @@
       where: Virginia Tech and UNTREF (telematic)
     - when: "2023"
       what: "[Fonocosa Aldo](intercambios/proyectos/fonocosa-aldo.html) and Fonocosa Furinge"
-      where: New works in the Fonocosa series
     - when: "2022"
       what: "*Transcontinental Grapevines*, telematic laptop orchestra (co-director, with Ivica Ico Bukvic)"
       where: UNTREF and Virginia Tech
@@ -90,59 +160,47 @@
       where: MUNTREF Arte y Ciencia, Tecnópolis, Buenos Aires
     - when: "2016"
       what: Installation and performance launching the C3D controller
-      where: Ciclo Delectro, Buenos Aires
-    - what: Composer and performer, Linux Laptop Orchestra (L2Ork)
-      where: Virginia Tech
-      check: List other concerts and pieces with dates.
+      where: Ciclo Delectro, Casa Temenos, Buenos Aires
 
-- title: Grants and awards
-  items:
-    - when: "2023"
-      what: Full doctoral funding
-      where: Virginia Tech
-    - when: "2025"
-      what: INARIA National AI Award, Argentina
-      where: Intercambios Transorgánicos
-      check: Confirm the award's exact name and who received it.
-    - what: Recognitions for Intercambios Transorgánicos from Fundación INVAP, the Ministry of Productive Development and the Fondo Metropolitano de las Artes
-      check: Add years and the name of each award or grant.
-    - what: A2RU annual grant, team award
-      where: Alliance for the Arts in Research Universities
-      check: Add the year and project title.
-    - what: Funding for the PD-L2Ork hackathons, two consecutive years
-      where: ICAT and ICTAS, Virginia Tech
-      check: Add the years.
-    - what: Support for the first version of the Singing Machine
-      where: Center for Future Work Places and Practices (CFWPP), Virginia Tech
-      check: Add the year.
-
-- title: Mentoring and service
+- title: Teaching and mentoring
   items:
     - when: "2026"
-      what: Supervisor, two undergraduate research assistants in Computer Science
-      where: Singing Machine, Virginia Tech
+      what: Research Supervisor, Singing Machine
+      where: Virginia Tech
+      note: Recruited (multi-round process, ~50 applicants) and supervise two undergraduate computer science research assistants.
+    - when: 2024, 2025
+      what: Director, PD-L2Ork Hackathons for HBCUs and MSIs
+      where: Virginia Tech (ICAT–ICTAS funded)
+      note: Designed and ran two consecutive annual hackathons to broaden participation from Historically Black Colleges and Universities and minority-serving institutions in the region.
+    - when: Current
+      what: Graduate School Application Mentor
+      where: Científico Latino
+    - when: 2015 – present
+      what: Mentor and Instructor
+      where: UNTREF, Buenos Aires
+      note: Mentor undergraduates in electronic arts, computer engineering and sound engineering toward interdisciplinary research careers; teach interactive systems and interface design.
+
+- title: Leadership and service
+  items:
+    - when: Current
+      what: President, Latin American and Iberian Graduate Student Association (LAIGSA)
+      where: Virginia Tech
+    - when: 2024 – present
+      what: Director, L2Ork International Community
+      note: Telematic performance network, Argentina–Mexico–USA.
+    - what: Member and Annual Summit Mentor
+      where: Alliance for the Arts in Research Universities (A2RU)
+    - what: Member, PD-L2Ork Laptop Orchestra
+      where: Virginia Tech
     - when: "2022"
       what: Organizer, First Young Researchers' Day
       where: Department of Art and Culture, UNTREF
-    - when: 2022 –
-      what: Coordinator of the Argentine PD-L2Ork community
-      where: UNTREF
-    - what: President, Latin American and Iberian Graduate Student Association (LAIGSA)
-      where: Virginia Tech
-      check: Add the years.
-    - what: Graduate school application mentor
-      where: Científico Latino
-      check: Add the years.
-    - what: Organizer, PD-L2Ork hackathons
-      where: Virginia Tech
-      note: Two consecutive years, aimed at increasing participation from HBCUs and minority-serving institutions in the region.
-      check: Add the years.
 
-- title: Certifications
+- title: Skills
   items:
-    - what: STEP science policy certification
-      check: Add the institution and year.
-
-- title: Languages
-  items:
-    - what: Spanish (native), English
+    - what: Research methods
+      note: Participatory and disability-led design, co-design workshops, photovoice, scoping reviews (Covidence, inter-rater reliability), qualitative analysis, policy analysis, human-subjects protocol design.
+    - what: Technical
+      note: Python, JavaScript, Pure Data / PD-L2Ork / WebPd, MediaPipe, TensorFlow.js, speech audio preprocessing (voice activity detection, dereverberation evaluation), Arduino, Processing, 3D modeling and printing, Ableton Live.
+    - what: Languages
+      note: Spanish (native), English (fluent).

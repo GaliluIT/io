@@ -1,12 +1,12 @@
 # Site-wide settings. Text here appears on every page.
 
-name: Gala Lucía González Barrios
+name: Gala Lucia Gonzalez Barrios
 tagline: Artist-researcher working with voice, singing and technology.
 place: Blacksburg, Virginia, and Buenos Aires
-description: Gala Lucía González Barrios is an artist-researcher working across HCI, science and technology studies and participatory design, with a focus on voice and singing.
+description: Gala Lucia Gonzalez Barrios is an artist-researcher working across HCI, science and technology studies and participatory design, with a focus on voice and singing.
 
 # Your name as it appears in author lists. It is set in bold there.
-me: González Barrios
+me: Gonzalez Barrios
 
 # The site's address.
 # Used for the preview image when the link is shared.
@@ -16,8 +16,13 @@ url: "https://galalucia.com"
 email: ""
 
 links:
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=GgLFF_MAAAAJ&hl=en
   - label: GitHub
     url: https://github.com/GaliluIT
+
+# Shown under Publications on the home page.
+scholar: https://scholar.google.com/citations?user=GgLFF_MAAAAJ&hl=en
 
 # Your CV as a PDF. Put the file here and a "Download PDF" button appears on the CV page.
 cv_pdf: assets/cv/cv.pdf
