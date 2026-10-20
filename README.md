@@ -41,7 +41,11 @@ Open http://localhost:8000. `--drafts` also shows placeholders and your "check" 
 3. In the repository go to **Settings → Pages**, and under **Build and deployment** set **Source** to **GitHub Actions**.
 4. Wait a minute for the "Publish site" action in the **Actions** tab to finish.
 
-After that, every push republishes the site. To use your own domain later, add it under Settings → Pages → Custom domain.
+After that, every push republishes the site.
+
+## The domain
+
+The site is served at https://galalucia.com. The domain is set in **Settings → Pages → Custom domain** and in the `CNAME` file. Its DNS (at GoDaddy) points to GitHub: four A records for `@` (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) and a CNAME record for `www` pointing to `galiluit.github.io`.
 
 ## The 3D object
 

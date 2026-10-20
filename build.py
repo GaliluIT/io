@@ -201,6 +201,8 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    if (ROOT / "CNAME").exists():  # custom domain (galalucia.com)
+        shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
     pubs = load_publications(site, args.drafts)
     projects = load_projects(args.drafts)
