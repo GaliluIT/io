@@ -1,0 +1,37 @@
+# Publications. They appear on the home page, split into English and Español,
+# and on the CV page. Newest first; the order in this file doesn't matter.
+#
+# Each entry:
+#   lang:    en or es (decides which column it goes in)
+#   year:    2026
+#   authors: as you want them printed
+#   title:   the title
+#   venue:   journal, conference, book or event
+#   type:    optional, e.g. Paper, Article, Chapter, Demo
+#   doi:     optional, e.g. 10.21606/drs.2026.1993 (becomes a link)
+#   url:     optional, use instead of doi for any other link
+#   check:   optional note to yourself, shown only with `python build.py --drafts`
+
+- lang: en
+  year: 2026
+  authors: G. L. González Barrios
+  title: "Re-voicing Identity: Care Ethics and the Politics of Unsilencing After Total Laryngectomy"
+  venue: DRS2026, Design Research Society Conference, Edinburgh
+  type: Paper
+  doi: 10.21606/drs.2026.1993
+
+- lang: en
+  year: 2025
+  authors: G. L. González Barrios and I. I. Bukvic
+  title: Singing Without a Larynx
+  venue: CMMR 2025, International Symposium on Computer Music Multidisciplinary Research, London
+  type: Demo
+  url: https://cmmr2025.prism.cnrs.fr/demos/
+  check: Confirm the authors and title as printed in the CMMR proceedings, and link the paper if there is one.
+
+# Placeholders are hidden on the live site. Replace this with your real entries.
+- lang: es
+  placeholder: true
+  year: ""
+  title: Tus publicaciones en español van acá
+  venue: Agregalas en content/publications.yml con lang es

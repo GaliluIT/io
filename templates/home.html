@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% from "_macros.html" import publication, todo with context %}
+
+{% block head %}
+{% if fono %}
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+{% endif %}
+{% endblock %}
+
+{% block main %}
+<section class="hero{% if not fono %} no-object{% endif %}">
+  <div class="hero-text">
+    <h1 class="name">{{ site.name }}</h1>
+    {% if site.tagline %}<p class="tagline">{{ site.tagline }}</p>{% endif %}
+  </div>
+
+  {% if fono %}
+  <figure class="specimen">
+    <model-viewer
+      src="{{ fono.model_url }}"
+      {% if fono.poster_url %}poster="{{ fono.poster_url }}"{% endif %}
+      alt="{{ fono.alt }}"
+      camera-controls
+      disable-zoom
+      disable-pan
+      interaction-prompt="none"
+      touch-action="pan-y"
+      camera-orbit="{{ fono.camera or '20deg 82deg auto' }}"
+      rotation-per-second="12deg"
+      environment-image="neutral"
+      exposure="0.95"
+      shadow-intensity="0.9"
+      shadow-softness="1"
+      {% if fono.sound_url %}data-sound="{{ fono.sound_url }}"{% endif %}></model-viewer>
+    <figcaption>
+      <span class="fono-title">{{ fono.title }}</span>{% if fono.credit %}, {{ fono.credit }}{% endif %}.
+      <span class="fono-hint">Drag to turn it.</span>
+      {% if fono.sound_url %}<button type="button" class="fono-play" data-play>Play its sound</button>{% endif %}
+      {% if drafts %}{{ todo(fono.check) }}{% endif %}
+    </figcaption>
+  </figure>
+  {% endif %}
+</section>
+
+{% if about_en or about_es %}
+<section class="band about" aria-labelledby="about-heading">
+  <div class="band-head">
+    <h2 id="about-heading">
+      <span data-lang-show="en">About</span><span data-lang-show="es" lang="es">Sobre mí</span>
+    </h2>
+    {% if about_en and about_es %}
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-set-lang="es" aria-pressed="false" lang="es">Español</button>
+    </div>
+    {% endif %}
+  </div>
+  <div class="band-body">
+    {% if about_en %}<div class="prose about-text" lang="en" data-lang-show="en">{{ about_en }}</div>{% endif %}
+    {% if about_es %}<div class="prose about-text" lang="es" data-lang-show="es">{{ about_es }}</div>{% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if pub_groups %}
+<section class="band publications" id="publications" aria-labelledby="pubs-heading">
+  <div class="band-head">
+    <h2 id="pubs-heading">Publications</h2>
+  </div>
+  <div class="band-body pub-columns{% if pub_groups|length == 1 %} is-single{% endif %}">
+    {% for group in pub_groups %}
+    <div class="pub-column" lang="{{ group.lang }}">
+      <h3>{{ group.label }}</h3>
+      <ul class="pub-list">
+        {% for p in group["items"] %}{{ publication(p) }}{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% macro todo(text) %}
+{% if drafts and text %}<p class="todo-note">{{ text }}</p>{% endif %}
+{% endmacro %}
+
+{% macro publication(p, show_lang=false) %}
+<li class="pub{% if p.placeholder %} is-placeholder{% endif %}">
+  <span class="pub-year">{{ p.year or "" }}</span>
+  <div class="pub-body">
+    <p class="pub-title">
+      {% if p.link %}<a href="{{ p.link }}">{{ p.title_html }}</a>{% else %}{{ p.title_html }}{% endif %}
+    </p>
+    {% if p.authors %}<p class="pub-authors">{{ p.authors_html }}</p>{% endif %}
+    {% if p.venue or p.type %}
+    <p class="pub-venue">
+      {% if p.venue %}<cite>{{ p.venue_html }}</cite>.{% endif %}
+      {% if p.type %} {{ p.type }}.{% endif %}
+      {% if show_lang and p.lang == 'es' %} In Spanish.{% endif %}
+    </p>
+    {% endif %}
+    {{ todo(p.check) }}
+  </div>
+</li>
+{% endmacro %}

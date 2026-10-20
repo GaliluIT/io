@@ -1,0 +1,78 @@
+{% if not fragment %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{% endif %}
+<title>{{ page_title }}</title>
+{% if fragment %}
+<meta name="claude:viewport-fit-sides" content="cover">
+{% endif %}
+<meta name="description" content="{{ description or site.description }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:type" content="website">
+{% if og_image %}
+<meta property="og:image" content="{{ og_image }}">
+{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/style.css">
+<script>
+  /* Pick the About language before the page paints: saved choice, then browser language. */
+  (function () {
+    var lang = null;
+    try { lang = localStorage.getItem("about-lang"); } catch (e) {}
+    if (lang !== "en" && lang !== "es") {
+      lang = (navigator.language || "").toLowerCase().slice(0, 2) === "es" ? "es" : "en";
+    }
+    document.documentElement.setAttribute("data-about-lang", lang);
+  })();
+</script>
+{% block head %}{% endblock %}
+<script src="{{ root }}assets/site.js" defer></script>
+{% if not fragment %}
+</head>
+<body class="page-{{ page_kind }}{% if drafts %} show-drafts{% endif %}">
+{% else %}
+<div class="page-{{ page_kind }}{% if drafts %} show-drafts{% endif %}">
+{% endif %}
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header wrap">
+  <a class="site-name" href="{{ root or './' }}">{{ site.name }}</a>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="{{ root or './' }}"{% if page_kind == 'home' %} aria-current="page"{% endif %}>About</a></li>
+      <li><a href="{{ root }}projects.html"{% if page_kind == 'projects' %} aria-current="page"{% elif page_kind == 'project' %} aria-current="true"{% endif %}>Projects</a></li>
+      <li><a href="{{ root }}cv.html"{% if page_kind == 'cv' %} aria-current="page"{% endif %}>CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>{{ site.name }}{% if site.place %}<br>{{ site.place }}{% endif %}</p>
+    <ul class="footer-links">
+      {% if site.email %}
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      {% endif %}
+      {% for link in site.links or [] %}
+      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+    <p class="updated">Updated {{ updated }}</p>
+  </div>
+</footer>
+{% if not fragment %}
+</body>
+</html>
+{% else %}
+</div>
+{% endif %}

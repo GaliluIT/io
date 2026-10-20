@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% from "_macros.html" import todo with context %}
+
+{% block main %}
+<article class="project">
+  <p class="back"><a href="{{ root }}projects.html">All projects</a></p>
+
+  <header class="project-head">
+    <h1>{{ project.title }}</h1>
+    {% if project.years %}<p class="project-years">{{ project.years }}</p>{% endif %}
+    {% if project.summary %}<p class="lede">{{ project.summary }}</p>{% endif %}
+    {% if drafts %}{{ todo(project.check) }}{% endif %}
+  </header>
+
+  {% for v in project.videos %}
+  <div class="video{% if v.kind == 'iframe' %} is-embed{% endif %}">
+    {% if v.kind == 'iframe' %}
+    <iframe src="{{ v.src }}" title="Video: {{ project.title }}" loading="lazy"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    {% else %}
+    <video src="{{ v.src }}" controls preload="metadata" playsinline></video>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="project-grid">
+    {% if project.details %}
+    <dl class="details">
+      {% for label, value in project.details %}
+      <div><dt>{{ label }}</dt><dd>{{ value }}</dd></div>
+      {% endfor %}
+    </dl>
+    {% else %}
+    <div></div>
+    {% endif %}
+
+    <div class="prose project-text">
+      {{ project.body }}
+      {% if project.links %}
+      <ul class="link-list">
+        {% for link in project.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if project.images %}
+  <div class="gallery">
+    {% for im in project.images %}
+    <figure>
+      <img src="{{ im.src }}" alt="{{ im.alt }}" loading="lazy">
+      {% if im.caption %}<figcaption>{{ im.caption }}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if previous or next %}
+  <nav class="pager" aria-label="More projects">
+    {% if previous %}
+    <a class="pager-prev" href="{{ previous.slug }}.html"><small>Previous</small><span>{{ previous.title }}</span></a>
+    {% else %}<span></span>{% endif %}
+    {% if next %}
+    <a class="pager-next" href="{{ next.slug }}.html"><small>Next</small><span>{{ next.title }}</span></a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</article>
+{% endblock %}

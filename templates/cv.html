@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% from "_macros.html" import publication, todo with context %}
+
+{% block main %}
+<div class="cv-head">
+  <h1 class="page-title">CV</h1>
+  {% if cv_pdf %}
+  <a class="button" href="{{ cv_pdf }}">Download PDF</a>
+  {% elif drafts %}
+  {{ todo("Put your CV PDF at the path set as cv_pdf in content/site.yml to show a download button here.") }}
+  {% endif %}
+</div>
+
+{% for s in sections %}
+<section class="band cv-section">
+  <div class="band-head"><h2>{{ s.title }}</h2></div>
+  <div class="band-body">
+    {% if s.pubs is defined %}
+    <ul class="pub-list">
+      {% for p in s.pubs %}{{ publication(p, show_lang=true) }}{% endfor %}
+    </ul>
+    {% else %}
+    <ul class="cv-list">
+      {% for it in s["items"] %}
+      <li class="cv-item{% if it.placeholder %} is-placeholder{% endif %}">
+        <span class="cv-when">{{ it.when or "" }}</span>
+        <div class="cv-body">
+          <p class="cv-what">{{ it.what_html }}</p>
+          {% if it.where %}<p class="cv-where">{{ it.where_html }}</p>{% endif %}
+          {% if it.note %}<p class="cv-note">{{ it.note_html }}</p>{% endif %}
+          {% if drafts %}{{ todo(it.check) }}{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

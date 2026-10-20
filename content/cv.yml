@@ -1,0 +1,87 @@
+# Your CV, section by section, in the order they appear.
+# Each item:
+#   when:  dates as you want them shown, e.g. 2021 – 2027 or Expected 2027
+#   what:  the main line (bold)
+#   where: optional second line
+#   note:  optional smaller line
+#   check: optional note to yourself, shown only with `python build.py --drafts`
+# A section with "from: publications" lists everything in publications.yml.
+# Markdown works in what/where/note, e.g. [link text](https://...).
+
+- title: Education
+  items:
+    - when: Expected 2027
+      what: PhD, Individualized Interdisciplinary PhD Program
+      where: Virginia Tech
+      note: Advisor, Ashley Shew
+    - what: Electronic Arts
+      check: Add the degree, institution and year.
+
+- title: Positions
+  items:
+    - what: Director, Intercambios Transorgánicos
+      where: MUNTREF Centro de Arte y Ciencia, Universidad Nacional de Tres de Febrero (UNTREF), Buenos Aires
+      check: Add the start year.
+    - what: Visiting scholar
+      where: Institute for Innovation and Public Purpose (IIPP), University College London
+      note: Hosted by Cecilia Rikap
+      check: Add the dates.
+
+- title: Publications
+  from: publications
+
+- title: Talks
+  items:
+    - what: Seminar, UCL Interaction Centre (UCLIC)
+      where: University College London
+      check: Add the title and date.
+    - what: Singing Machine, ICAT Playdates
+      where: Institute for Creativity, Arts, and Technology, Virginia Tech
+      check: Add the date.
+
+- title: Grants and awards
+  items:
+    - when: "2025"
+      what: INARIA National AI Award, Argentina
+      where: Intercambios Transorgánicos
+      check: Confirm the award's exact name and who received it.
+    - what: A2RU annual grant, team award
+      where: Alliance for the Arts in Research Universities
+      check: Add the year and project title.
+    - what: Funding for the PD-L2Ork hackathons, two consecutive years
+      where: ICAT and ICTAS, Virginia Tech
+      check: Add the years.
+    - what: Support for the first version of the Singing Machine
+      where: Center for Future Work Places and Practices (CFWPP), Virginia Tech
+      check: Add the year.
+
+- title: Mentoring and service
+  items:
+    - what: President, Latin American and Iberian Graduate Student Association (LAIGSA)
+      where: Virginia Tech
+      check: Add the years.
+    - what: Graduate school application mentor
+      where: Científico Latino
+      check: Add the years.
+    - when: "2026"
+      what: Supervisor, two undergraduate research assistants in Computer Science
+      where: Singing Machine, Virginia Tech
+    - what: Organizer, PD-L2Ork hackathons
+      where: Virginia Tech
+      note: Two consecutive years, aimed at increasing participation from HBCUs and minority-serving institutions in the region.
+      check: Add the years.
+
+- title: Performance
+  items:
+    - what: Composer and performer, Linux Laptop Orchestra (L2Ork)
+      where: Virginia Tech
+      check: List concerts and pieces with dates.
+
+- title: Certifications
+  items:
+    - what: STEP science policy certification
+      check: Add the institution and year.
+
+- title: Languages
+  items:
+    - what: Spanish (native), English

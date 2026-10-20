@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "_macros.html" import todo with context %}
+
+{% block main %}
+<h1 class="page-title">Projects</h1>
+
+<ul class="project-list">
+  {% for p in projects %}
+  <li class="project-row{% if p.cover %} has-cover{% endif %}">
+    <a href="projects/{{ p.slug }}.html">
+      {% if p.cover %}<img src="{{ p.cover }}" alt="" loading="lazy">{% endif %}
+      <span class="project-main">
+        <span class="project-title">{{ p.title }}</span>
+        {% if p.summary %}<span class="project-summary">{{ p.summary }}</span>{% endif %}
+      </span>
+      <span class="project-years">{{ p.years }}{% if drafts and p.draft %} (draft){% endif %}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

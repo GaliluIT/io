@@ -1,0 +1,3 @@
+I'm an artist-researcher from Buenos Aires, working between human-computer interaction, science and technology studies, and participatory design. I study voice: what a voice is, what it is for, and what singing can show us about both. Much of my current work is with people who have had a total laryngectomy, building instruments and methods in which expression and identity count as much as function.
+
+I'm a PhD candidate in the Individualized Interdisciplinary PhD Program at Virginia Tech, advised by Ashley Shew. In Buenos Aires I direct Intercambios Transorgánicos, an arts-science research program at MUNTREF Centro de Arte y Ciencia (UNTREF). I trained in electronic arts, and I have composed for and performed with the Linux Laptop Orchestra (L2Ork) many times.

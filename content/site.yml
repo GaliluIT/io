@@ -1,0 +1,33 @@
+# Site-wide settings. Text here appears on every page.
+
+name: Gala Lucía González Barrios
+tagline: Artist-researcher working with voice, singing and technology.
+place: Blacksburg, Virginia, and Buenos Aires
+description: Gala Lucía González Barrios is an artist-researcher working across HCI, science and technology studies and participatory design, with a focus on voice and singing.
+
+# Your name as it appears in author lists. It is set in bold there.
+me: González Barrios
+
+# The site's address once it is live, e.g. https://galiluit.github.io
+# Used for the preview image when the link is shared.
+url: "https://galiluit.github.io/io"
+
+# Leave empty to keep your email off the site.
+email: ""
+
+links:
+  - label: GitHub
+    url: https://github.com/GaliluIT
+
+# Your CV as a PDF. Put the file here and a "Download PDF" button appears on the CV page.
+cv_pdf: assets/cv/cv.pdf
+
+# The 3D object on the home page. Delete this whole block to remove it.
+fono:
+  title: FonoAldo
+  credit: ""            # e.g. "speculative voice object, 2026" or "modeled by ..."
+  model: assets/fono/fono.glb
+  poster: assets/fono/poster.webp
+  alt: "FonoAldo, a pale sculptural object shaped like a voice instrument: a mouthpiece opens into a ribbed, throat-like body crowned with horns and curling tendrils."
+  sound: ""             # optional: an audio file (e.g. assets/fono/fono.mp3) that plays when the object is clicked
+  check: Add a credit line saying who made FonoAldo and when.
