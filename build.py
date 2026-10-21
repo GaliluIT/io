@@ -315,7 +315,7 @@ def build_intercambios(render, drafts, newest_first=True):
             "video": p.get("video") or "",
         })
     team = load_yaml(IT / "equipo.yml") or []
-    team_groups = [{"title": bi(g, "title"),
+    team_groups = [{"title": bi(g, "title"), "note": bi(g, "note"),
                     "people": [{"name": x.get("name"), "role": bi(x, "role")} for x in g.get("people") or []]}
                    for g in team]
     website = meta.get("website") or ""

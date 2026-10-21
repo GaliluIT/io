@@ -1,5 +1,6 @@
 # Equipo de Intercambios Transorgánicos. Cada grupo tiene un título y una lista de personas.
 # role / role_en: una línea corta sobre lo que hace o hizo cada persona (opcional).
+# note / note_en: un texto breve debajo del grupo (opcional).
 
 - title: Dirección
   title_en: Director
@@ -7,6 +8,8 @@
     - name: Gala Lucia Gonzalez Barrios
       role: Fundadora y directora. Licenciada en Artes Electrónicas (UNTREF), diplomada en Neurorrehabilitación Integral Transdisciplinaria (UMSA).
       role_en: Founder and director. BA in Electronic Arts (UNTREF), diploma in Transdisciplinary Integral Neurorehabilitation (UMSA).
+  note: Todas las personas de esta lista fueron mis mentoreadxs y/o pares que se convirtieron en colegas, y muchas de ellas son también mis héroes personales. ¡Busquen sus nombres para conocer todo lo maravilloso que hacen en Argentina y en el mundo!
+  note_en: All the people listed below were my mentees and/or peers who became my colleagues, and many of them are also my personal heroes. Go ahead and google their names to check out all the wonderful things they do in Argentina and around the world!
 
 - title: Equipo
   title_en: Team

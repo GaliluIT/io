@@ -713,6 +713,7 @@ a.card-link:hover .card-title { color: var(--accent); text-decoration-color: cur
 .it-team-group li { break-inside: avoid; padding-block: 0.3rem; }
 .it-person { font-weight: 700; }
 .it-role { display: block; font-size: var(--s-1); color: var(--muted); }
+.it-team-note { margin-top: 1rem; max-width: var(--measure); font-size: var(--s1); line-height: 1.5; }
 .text-body { max-width: 68ch; }
 .text-body img { display: block; max-width: min(100%, 520px); height: auto; margin-block: 0.5rem; background: #FFFFFF; }
 .text-body blockquote { margin: 1.5em 0; padding-left: 1.25rem; border-left: 2px solid var(--rule); color: var(--muted); }

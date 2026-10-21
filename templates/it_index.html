@@ -47,6 +47,7 @@
         <li><span class="it-person">{{ person.name }}</span>{% if person.role.es %} <span class="it-role">{{ bi(person.role) }}</span>{% endif %}</li>
         {% endfor %}
       </ul>
+      {% if g.note.es %}<p class="it-team-note">{{ bi(g.note) }}</p>{% endif %}
     </div>
     {% endfor %}
   </div>
