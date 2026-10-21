@@ -8,8 +8,8 @@ lede_en: A research program that develops interactive interfaces as strategies f
 recognition:
   - es: Premio Nacional de Inteligencia Artificial INARIA, por Archivoz (2025)
     en: INARIA National Artificial Intelligence Award, for Archivoz (2025)
-  - es: Premio De la Ciencia al Impacto Social, Ministerio de Ciencia y Tecnología de la Nación e INVAP (2018)
-    en: From Science to Social Impact Award, Argentina's Ministry of Science and Technology and INVAP (2018)
+  - es: "Emprende ConCiencia: Premio De la Ciencia al Impacto Social, Ministerio de Ciencia y Tecnología de la Nación e INVAP (2018)"
+    en: "Emprende ConCiencia: From Science to Social Impact Award, Argentina's National Ministry of Science and Technology and INVAP (2018)"
   - es: Fondo Metropolitano de la Cultura, las Artes y las Ciencias, Buenos Aires (2017)
     en: Metropolitan Fund of Arts, Culture and Science, Buenos Aires (2017)
   - es: Premio a la Innovación en Investigación en Tecnologías Críticas, UNTREF (2017)
