@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import todo, video with context %}
+{% from "_macros.html" import todo, video, press_item with context %}
 
 {% block head %}
 {% if project.model %}
@@ -54,6 +54,12 @@
       {% if project.links %}
       <ul class="link-list">
         {% for link in project.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if project.press %}
+      <h2 class="downloads-title">In the press</h2>
+      <ul class="pub-list press-list">
+        {% for p in project.press %}{{ press_item(p) }}{% endfor %}
       </ul>
       {% endif %}
       {% if project.downloads %}

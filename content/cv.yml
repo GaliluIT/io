@@ -5,7 +5,8 @@
 #   where: optional second line
 #   note:  optional smaller line
 #   check: optional note to yourself, shown only with `python build.py --drafts`
-# A section with "from: publications" lists everything in publications.yml.
+# A section with "from: publications" lists everything in publications.yml,
+# and one with "from: press" everything in press.yml.
 # Markdown works in what/where/note, e.g. [link text](https://...).
 
 - title: Education
@@ -94,6 +95,9 @@
       what: Innovation in Critical Technology Research Award
       where: UNTREF
 
+- title: Press
+  from: press
+
 - title: Selected presentations
   items:
     - when: "2026"
@@ -125,7 +129,8 @@
       where: IIPPE Conference, Istanbul, Türkiye
     - when: 2017 – 2019
       what: "C3D: A Novel Tool for Physical Therapy Focused on Motivation and Identity Restoration Through Digital Art"
-      where: Iberdiscap; INVAP; Metabody
+      where: Iberdiscap; INVAP; Metabody; Expo Medical, Salud Innova Tech (2019); XIV Jornada de Salud e Informática, Hospital Italiano (2019)
+      note: "[Interview at Expo Medical, 2019 (video)](https://www.youtube.com/watch?v=X6vigr5jd0U)"
     - when: "2016"
       what: "Electromechanical Non-functional Prosthetics: Augmented Post-humanities"
       where: Friedrich Nietzsche International Conference, Universidad Complutense de Madrid, Spain
@@ -144,7 +149,7 @@
     - when: 2015 – present
       what: Director, [Intercambios Transorgánicos](intercambios/index.html)
       where: MUNTREF Centro de Arte y Ciencia (UNTREF), Buenos Aires
-      note: Lead a transdisciplinary arts–science research program (projects include Archivoz and Fonocosa); supervised 40+ interdisciplinary students; facilitate international workshops on technology, art and social justice.
+      note: "Lead a transdisciplinary arts–science research program (projects include Archivoz and Fonocosa); supervised 40+ interdisciplinary students; facilitate international workshops on technology, art and social justice. [Profile at MUNTREF Arte y Ciencia](http://arteyciencia.untref.edu.ar/gala-lucia-gonzalez)."
     - when: 2023 – present
       what: Graduate Research Assistant
       where: Virginia Tech
@@ -152,9 +157,10 @@
       what: Science & Technology Consultant, Tecnópolis
       where: Ministry of Culture, Argentina
       note: Produced large-scale public science exhibitions for 50,000+ daily visitors; coordinated Argentina–China and Argentina–France cultural and scientific cooperation projects.
-    - what: Art therapist, transdisciplinary neurorehabilitation
-      where: AlunCo, Buenos Aires
-      check: Add the dates, or remove.
+    - when: 2014 – 2015
+      what: Art therapist, transdisciplinary neurorehabilitation
+      where: "[AlunCo Internacional](http://www.aluncointernacional.org/), Buenos Aires"
+      note: Therapeutic education program for children and adolescents, after art therapy internships at Fundación AlunCo (2007 – 2012).
 
 - title: Exhibitions and performances
   items:
@@ -169,6 +175,18 @@
     - when: "2021"
       what: "*El espectro de la voz*, interactive installation with AudioStellar"
       where: Tecnópolis, BIENALSUR, Buenos Aires
+    - when: "2019"
+      what: Performance *Disponible*
+      where: "[Laboratorio de Periodismo Performático](http://www.revistaanfibia.com/laboratorio-periodismo-performatico/portfolio/sinfonia-big-data/), Revista Anfibia: Fundación Cazadores, Buenos Aires, and Festival de Pensamiento Contemporáneo, Rosario"
+    - when: "2018"
+      what: Performance *Esperando que vuelvan las utopías*
+      where: MAR Museo de Arte Contemporáneo, Mar del Plata
+    - when: "2018"
+      what: Selected artist and fellow, *Fronteras Suspendidas* production clinic
+      where: "[MAR Museo de Arte Contemporáneo](https://www.gba.gob.ar/museomar/cl%C3%ADnica_de_producci%C3%B3n_fronteras_suspendidas_2018), Mar del Plata"
+    - when: "2018"
+      what: Concept and texts, *Naturaleza Muerta*, GRUPO DOMA
+      where: "[Sala Cronopios, Centro Cultural Recoleta](http://centroculturalrecoleta.org/agenda/naturaleza-muerta), Buenos Aires"
     - when: "2016"
       what: "*Intercambios Transorgánicos*, exhibition"
       where: MUNTREF Arte y Ciencia, Tecnópolis, Buenos Aires
@@ -192,7 +210,12 @@
     - when: 2015 – present
       what: Mentor and Instructor
       where: UNTREF, Buenos Aires
-      note: Mentor undergraduates in electronic arts, computer engineering and sound engineering toward interdisciplinary research careers; teach interactive systems and interface design.
+      note: "Mentor undergraduates in electronic arts, computer engineering and sound engineering toward interdisciplinary research careers; teach interactive systems and interface design. Created and directed MUNTREF's [Art and Science Project Mentoring Program](http://untref.edu.ar/muntref/es/noticias/la-universidad-promueve-la-pasion-por-la-ciencia-y-la-investigacion-entre-los-jovenes-estudiantes/) ([information session, 2019](http://untref.edu.ar/muntref/es/noticias/charla-informativa-programa-de-mentorias-y-desarrollo/))."
+    - when: "2016"
+      what: Creator and general coordinator, Inclusion program
+      where: "[Flexible](https://flexiblelab.wordpress.com/), a laboratory of art, play, science and technology, Buenos Aires"
+      note: "Also designed and coordinated its teaching content. [About the Inclusion program](https://flexiblelab.wordpress.com/2016/02/19/flexible-inclusion/)."
+      check: Add the end year (the program started in March 2016).
 
 - title: Leadership and service
   items:

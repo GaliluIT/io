@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import publication, lang_switch, todo with context %}
+{% from "_macros.html" import publication, press_item, lang_switch, todo with context %}
 
 {% block head %}
 {% if fono %}
@@ -74,6 +74,17 @@
       </ul>
     </div>
     {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if press %}
+<section class="band press" id="press" aria-labelledby="press-heading">
+  <div class="band-head"><h2 id="press-heading">Press</h2></div>
+  <div class="band-body">
+    <ul class="pub-list press-list">
+      {% for p in press %}{{ press_item(p) }}{% endfor %}
+    </ul>
   </div>
 </section>
 {% endif %}

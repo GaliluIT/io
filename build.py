@@ -162,6 +162,20 @@ def load_publications(site, drafts):
     return pubs
 
 
+def load_press(drafts):
+    """Articles, interviews and videos about the work (content/press.yml), newest first."""
+    out = []
+    for i, p in enumerate(load_yaml(CONTENT / "press.yml") or [], 1):
+        if p.get("check"):
+            note(f"press.yml, entry {i}", p["check"])
+        if p.get("draft") and not drafts:
+            continue
+        out.append({**p, "year": str(p.get("year") or ""), "lang": str(p.get("lang", "en")).lower(),
+                    "title_html": md_inline(p.get("title")), "projects": p.get("projects") or []})
+    out.sort(key=year_key, reverse=True)  # undated first
+    return out
+
+
 def load_projects(drafts, newest_first=True):
     projects = []
     for path in sorted((CONTENT / "projects").glob("*.md")):
@@ -180,7 +194,7 @@ def load_projects(drafts, newest_first=True):
                          newest_first)
 
 
-def project_view(p, root):
+def project_view(p, root, press=()):
     m, where = p["meta"], p["where"]
     title = m.get("title", p["slug"])
     videos = m.get("videos") or ([m["video"]] if m.get("video") else [])
@@ -239,6 +253,7 @@ def project_view(p, root):
         "links": links,
         "downloads": downloads,
         "hero": hero,
+        "press": [x for x in press if p["slug"] in x["projects"]],
         "model": model,
         "body": rewrite_body_links(md_block(p["body"]), root),
         "check": m.get("check"),
@@ -358,6 +373,7 @@ def main():
         shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
     pubs = load_publications(site, args.drafts)
+    press = load_press(args.drafts)
     newest_first = site.get("projects_newest_first", True)
     projects = load_projects(args.drafts, newest_first)
 
@@ -422,6 +438,7 @@ def main():
         fragment=args.fragment_home,
         about=about,
         pub_groups=[g for g in groups if g["items"]],
+        press=press,
         fono=fono,
     )
 
@@ -434,8 +451,8 @@ def main():
     # Projects list and one page per project
     render("projects.html", "projects.html", "",
            page_kind="projects", page_title=f"Projects | {site.get('name', '')}",
-           projects=[project_view(p, "") for p in projects])
-    views = [v for v in (project_view(p, "../") for p in projects) if not v["link"]]
+           projects=[project_view(p, "", press) for p in projects])
+    views = [v for v in (project_view(p, "../", press) for p in projects) if not v["link"]]
     for i, view in enumerate(views):
         render("project.html", f"projects/{view['slug']}.html", "../",
                page_kind="project", page_title=f"{view['title']} | {site.get('name', '')}",
@@ -449,6 +466,10 @@ def main():
     for s in load_yaml(CONTENT / "cv.yml") or []:
         if s.get("from") == "publications":
             sections.append({"title": s.get("title", "Publications"), "pubs": pubs})
+            continue
+        if s.get("from") == "press":
+            if press:
+                sections.append({"title": s.get("title", "Press"), "press": press})
             continue
         items = []
         for it in s.get("items") or []:

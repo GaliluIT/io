@@ -1,0 +1,60 @@
+# Press: articles, interviews and videos about your work.
+# They appear on the home page (under Publications), in the CV, and on the page
+# of each project listed in `projects` (the project's file name, e.g. archivoz).
+#   year:     leave empty if unknown (it then shows first, as the newest)
+#   outlet:   newspaper, magazine, site or channel
+#   title:    the headline, as published
+#   kind:     optional, e.g. Interview, Profile, Video
+#   lang:     es or en
+#   check:    optional note to yourself, shown only with --drafts
+
+- year: ""
+  outlet: Clarín, Revista Ñ
+  title: Archivoz redefine la preservación de las voces
+  kind: Interview
+  lang: es
+  url: https://www.clarin.com/revista-n/tecnologia-cultura-archivoz-redefine-preservacion-voces_0_RNPwMz0yvN.html
+  projects: [archivoz]
+  check: Add the date, and check the headline (taken from the article's address).
+
+- year: "2025"
+  outlet: Mundo UNTREF
+  title: Archivoz recibió una distinción del Instituto Argentino de Inteligencia Artificial
+  lang: es
+  url: https://www.untref.edu.ar/mundountref/archivoz-recibio-una-distincion-del-instituto-argentino-de-inteligencia-artificial
+  projects: [archivoz]
+
+- year: "2025"
+  outlet: Estamos en Línea
+  title: "Soberanía de la voz: UNTREF gana el Premio INARIA con Archivoz, el proyecto que rescata los acentos argentinos con Inteligencia Artificial"
+  lang: es
+  url: https://www.estamosenlinea.com/2025/11/14/soberania-de-la-voz-untref-gana-el-premio-inaria-con-archivoz-el-proyecto-que-rescata-los-acentos-argentinos-con-inteligencia-artificial/
+  projects: [archivoz]
+
+- year: "2025"
+  outlet: ANDigital
+  title: "“Archivoz”, un proyecto que rescata el acento argentino en la IA"
+  lang: es
+  url: https://andigital.com.ar/nota/136785/archivoz-un-proyecto-que-rescata-el-acento-argentino-en-la-ia/
+  projects: [archivoz]
+
+- year: "2019"
+  outlet: La Nación
+  title: "Rehabilitación: en la Universidad de Tres de Febrero usan el arte y la ciencia para mejores terapias"
+  kind: On C3D and Intercambios Transorgánicos
+  lang: es
+  url: https://www.lanacion.com.ar/tecnologia/rehabilitacion-universidad-tres-febrero-usan-arte-ciencia-nid2316536
+
+- year: "2019"
+  outlet: Diagnóstico y Debate TV
+  title: "C3D, una revolucionaria herramienta para procesos de rehabilitación"
+  kind: Video interview, Expo Medical
+  lang: es
+  url: https://www.youtube.com/watch?v=X6vigr5jd0U
+
+- year: "2017"
+  outlet: Mundo UNTREF
+  title: "“Hay cosas que solucionar y yo me paro allí donde surgen las necesidades”"
+  kind: Profile
+  lang: es
+  url: http://www.untref.edu.ar/mundountref/gala-gonzalez-artes-electronicas-historias-untref

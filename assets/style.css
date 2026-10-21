@@ -526,6 +526,9 @@ a.card-link:hover .card-title { color: var(--accent); text-decoration-color: cur
 .link-list { list-style: none; padding: 0 !important; margin-top: 1.25rem; }
 .downloads-title { margin-top: 2rem !important; font-family: var(--font-body); font-weight: 700; font-size: var(--s0) !important; }
 .downloads-title + .link-list { margin-top: 0.6rem; }
+.project-text .press-list { padding: 0; margin-top: 0.4rem; }
+.project-text .press-list .pub { grid-template-columns: 3.25rem minmax(0, 1fr); }
+.press-list { max-width: 52rem; }
 .file-note { display: block; font-size: var(--s-1); color: var(--muted); }
 .project-model { margin-bottom: clamp(28px, 4vw, 48px); }
 .project-hero { margin-bottom: clamp(28px, 4vw, 48px); }

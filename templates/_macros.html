@@ -79,6 +79,18 @@
 </li>
 {% endmacro %}
 
+{# One press item: year, headline (linked), outlet. #}
+{% macro press_item(p) %}
+<li class="pub">
+  <span class="pub-year">{{ p.year }}</span>
+  <div class="pub-body">
+    <p class="pub-title"{% if p.lang == 'es' %} lang="es"{% endif %}><a href="{{ p.url }}">{{ p.title_html }}</a></p>
+    <p class="pub-venue"><cite>{{ p.outlet }}</cite>{% if p.kind %}. {{ p.kind }}{% endif %}{% if p.lang == 'es' %}. In Spanish{% endif %}.</p>
+    {{ todo(p.check) }}
+  </div>
+</li>
+{% endmacro %}
+
 {% macro publication(p, show_lang=false) %}
 <li class="pub{% if p.placeholder %} is-placeholder{% endif %}">
   <span class="pub-year">{{ p.year or "" }}</span>
