@@ -91,6 +91,12 @@
     - when: "2026"
       what: "Re-voicing identity: Care ethics and the politics of unsilencing after total laryngectomy"
       where: DRS2026, Edinburgh, UK
+    - when: "2026"
+      what: Invited seminar
+      where: Institute of Visual Computing and Human-Centered Technology, Technische Universität Wien (TU Wien), Vienna, Austria
+    - when: "2026"
+      what: Invited seminar
+      where: Seminar on Public Culture, Territory and Sustainable Development, Master's in Public Culture, Universidad Nacional de las Artes (UNA), Argentina
     - when: "2025"
       what: "Singing without a larynx: A vowel-based real-time interface for embodied vocal performance"
       where: CMMR 2025, London, UK
