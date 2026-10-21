@@ -18,6 +18,9 @@ images:
   - src: assets/projects/fonocosa-aldo/01.jpg
     alt: "Fonocosa Aldo against a white wall: a dark grey, glittering 3D print with a mouthpiece at the bottom, a ribbed, throat-like body, and horns and curling tendrils at the top. Its blurred shadow falls on the wall to the right."
     caption: Fonocosa Aldo.
+  - src: assets/projects/fonocosa-aldo/06.jpg
+    alt: "Fonocosa Aldo installed in a gallery: the black, glittering sculpture hangs in the air in front of a white wall. To its right, on the wall, a small framed image of the piece, white headphones hanging from a hook, and a wall label."
+    caption: Fonocosa Aldo installed, with the headphones for the sound piece.
   - src: assets/projects/fonocosa-aldo/02.jpg
     alt: A gloved hand holds a curved grey piece of the print while it is being finished.
     caption: Finishing the 3D print.
