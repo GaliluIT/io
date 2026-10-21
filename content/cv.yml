@@ -76,9 +76,17 @@
     - when: "2023"
       what: Full PhD Scholarship and Graduate Research Assistantship
       where: Virginia Tech
+    - when: "2019"
+      what: National finalist, Samsung Innovation Award (Samsung Innova)
+      where: Samsung, Argentina
+      note: "For C3D. [Watch the video](https://youtu.be/MgPgezwGlEE)."
     - when: "2018"
       what: "Emprende ConCiencia: From Science to Social Impact Award"
       where: National Ministry of Science and Technology (INVAP), Argentina
+    - when: "2018"
+      what: National finalist, SingularityU Argentina Global Impact Challenge
+      where: Singularity University
+      note: For C3D.
     - when: "2017"
       what: Metropolitan Fund of Arts, Culture and Science Award
       where: Buenos Aires
