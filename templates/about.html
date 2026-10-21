@@ -23,6 +23,9 @@
   </div>
   <div class="band-body">
     <ul class="profile-links">
+      {% if site.email %}
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      {% endif %}
       {% for link in site.links or [] %}
       <li><a href="{{ link.url }}">{{ link.label }}</a></li>
       {% endfor %}

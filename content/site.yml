@@ -12,8 +12,9 @@ me: Gonzalez Barrios
 # Used for the preview image when the link is shared.
 url: "https://galalucia.com"
 
-# Leave empty to keep your email off the site.
-email: ""
+# Your email. It appears in the footer of every page, on the About page and at the
+# top of the CV and its PDF. Leave empty ("") to keep your email off the site.
+email: gala@vt.edu
 
 # Profiles. They appear in the footer of every page and on the About page.
 links:
@@ -35,7 +36,7 @@ scholar: https://scholar.google.com/citations?user=GgLFF_MAAAAJ&hl=en
 
 # Your CV as a PDF, with a "Download PDF" button on the CV and About pages.
 # GitHub makes it from the CV page every time you publish (see README),
-# so it always matches cv.yml. It never includes a phone number or email.
+# so it always matches cv.yml. It shows your email (above) but never a phone number.
 cv_pdf: assets/cv/Gala-Lucia-Gonzalez-Barrios-CV.pdf
 
 # Your photo on the About page, and its description for people who can't see it.

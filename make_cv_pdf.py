@@ -6,8 +6,8 @@
     python make_cv_pdf.py --save   # also updates the copy kept in assets/cv/
 
 It prints the CV page with Chrome or Chromium, using the page's print layout:
-black on white, no menus, your name and website at the top. Contact details
-other than the website and LinkedIn are never included.
+black on white, no menus, and your name, email, website and LinkedIn at the top.
+A phone number is never included.
 GitHub runs this automatically when it publishes the site (.github/workflows/pages.yml).
 """
 import argparse

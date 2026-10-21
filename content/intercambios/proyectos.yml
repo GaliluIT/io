@@ -39,6 +39,7 @@
   image: assets/intercambios/c3d/01.jpg
   alt: Renders del C3D, una esfera blanca con aberturas pentagonales y las letras IT.
   alt_en: Renderings of the C3D, a white sphere with pentagonal openings and the letters IT.
+  link: projects/c3d.html
   video: https://youtu.be/s8OdWUvlXhc
 
 - title: Eterófono
@@ -67,6 +68,7 @@
   image: assets/intercambios/espectro-de-la-voz/01.jpg
   alt: El panel de presentación de Intercambios Transorgánicos en la instalación, con el logo verde del programa.
   alt_en: The Intercambios Transorgánicos introduction panel at the installation, with the program's green logo.
+  link: projects/el-espectro-de-la-voz.html
 
 - title: Orquesta de laptops telemática
   title_en: Telematic laptop orchestra

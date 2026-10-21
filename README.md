@@ -6,7 +6,7 @@ A small static site for GitHub Pages. All the text lives in `content/`, the imag
 
 | To change | Edit |
 |---|---|
-| Name, tagline, profile links (LinkedIn, Instagram…), the 3D object | `content/site.yml` |
+| Name, tagline, email, profile links (LinkedIn, Instagram…), the 3D object | `content/site.yml` |
 | About text | `content/about.en.md` and `content/about.es.md` (the home page shows the first paragraph, the About page all of it) |
 | Your photo on the About page | `assets/about/portrait.jpg`, and its description `portrait_alt` in `content/site.yml` |
 | Publications (home page and CV) | `content/publications.yml` (`lang: en` or `lang: es` picks the column) |
@@ -31,7 +31,7 @@ python build.py
 python make_cv_pdf.py --save
 ```
 
-`--save` updates the copy kept in `assets/cv/`. The PDF shows your name, website and LinkedIn at the top, and never a phone number or email.
+`--save` updates the copy kept in `assets/cv/`. The PDF shows your name, email (`email` in `content/site.yml`), website and LinkedIn at the top, and never a phone number.
 
 ## Intercambios Transorgánicos page (Spanish and English)
 

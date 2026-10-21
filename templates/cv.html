@@ -4,7 +4,7 @@
 {% block main %}
 <div class="print-head">
   <p class="print-name">{{ site.name }}</p>
-  <p>Curriculum vitae · {{ site.url | replace("https://", "") }}{% for link in site.links or [] %}{% if link.label == "LinkedIn" %} · {{ link.url | replace("https://www.", "") | replace("https://", "") | trim("/") }}{% endif %}{% endfor %} · Updated {{ updated }}</p>
+  <p>Curriculum vitae · {% if site.email %}{{ site.email }} · {% endif %}{{ site.url | replace("https://", "") }}{% for link in site.links or [] %}{% if link.label == "LinkedIn" %} · {{ link.url | replace("https://www.", "") | replace("https://", "") | trim("/") }}{% endif %}{% endfor %} · Updated {{ updated }}</p>
 </div>
 <div class="cv-head">
   <h1 class="page-title">CV</h1>

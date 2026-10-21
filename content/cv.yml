@@ -26,12 +26,15 @@
     - when: "2017"
       what: Diploma in Transdisciplinary Integral Neurorehabilitation
       where: Universidad del Museo Social Argentino (UMSA)
+      note: V.E.T.A.S. transdisciplinary program, declared of interest by UNESCO.
+      check: "Your older Spanish CV dates this 2014 – 2015."
     - when: "2013"
       what: Art therapy
       where: Primera Escuela Argentina de Arteterapia
     - when: "2007"
       what: Music
       where: Colegio Nacional de Música Juan Pedro Esnaola, Buenos Aires
+      note: Secondary school diploma; flute and piano.
 
 - title: Publications
   from: publications
@@ -53,7 +56,7 @@
     - when: 2019 – present
       what: "[Fonocosa](projects/fonocosa.html), including Fonocosa Aldo and Fonocosa Furinge (2023)"
     - when: 2017 – 2019
-      what: "C3D, lead designer"
+      what: "[C3D](projects/c3d.html), lead designer"
       note: Digital-art tool for physical therapy focused on motivation and identity restoration; national awards in 2017 and 2018.
 
 - title: Awards, fellowships and funding
@@ -78,16 +81,32 @@
       what: Full PhD Scholarship and Graduate Research Assistantship
       where: Virginia Tech
     - when: "2019"
+      what: Seed Capital Fund (Fondo Semilla)
+      where: National Ministry of Production, Argentina
+    - when: "2019"
       what: National finalist, Samsung Innovation Award (Samsung Innova)
       where: Samsung, Argentina
       note: "For C3D. [Watch the video](https://youtu.be/MgPgezwGlEE)."
     - when: "2018"
       what: "Emprende ConCiencia: From Science to Social Impact Award"
       where: National Ministry of Science and Technology (INVAP), Argentina
+      note: For C3D.
+      check: Your older Spanish CV also lists a 2019 Emprende ConCiencia win. Add 2019 here if that's right.
     - when: "2018"
       what: National finalist, SingularityU Argentina Global Impact Challenge
       where: Singularity University
       note: For C3D.
+    - when: "2018"
+      what: "Second place, Global Impact category, #VosLoHacés"
+      where: Government of the City of Buenos Aires
+    - when: "2018"
+      what: Second place, UNTREF Emprende
+      where: UNTREF
+    - when: "2018"
+      what: Metropolitan Fund of Arts, Culture and Science, research grant
+      where: Buenos Aires
+      note: "To make the [Inclusion program at Flexible](projects/flexible-inclusion.html) replicable in other institutions."
+      check: Your older CV gives this grant as August 2018. If it is the same grant as the 2017 award below, merge the two.
     - when: "2017"
       what: Metropolitan Fund of Arts, Culture and Science Award
       where: Buenos Aires
@@ -127,13 +146,16 @@
     - when: "2024"
       what: "Harmonizing Humanity: Developing an Interdisciplinary Approach to Voice Restoration Through Human-Centered Design"
       where: IIPPE Conference, Istanbul, Türkiye
+    - when: "2019"
+      what: "Two micro-talks: *Hiperstición* and *Intemperie*"
+      where: MicroCharlas, Parque Paradigma, Museo Sívori, Buenos Aires
     - when: 2017 – 2019
       what: "C3D: A Novel Tool for Physical Therapy Focused on Motivation and Identity Restoration Through Digital Art"
-      where: Iberdiscap; INVAP; Metabody; Expo Medical, Salud Innova Tech (2019); XIV Jornada de Salud e Informática, Hospital Italiano (2019)
+      where: "Iberdiscap; INVAP; Metabody; Expo Medical, Salud Innova Tech (2019; talk: *El futuro de la rehabilitación*); XIV Jornada de Salud e Informática, Hospital Italiano (2019)"
       note: "[Interview at Expo Medical, 2019 (video)](https://www.youtube.com/watch?v=X6vigr5jd0U)"
     - when: "2016"
       what: "Electromechanical Non-functional Prosthetics: Augmented Post-humanities"
-      where: Friedrich Nietzsche International Conference, Universidad Complutense de Madrid, Spain
+      where: "8th Conference on Posthumanism and Control Technologies, Friedrich Nietzsche International Conference (Congreso Nietzsche Complutense), Universidad Complutense de Madrid, Spain"
     - when: "2016"
       what: Foro Internacional Metabody, with Jaime del Val
       where: Centros Culturales de España in Buenos Aires and Montevideo
@@ -143,13 +165,16 @@
     - when: "2015"
       what: Round table, Ars Electronica Híbrido series
       where: Centro Cultural Kirchner (CCK), Buenos Aires
+    - when: "2012"
+      what: Foro de Sociedades Digitales SD#12
+      where: Paraná, Entre Ríos, Argentina
 
 - title: Positions
   items:
     - when: 2015 – present
-      what: Director, [Intercambios Transorgánicos](intercambios/index.html)
+      what: Founder and director, [Intercambios Transorgánicos](intercambios/index.html)
       where: MUNTREF Centro de Arte y Ciencia (UNTREF), Buenos Aires
-      note: "Lead a transdisciplinary arts–science research program (projects include Archivoz and Fonocosa); supervised 40+ interdisciplinary students; facilitate international workshops on technology, art and social justice. [Profile at MUNTREF Arte y Ciencia](http://arteyciencia.untref.edu.ar/gala-lucia-gonzalez)."
+      note: "Lead a transdisciplinary arts–science research program (projects include Archivoz and Fonocosa); supervised 40+ interdisciplinary students; facilitate international workshops on technology, art and social justice. Researcher at MUNTREF Arte y Ciencia since November 2014, with a standing art and science research fellowship; led a team of five and handled R&D, management and funding. [Profile at MUNTREF Arte y Ciencia](http://arteyciencia.untref.edu.ar/gala-lucia-gonzalez)."
     - when: 2023 – present
       what: Graduate Research Assistant
       where: Virginia Tech
@@ -157,6 +182,9 @@
       what: Science & Technology Consultant, Tecnópolis
       where: Ministry of Culture, Argentina
       note: Produced large-scale public science exhibitions for 50,000+ daily visitors; coordinated Argentina–China and Argentina–France cultural and scientific cooperation projects.
+    - when: "2018"
+      what: Artist's assistant and production of works for Sebastián Tedesco
+      where: Buenos Aires
     - when: 2014 – 2015
       what: Art therapist, transdisciplinary neurorehabilitation
       where: "[AlunCo Internacional](http://www.aluncointernacional.org/), Buenos Aires"
@@ -173,26 +201,62 @@
       what: "*Transcontinental Grapevines*, telematic laptop orchestra (co-director, with Ivica Ico Bukvic)"
       where: UNTREF and Virginia Tech
     - when: "2021"
-      what: "*El espectro de la voz*, interactive installation with AudioStellar"
+      what: "[*El espectro de la voz*](projects/el-espectro-de-la-voz.html), interactive installation with AudioStellar"
       where: Tecnópolis, BIENALSUR, Buenos Aires
+    - when: "2020"
+      what: Podcast Intercambios Transorgánicos, pandemic edition
     - when: "2019"
-      what: Performance *Disponible*
+      what: "Performance [*Disponible*](projects/disponible.html)"
       where: "[Laboratorio de Periodismo Performático](http://www.revistaanfibia.com/laboratorio-periodismo-performatico/portfolio/sinfonia-big-data/), Revista Anfibia: Fundación Cazadores, Buenos Aires, and Festival de Pensamiento Contemporáneo, Rosario"
     - when: "2018"
-      what: Performance *Esperando que vuelvan las utopías*
+      what: "Performance [*Esperando que vuelvan las utopías*](projects/esperando-que-vuelvan-las-utopias.html)"
       where: MAR Museo de Arte Contemporáneo, Mar del Plata
     - when: "2018"
       what: Selected artist and fellow, *Fronteras Suspendidas* production clinic
       where: "[MAR Museo de Arte Contemporáneo](https://www.gba.gob.ar/museomar/cl%C3%ADnica_de_producci%C3%B3n_fronteras_suspendidas_2018), Mar del Plata"
+      note: The clinic ended with an exhibition at the museum on November 24, 2018.
     - when: "2018"
-      what: Concept and texts, *Naturaleza Muerta*, GRUPO DOMA
-      where: "[Sala Cronopios, Centro Cultural Recoleta](http://centroculturalrecoleta.org/agenda/naturaleza-muerta), Buenos Aires"
+      what: "Curator, [*Naturaleza Muerta*](projects/naturaleza-muerta.html), GRUPO DOMA"
+      where: "[Sala Cronopios, Centro Cultural Recoleta](http://centroculturalrecoleta.org/agenda/naturaleza-muerta), Buenos Aires, May – September 2018"
+      note: Concept, texts for the works and the exhibition catalogue.
+    - when: "2017"
+      what: "[C3D](projects/c3d.html) installation by Intercambios Transorgánicos, *Invernautas*"
+      where: Club Cultural Matienzo, Buenos Aires
+    - when: "2016"
+      what: "*Influence*, immersive installation by Intercambios Transorgánicos"
+      where: Expo 3F Innova, Caseros, Buenos Aires
     - when: "2016"
       what: "*Intercambios Transorgánicos*, exhibition"
-      where: MUNTREF Arte y Ciencia, Tecnópolis, Buenos Aires
+      where: MUNTREF Arte y Ciencia, Tecnópolis, Buenos Aires, July – October 2016
     - when: "2016"
-      what: Installation and performance launching the C3D controller
+      what: "Installation and performance launching the [C3D](projects/c3d.html) controller"
       where: Ciclo Delectro, Casa Temenos, Buenos Aires
+    - when: "2016"
+      what: Interactive video and text installation, FLISoL 2016
+      where: Buenos Aires
+      note: With Martín Aranda.
+    - when: "2014"
+      what: Lighting for ceramic sculptures by Mayra Heras Levy, exhibition *Fueron sueños*
+    - when: "2013"
+      what: Dancer, video dance *Bóveda compartida*
+      note: Directed by Javier Orellano.
+    - when: 2012, 2013
+      what: Coordinator of interactive artworks, Ponele electronic music festival
+      where: Buenos Aires
+      note: "Benefit festival: for the En Polleras reading and writing recovery workshop at Hospital Moyano (2012) and for Un Minuto de Vos (2013)."
+
+- title: Music
+  items:
+    - when: "2014"
+      what: Session flutist, solo album by composer Juan Pablo Barone Gea
+    - when: "2013"
+      what: Session flutist, solo album by pianist Martín Perino
+    - when: 2004 – 2006
+      what: Soprano, choir of the Escuela de Música Juan Pedro Esnaola
+      note: Concerts in churches, cathedrals and the Faculty of Law, Buenos Aires; repertoire included Mozart's *Requiem*, Brahms's *Nänie*, Mendelssohn's psalms and Dvořák's *Kyrie*.
+    - when: 2004 – 2006
+      what: Second flute, wind ensemble of the Escuela de Música Juan Pedro Esnaola
+      note: Tangos and classical music.
 
 - title: Teaching and mentoring
   items:
@@ -211,11 +275,31 @@
       what: Mentor and Instructor
       where: UNTREF, Buenos Aires
       note: "Mentor undergraduates in electronic arts, computer engineering and sound engineering toward interdisciplinary research careers; teach interactive systems and interface design. Created and directed MUNTREF's [Art and Science Project Mentoring Program](http://untref.edu.ar/muntref/es/noticias/la-universidad-promueve-la-pasion-por-la-ciencia-y-la-investigacion-entre-los-jovenes-estudiantes/) ([information session, 2019](http://untref.edu.ar/muntref/es/noticias/charla-informativa-programa-de-mentorias-y-desarrollo/))."
+    - when: "2017"
+      what: Teacher, ICT and Technology
+      where: Colegio Alas, El Palomar, Buenos Aires
+      check: Add the end year.
+    - when: "2017"
+      what: Coordinator and teacher, technology summer camp
+      where: Escuela de Diseño Multimedial Da Vinci, with iLab, Buenos Aires
     - when: "2016"
-      what: Creator and general coordinator, Inclusion program
+      what: "Creator and general coordinator, [Inclusion program](projects/flexible-inclusion.html)"
       where: "[Flexible](https://flexiblelab.wordpress.com/), a laboratory of art, play, science and technology, Buenos Aires"
       note: "Also designed and coordinated its teaching content. [About the Inclusion program](https://flexiblelab.wordpress.com/2016/02/19/flexible-inclusion/)."
       check: Add the end year (the program started in March 2016).
+    - when: "2016"
+      what: Workshop leader, Art and Electronics days, iLab
+      where: Colegio Alas, El Palomar (with Arduino), and Newlands School, Adrogué
+    - when: "2014"
+      what: Workshop leader, building Núcleo modular systems
+      where: University extension program, UNTREF
+      note: With Francisco Tripodi Arley and Santiago Villa.
+    - when: 2012 – 2013
+      what: Early childhood music teacher
+      where: Tempo Escuela de Música, Buenos Aires
+    - when: 2011 – 2012
+      what: Bilingual teacher (art, music, play and learning)
+      where: Gymboree Play & Music, Buenos Aires
 
 - title: Leadership and service
   items:
@@ -233,11 +317,52 @@
       what: Organizer, First Young Researchers' Day
       where: Department of Art and Culture, UNTREF
 
+- title: Workshops and further training
+  items:
+    - when: "2019"
+      what: Mentoring and technical training in product development and impact business models
+      where: MAYMA
+    - when: "2019"
+      what: Facebook and Instagram training for technology entrepreneurs
+      where: Samsung Innova
+    - when: "2018"
+      what: Mentoring and methodology training in product development and impact business models
+      where: Emprende ConCiencia, INVAP and National Ministry of Production
+    - when: "2017"
+      what: Contemporary dance with Margarita Molfino
+      where: Estudio Diana Szeinblum, Buenos Aires
+    - when: "2017"
+      what: Singing with Marion Moss
+    - when: "2015"
+      what: "METABODY workshop: metabody and mobile architectures, with Jaime del Val"
+      where: Centro Cultural de España, Santiago de Chile
+    - when: "2015"
+      what: Workshop with Sadam Fujioka
+      where: Museo de la Universidad Nacional de Tres de Febrero (MUNTREF)
+    - when: "2013"
+      what: "Integrating Knowledge on Disability, Diversity and Inclusion: From Clinical-Neurological Language to Collective Action"
+      where: Fundación AlunCo
+      note: Taught by Daniel Bistritsky.
+    - when: "2013"
+      what: Building analog synthesizer modules, with Manuel Osorio
+      where: Departamento Único de Asuntos Intuitivos, Buenos Aires
+    - when: "2012"
+      what: Stretching instructor certification
+      where: CIENSA
+
 - title: Skills
   items:
     - what: Research methods
       note: Participatory and disability-led design, co-design workshops, photovoice, scoping reviews (Covidence, inter-rater reliability), qualitative analysis, policy analysis, human-subjects protocol design.
+    - what: Design and transfer
+      note: Design of experiences, technologies, applications and programs; knowledge-transfer strategies; art, science and technology content for health, education and environmental impact; interactive content and products for the private sector; team coordination, teaching and mentoring.
     - what: Technical
-      note: Python, JavaScript, Pure Data / PD-L2Ork / WebPd, MediaPipe, TensorFlow.js, speech audio preprocessing (voice activity detection, dereverberation evaluation), Arduino, Processing, 3D modeling and printing, Ableton Live.
+      note: Python, JavaScript, HTML, CSS, Pure Data / PD-L2Ork / WebPd, Max, Processing, Hydra, VSynth, MediaPipe, TensorFlow.js, speech audio preprocessing (voice activity detection, dereverberation evaluation), Arduino and analog and digital electronics, 3D modeling and printing.
+    - what: Sound and video
+      note: Composition, sound production and post-production (Ableton Live, Cubase, Nuendo, Audacity); video editing and post-production (Premiere, Photoshop); flute, piano and voice.
+    - what: Educational technology
+      note: Scratch, LEGO Mindstorms, Arduino, littleBits.
+    - what: Project management
+      note: Agile methods, Trello, Miro, Excel, Google Drive.
     - what: Languages
       note: Spanish (native), English (fluent).

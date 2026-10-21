@@ -44,6 +44,7 @@
   kind: On C3D and Intercambios Transorgánicos
   lang: es
   url: https://www.lanacion.com.ar/tecnologia/rehabilitacion-universidad-tres-febrero-usan-arte-ciencia-nid2316536
+  projects: [c3d]
 
 - year: "2019"
   outlet: Diagnóstico y Debate TV
@@ -51,6 +52,7 @@
   kind: Video interview, Expo Medical
   lang: es
   url: https://www.youtube.com/watch?v=X6vigr5jd0U
+  projects: [c3d]
 
 - year: "2017"
   outlet: Mundo UNTREF

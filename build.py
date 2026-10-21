@@ -280,10 +280,10 @@ MOVED = {
     "intercambios/proyectos/fonocosa-aldo.html": "projects/fonocosa-aldo.html",
     "intercambios/proyectos/archivoz.html": "projects/archivoz.html",
     "intercambios/proyectos/orquesta-telematica.html": "projects/l2ork.html",
-    "intercambios/proyectos/c3d.html": "intercambios/index.html",
+    "intercambios/proyectos/c3d.html": "projects/c3d.html",
     "intercambios/proyectos/eterofono.html": "intercambios/index.html",
     "intercambios/proyectos/juego-de-ingenio.html": "intercambios/index.html",
-    "intercambios/proyectos/espectro-de-la-voz.html": "intercambios/index.html",
+    "intercambios/proyectos/espectro-de-la-voz.html": "projects/el-espectro-de-la-voz.html",
 }
 
 
