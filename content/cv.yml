@@ -25,12 +25,12 @@
     - when: "2017"
       what: Diploma in Transdisciplinary Integral Neurorehabilitation
       where: Universidad del Museo Social Argentino (UMSA)
-    - what: Art therapy
+    - when: "2013"
+      what: Art therapy
       where: Primera Escuela Argentina de Arteterapia
-      check: Add the year and qualification, or remove.
-    - what: Music
-      where: Colegio Juan Pedro Esnaola, Buenos Aires
-      check: Add the years and qualification, or remove.
+    - when: "2007"
+      what: Music
+      where: Colegio Nacional de Música Juan Pedro Esnaola, Buenos Aires
 
 - title: Publications
   from: publications
