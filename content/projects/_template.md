@@ -18,6 +18,12 @@ status: ""           # optional label next to the years, e.g. Work in progress
 # cover: assets/projects/my-project/cover.jpg
 # cover_alt: What the cover shows.
 
+# Optional: a large image at the top of the page.
+# hero:
+#   src: assets/projects/my-project/hero.jpg
+#   alt: What it shows.
+#   caption: Optional caption.
+
 # Videos: YouTube or Vimeo links, or a short silent .mp4 in assets/.
 # Give each one a title. A file also needs a poster (a still) and a description of what happens in it.
 videos:

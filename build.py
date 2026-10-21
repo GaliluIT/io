@@ -213,6 +213,12 @@ def project_view(p, root):
         size = f"{path.stat().st_size / 1e6:.1f} MB" if path.exists() else ""
         downloads.append({"label": d.get("label") or path.name, "url": asset(d.get("url"), root, where),
                           "kind": path.suffix.lstrip(".").upper(), "size": size, "note": d.get("note") or ""})
+    hero = None
+    if m.get("hero"):
+        hero = {"src": asset(m["hero"].get("src"), root, where), "alt": m["hero"].get("alt") or "",
+                "caption": md_inline(m["hero"].get("caption"))}
+        if not hero["alt"]:
+            note(where, "add an alt to the hero image")
     model = None
     if m.get("model"):
         model = {"src": asset(m["model"].get("src"), root, where), "alt": m["model"].get("alt") or "",
@@ -232,6 +238,7 @@ def project_view(p, root):
         "details": [(k, md_inline(v)) for k, v in (m.get("details") or {}).items()],
         "links": links,
         "downloads": downloads,
+        "hero": hero,
         "model": model,
         "body": rewrite_body_links(md_block(p["body"]), root),
         "check": m.get("check"),

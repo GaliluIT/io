@@ -23,6 +23,10 @@ images:
     alt: Participants stand and talk in a hallway during a break in the hackathon.
     caption: PD-L2Ork hackathon, 2024.
 links:
+  - label: First PD-L2Ork Hackathon at Virginia Tech (2024)
+    url: https://l2ork.bukvic.net/main/first-pd-l2ork-hackathon-at-virginia-tech/
+  - label: Second PD-L2Ork Hackathon (2025), presentation on Microsoft Sway
+    url: https://sway.cloud.microsoft/TSSxRbxaE3N2Vkpq
   - label: "Transcontinental Grapevines (2022), on YouTube"
     url: https://youtu.be/u7vI-jbOju0
   - label: "L2Ork fall 2023 concert, with the premiere of Territorio Prismático, on YouTube"
@@ -43,4 +47,4 @@ Since 2024 I have directed the L2Ork International Community, a telematic perfor
 
 ## PD-L2Ork hackathons
 
-In 2024 and 2025 I designed and ran the PD-L2Ork hackathons, funded by ICAT–ICTAS grants. The aim was to widen who takes part in creative coding by bringing in students from Historically Black Colleges and Universities and minority-serving institutions in the region.
+In 2024 and 2025 I designed and ran the PD-L2Ork hackathons, funded by ICAT–ICTAS grants. The aim was to widen who takes part in creative coding by bringing in students from Historically Black Colleges and Universities and minority-serving institutions in the region. More about the [first hackathon, in 2024](https://l2ork.bukvic.net/main/first-pd-l2ork-hackathon-at-virginia-tech/), and the [second, in 2025](https://sway.cloud.microsoft/TSSxRbxaE3N2Vkpq).

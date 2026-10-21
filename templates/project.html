@@ -18,6 +18,13 @@
     {% if drafts %}{{ todo(project.check) }}{% endif %}
   </header>
 
+  {% if project.hero %}
+  <figure class="project-hero">
+    <img src="{{ project.hero.src }}" alt="{{ project.hero.alt }}">
+    {% if project.hero.caption %}<figcaption>{{ project.hero.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
   <div class="project-media{% if project.model %} has-model{% endif %}">
   {% for v in project.videos %}{{ video(v, "video-" ~ loop.index) }}{% endfor %}
 

@@ -3,6 +3,12 @@ title: Fonocosa
 years: 2019 – present
 summary: An assistive speech interface for people who have had a laryngectomy that grew into research on the voice as a marker of identity, and into a series of works.
 order: 3
+cover: assets/projects/fonocosa/05.jpg
+cover_alt: "A pink and orange image of two faces in profile, facing each other, with the words “Las voces diversas solo son extrañas en una sociedad que todo lo normaliza” over it."
+hero:
+  src: assets/projects/fonocosa/05.jpg
+  alt: "A pink and orange image of two faces in profile, facing each other, with the words “Las voces diversas solo son extrañas en una sociedad que todo lo normaliza” over it."
+  caption: "“Diverse voices are only strange in a society that normalizes everything.”"
 details:
   Role: Director
   Where: Intercambios Transorgánicos, MUNTREF Centro de Arte y Ciencia (UNTREF), Buenos Aires
@@ -20,9 +26,6 @@ images:
   - src: assets/projects/fonocosa/04.jpg
     alt: "A dense process collage: sketches of the device, screenshots of sound software, anatomical images and handwritten words."
     caption: Process collage.
-  - src: assets/projects/fonocosa/05.jpg
-    alt: "Text over a pink and orange gradient: “Las voces diversas solo son extrañas en una sociedad que todo lo normaliza.”"
-    caption: "“Diverse voices are only strange in a society that normalizes everything.”"
 check: Add a video (for example the Fonocosa collage video) once it is on YouTube or Vimeo.
 ---
 Fonocosa is a project I direct at [Intercambios Transorgánicos](../intercambios/index.html). It began as an attempt to offer technical alternatives to the electrolarynx, the device many people use to speak after a laryngectomy. It had two goals: to give that new voice a wider range of sound, and to free the hand from the work of producing voice through a prosthetic device. The first prototype was a collar with a motion sensor that controls a synthesis module; the sound travels to the mouth, where a small speaker plays it so the person can shape it into words.
