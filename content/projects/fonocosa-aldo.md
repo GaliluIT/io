@@ -8,6 +8,9 @@ videos:
     title: "Fonocosa Aldo, short documentary"
 details:
   Year: "2023"
+  Artist: Gala Lucia Gonzalez Barrios
+  3D design: "[Emilia Lopez](https://www.instagram.com/tailordrift/)"
+  3D printing: "[Pablo Rosi](https://www.instagram.com/tailordrift/)"
   Medium: Digital modeling, 3D print and sound
   Series: "[Fonocosa](fonocosa.html)"
   3D model: "[Turn it on the home page](../index.html)"
@@ -39,5 +42,7 @@ On one side, the work is a digital model and 3D print based on deformations of t
 The work is an exercise in imagining voice prostheses, diverse voices, and forms of sound and body that break away from the normative logic of bodies and their experiences, and it engages with the idea of embracing the monstrous.
 
 The installation can be shown in several ways. Ideally the sculpture stands in the center of a dark room under a spotlight, with the sound surrounding the whole room; the piece lasts from the start to the end of the audio.
+
+The sculpture was modeled in 3D by [Emilia Lopez](https://www.instagram.com/tailordrift/) and printed by [Pablo Rosi](https://www.instagram.com/tailordrift/).
 
 The 3D object on the [home page](../index.html) is Fonocosa Aldo: you can turn it with a mouse, a finger or the arrow keys.
