@@ -211,6 +211,7 @@
     - when: "2018"
       what: "Performance [*Esperando que vuelvan las utopías*](projects/esperando-que-vuelvan-las-utopias.html)"
       where: MAR Museo de Arte Contemporáneo, Mar del Plata
+      note: Site-specific durational performance at the final exhibition of the *Fronteras Suspendidas* production clinic.
     - when: "2018"
       what: Selected artist and fellow, *Fronteras Suspendidas* production clinic
       where: "[MAR Museo de Arte Contemporáneo](https://www.gba.gob.ar/museomar/cl%C3%ADnica_de_producci%C3%B3n_fronteras_suspendidas_2018), Mar del Plata"
