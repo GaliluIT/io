@@ -9,6 +9,8 @@ details:
   Clinic: "Directed by Sebastián Tedesco and Mariano Luna. 2018 guests: Jorge Macchi, Carlos Herrera, Eduardo Stupia, Diana Wechsler, Segismundo de Vajay, Esteban Álvarez and Larisa Zmud"
   Objects: "A lifeguard's chair of recovered wood, two meters high, built by a member of the lifeguards' union; binoculars made in the USSR; a hammer-and-sickle pin; a dress in a mid-twentieth-century style"
 links:
+  - label: "The work's own page (2019, rebuilt in 2026), in Spanish and English"
+    url: https://galiluit.github.io/esperando-que-vuelvan-las-utopias/
   - label: Fronteras Suspendidas production clinic, MAR (2018)
     url: https://www.gba.gob.ar/museomar/cl%C3%ADnica_de_producci%C3%B3n_fronteras_suspendidas_2018
 check: "Add photos of the performance (Fig. 1–4 in your 2019 essay, Esperando Que Vuelvan Las Utopías.docx). Your notes give the length as eight hours in some places and five in others; add the right one if you want it shown."
@@ -45,3 +47,5 @@ cambia las direcciones de cualquier rumbo.
 *The global market is driven by the 67% of people around the planet who live below the poverty line, and by the hundreds of thousands trapped in precarious work for life. My waiting covers me in dignity. It builds inside me as I act. There is no silence. Now, I am not silent. Now, I am not waiting. I am active and available. Evoking. And calling. To the power that is pure potential in every subjugated body, to the intelligence atrophied in every mind turned sub-genius. A fire of such magnitude purifies, changes the direction of any course.*
 
 The work resists the resignation that this system is the only one possible, and brings back the idea of utopias: dreams of a just and equal future worth building, even when they seem impossible. It also holds a doubt about itself: a resistance staged inside the museum, within the logic of the art system, risks being a passive one. Is it possible to resist the logic of the art market from inside it? The piece leaves that question open, as a longing, with the body as its material.
+
+In 2019 I made a web version of the piece for the course Tecnología Hipermedial. It held the text *Humane, demasiado humane* and memes that, when clicked, led along different paths. Those files were not kept; the work's [own page](https://galiluit.github.io/esperando-que-vuelvan-las-utopias/) rebuilds it from its texts.
