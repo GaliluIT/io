@@ -11,6 +11,35 @@
 - title: Equipo
   title_en: Team
   people:
+    - name: Emmanuel Misley
+      role: Ingeniería acústica
+      role_en: Acoustic engineering
+    - name: Matías Di Bernardo
+      role: Ingeniería acústica e ingeniería en computación
+      role_en: Acoustic engineering and computer engineering
+    - name: Simon Mellino
+      role: Ingeniería acústica
+      role_en: Acoustic engineering
+    - name: Ignacio Correa
+      role: Ingeniería acústica
+      role_en: Acoustic engineering
+    - name: Milagros Galli
+      role: Comunicación y artes electrónicas
+      role_en: Communication and electronic arts
+    - name: Ignacio Perez Garea
+      role: Comunicación y artes electrónicas
+      role_en: Communication and electronic arts
+
+- title: Colaboradores
+  title_en: Collaborators
+  people:
+    - name: Manuel Luna
+    - name: Mathias Gatti
+    - name: Juan Martín Sesali
+
+- title: Integrantes anteriores
+  title_en: Former members
+  people:
     - name: Matilde Lila Grillo
       role: Escenografía y artes electrónicas
       role_en: Scenography and electronic arts
@@ -29,17 +58,12 @@
     - name: Alejandro Sosa Welford
       role: Desarrollo técnico de Archivoz
       role_en: Technical development of Archivoz
-
-- title: Colaboradores
-  title_en: Collaborators
-  people:
-    - name: Manuel Luna
-    - name: Mathias Gatti
-    - name: Juan Martín Sesali
-
-- title: Integrantes anteriores
-  title_en: Former members
-  people:
+    - name: Milagros Dimasi
+      role: Artes electrónicas y comunicación
+      role_en: Electronic arts and communication
+    - name: Mateo Garcia
+      role: Ingeniería acústica
+      role_en: Acoustic engineering
     - name: Martín Aranda
       role: Integración de nuevas tecnologías en salud y educación
       role_en: Bringing new technologies into health and education
@@ -74,7 +98,6 @@
       role: Escritura creativa y comunicación
       role_en: Creative writing and communication
     - name: Mauro Módica
-    - name: Matías Di Bernardo
     - name: Cristian De Paoli
     - name: Alma Laprida
     - name: Aida Pantano
