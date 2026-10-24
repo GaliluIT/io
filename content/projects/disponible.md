@@ -8,9 +8,9 @@ details:
   Shown at: Fundación Cazadores, Buenos Aires; Festival de Pensamiento Contemporáneo, Rosario (2019)
 videos:
   - url: https://youtu.be/vzv1mu9GYJU
-    title: Disponible (2019)
+    title: "Periodismo Performático - Sinfonía Big Data"
 links:
-  - label: Laboratorio de Periodismo Performático, Revista Anfibia
+  - label: Sinfonía Big Data, Laboratorio de Periodismo Performático, Revista Anfibia
     url: http://www.revistaanfibia.com/laboratorio-periodismo-performatico/portfolio/sinfonia-big-data/
 images:
   - src: assets/projects/disponible/01.jpg
