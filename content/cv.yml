@@ -206,7 +206,7 @@
     - when: "2020"
       what: Podcast Intercambios Transorgánicos, pandemic edition
     - when: "2019"
-      what: "Performance [*Disponible*](projects/disponible.html)"
+      what: "Performance [*Disponible*](projects/disponible.html), in *Sinfonía Big Data*, Colectivo Dominio Público"
       where: "[Laboratorio de Periodismo Performático](http://www.revistaanfibia.com/laboratorio-periodismo-performatico/portfolio/sinfonia-big-data/), Revista Anfibia: Fundación Cazadores, Buenos Aires, and Festival de Pensamiento Contemporáneo, Rosario"
     - when: "2018"
       what: "Performance [*Esperando que vuelvan las utopías*](projects/esperando-que-vuelvan-las-utopias.html)"
