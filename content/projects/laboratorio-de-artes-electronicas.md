@@ -3,17 +3,29 @@ title: Laboratorio de Artes Electrónicas
 years: 2021 – 2022
 summary: "The *Electronic Arts Lab* at Tecnópolis: a stage and a workshop that gave the leading role to the people in Argentina who create where art, science and technology meet. I made it as an advisor and producer for the Ministry of Culture, with Gala Cacchione and Mariana Albornoz."
 order: 2
-cover: assets/projects/laboratorio-de-artes-electronicas/hero.jpg
-cover_alt: "Three large LED screens forming an angled wall in a dark hall, glowing with blue and aqua brushstroke-like visuals."
+cover: assets/projects/laboratorio-de-artes-electronicas/07-niebla.jpg
+cover_alt: "People lie on cushions on the floor while a projected white, shell-like form glows through haze."
 hero:
-  src: assets/projects/laboratorio-de-artes-electronicas/hero.jpg
-  alt: "A dark hall with three large LED screens forming an angled wall, glowing with blue and aqua brushstroke-like visuals that reflect on the floor; violet lights at their base."
-  caption: The Lab's screens at Tecnópolis, November 2021.
+  src: assets/projects/laboratorio-de-artes-electronicas/hero-live-coding.jpg
+  alt: "Silhouettes of the audience, one of them filming with a phone, against a giant LED screen of swirling cyan, pink and red visuals overlaid with lines of live code."
+  caption: Live coding with Hydra on the Lab's opening weekend, November 13, 2021.
 videos:
+  - url: assets/projects/laboratorio-de-artes-electronicas/arte-digital.mp4
+    poster: assets/projects/laboratorio-de-artes-electronicas/arte-digital-poster.jpg
+    title: Digital art at the Lab (Tecnópolis video)
+    description: "A 35-second video with music: a dancer and a passerby move in front of giant screens of streaming pink and blue light, hands patch modular synthesizers and play a DJ controller, and musicians perform on the stage, before the Tecnópolis and Ministry of Culture logos."
   - url: assets/projects/laboratorio-de-artes-electronicas/festival-2022.mp4
     poster: assets/projects/laboratorio-de-artes-electronicas/festival-2022-poster.jpg
     title: "Festival at the Lab, Atardeceres en Tecnópolis, summer 2022 (video by Argentina's Ministry of Culture)"
     description: "A 26-second video with music: visitors play arcade games and a table football game glowing under black light, a panel speaks in front of a projection, hands play a synthesizer, the audience watches the screens, and two hosts wave to the camera, before the Atardeceres 2022 and Ministry of Culture logos."
+  - url: assets/projects/laboratorio-de-artes-electronicas/taller-ia.mp4
+    poster: assets/projects/laboratorio-de-artes-electronicas/taller-ia-poster.jpg
+    title: A workshop on artificial intelligence at the Lab (Tecnópolis video, in Spanish)
+    description: "A 56-second video, spoken in Spanish with Spanish subtitles: a producer of the Lab invites visitors to discover what is happening with technology and national industry; artists present their workshop on artificial intelligences, made with algorithms they worked with all the previous year, next to large screens showing neural networks; young participants say the tool interests them because it is new; and the producer closes: come to the Lab, where we cure your technophobia."
+  - url: assets/projects/laboratorio-de-artes-electronicas/cianotipia.mp4
+    poster: assets/projects/laboratorio-de-artes-electronicas/cianotipia-poster.jpg
+    title: Cyanotype and pinhole photography workshops at the Lab (Tecnópolis video, in Spanish)
+    description: "A 58-second video, spoken in Spanish with Spanish subtitles: workshop leaders explain cyanotype, chemicals that react to ultraviolet light to print plants and shapes, mixing art with the natural world, and pinhole photography with cameras built from recycled materials; visitors print, build cameras and develop images, and one leader says it is a discipline anyone can practice."
 details:
   Role: Advisor and producer, Tecnópolis, Ministry of Culture of Argentina
   With: Gala Cacchione and Mariana Albornoz

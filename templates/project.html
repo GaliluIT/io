@@ -25,7 +25,7 @@
   </figure>
   {% endif %}
 
-  <div class="project-media{% if project.model %} has-model{% endif %}">
+  <div class="project-media{% if project.model %} has-model{% elif project.videos|length > 1 %} has-videos{% endif %}">
   {% for v in project.videos %}{{ video(v, "video-" ~ loop.index) }}{% endfor %}
 
   {% if project.model %}
