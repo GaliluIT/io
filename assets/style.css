@@ -541,7 +541,7 @@ a.card-link:hover .card-title { color: var(--accent); text-decoration-color: cur
   gap: 0 1.5rem;
   align-items: start;
 }
-.project-media.has-videos .video video { width: 100%; max-height: none; }
+.project-media.has-videos .video video { width: auto; max-width: 100%; max-height: min(70vh, 560px); }
 @media (max-width: 760px) {
   .project-media.has-videos { grid-template-columns: minmax(0, 1fr); }
 }

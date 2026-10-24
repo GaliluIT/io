@@ -6,6 +6,10 @@ order: 4
 videos:
   - url: https://youtu.be/L-kwkI7Hb78
     title: "Fonocosa Aldo, short documentary"
+  - url: assets/projects/fonocosa-aldo/visita.mp4
+    poster: assets/projects/fonocosa-aldo/visita-poster.jpg
+    title: Visitors at the opening, June 2023
+    description: "A 7-second vertical video with room sound: visitors walk through the gallery toward the wall where the sculpture hangs, one of them puts on the headphones and listens, standing still in front of the work."
 details:
   Year: "2023"
   Artist: Gala Lucia Gonzalez Barrios
@@ -28,16 +32,28 @@ images:
   - src: assets/projects/fonocosa-aldo/03.jpg
     alt: Close-up of the unfinished grey print, with thin, flowing tendrils branching out from a ribbed center.
     caption: Detail of the 3D print.
-  - src: assets/projects/fonocosa-aldo/04.jpg
-    alt: "Installation plan: a rendering of a white gallery with the sculpture hanging on one wall and headphones mounted on another, with a bench in between."
-    caption: "Installation plan: sculpture, headphones and bench."
-  - src: assets/projects/fonocosa-aldo/05.jpg
-    alt: Installation plan with a dark silhouette of a visitor wearing headphones plugged into a box on the wall, and the sculpture hanging on the wall behind.
-    caption: "Installation plan: listening to the sound piece."
+  - src: assets/projects/fonocosa-aldo/07.jpg
+    alt: "Fonocosa Aldo hanging on a white gallery wall: the black, glittering sculpture with horns and curling tendrils at the top and a mouthpiece at the bottom; below it, its pale shadow spreads on the wall like a branching tree."
+    caption: Fonocosa Aldo and its shadow, June 2023.
+  - src: assets/projects/fonocosa-aldo/08.jpg
+    alt: "A visitor with white headphones stands by the wall, listening, next to a small framed image; the sculpture hangs on the wall to his left."
+    caption: Listening to the sound piece, June 2023.
+  - src: assets/projects/fonocosa-aldo/09.jpg
+    alt: "Seen over the shoulder of a man wearing large white headphones, the sculpture hangs on the white wall ahead, with its shadow below."
+    caption: The voice in the headphones, the sculpture on the wall.
+  - src: assets/projects/fonocosa-aldo/10.jpg
+    alt: "A wide view of the gallery: a large brown ceramic vessel on a white plinth in the foreground, works hanging on the walls behind, and Fonocosa Aldo small and dark on the white wall to the right."
+    caption: Fonocosa Aldo in the exhibition, June 2023.
+  - src: assets/projects/fonocosa-aldo/11.jpg
+    alt: "A woman with dark hair tilts her head back under the hanging sculpture, eyes closed and mouth open around its mouthpiece, as if singing into it."
+    caption: Singing into the mouthpiece, at the opening.
+  - src: assets/projects/fonocosa-aldo/12.jpg
+    alt: "Five people stand smiling together in the corner of the gallery, under the hanging sculpture; to the right, the small framed image and the headphones on the wall."
+    caption: At the opening, June 15, 2023.
 links:
   - label: Short documentary on YouTube
     url: https://youtu.be/L-kwkI7Hb78
-check: "Add more video if you have it: the work installed, or an excerpt of the sound piece."
+check: "Add the name and place of the exhibition where it was shown in June 2023, and who is in the opening photo, if you want them named."
 ---
 Fonocosa Aldo is one of a series of artistic experiments within [Fonocosa](fonocosa.html), built on the questions that have driven my research since 2019: what makes a voice human? What sets it apart from an artificial voice? Which aspects of the voice are part of our identity? What are the limits and possibilities of technology for reproducing the traits that make a human voice someone's own?
 
