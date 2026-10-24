@@ -209,6 +209,7 @@ def project_view(p, root, press=()):
             "src": asset(im.get("src"), root, where),
             "caption": md_inline(im.get("caption")),
             "alt": alt,
+            "wide": bool(im.get("wide")),  # wide: true = the full width of the page
         })
     if m.get("cover"):
         cover = {"src": asset(m["cover"], root, where), "alt": m.get("cover_alt") or ""}

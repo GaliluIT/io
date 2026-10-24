@@ -36,6 +36,7 @@ videos:
 
 # alt: what the picture shows, for people who can't see it (required).
 # caption: optional context under the picture: what, where, when, credit.
+# wide: true makes a picture take the full width of the page, above the rest.
 images:
   - src: assets/projects/my-project/01.jpg
     alt: Two people play a laptop instrument on a dark stage.

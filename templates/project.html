@@ -75,7 +75,7 @@
   <section class="gallery-section" aria-label="Images">
     <ul class="gallery">
       {% for im in project.images %}
-      <li>
+      <li{% if im.wide %} class="is-wide"{% endif %}>
         <figure>
           <a href="{{ im.src }}" data-viewer><img src="{{ im.src }}" alt="{{ im.alt }}" loading="lazy"></a>
           {% if im.caption %}<figcaption>{{ im.caption }}</figcaption>{% endif %}
