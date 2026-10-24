@@ -21,9 +21,6 @@ details:
   When: Opened in November 2021; back in 2022 as a permanent space of the park
   Visitors: 18,700 in the eight days it opened in 2021, and 21,500 more in the summer of 2022
 images:
-  - src: assets/projects/laboratorio-de-artes-electronicas/01-estaciones.jpg
-    alt: "A row of workstations under a lit truss: computers and TV screens on a long counter, white chairs and a few visitors in violet light."
-    caption: The workshop stations, 2021.
   - src: assets/projects/laboratorio-de-artes-electronicas/02-live-coding.jpg
     alt: "A crowd stands before a large LED screen showing swirling colors overlaid with lines of code; at right, a modular synthesizer glows on a table."
     caption: Live coding with Hydra on the opening weekend, November 2021.
