@@ -3,8 +3,8 @@ title: C3D
 years: 2016 – 2019
 summary: A wireless controller that turns movement into spatialized image and sound, designed as an aid for neurorehabilitation, with a focus on motivation and identity. Made with Intercambios Transorgánicos.
 order: 2
-cover: assets/projects/c3d/03.jpg
-cover_alt: Two 3D-printed spheres with round openings, one fluorescent yellow and one white, on a green cutting mat.
+cover: assets/projects/c3d/cover.jpg
+cover_alt: "The silhouette of a person in a red fleece, seen from behind, holding the C3D sphere above their head with both hands against a green and yellow projected grid."
 videos:
   - url: https://youtu.be/s8OdWUvlXhc
     title: The C3D controller
@@ -58,11 +58,47 @@ images:
     alt: "A golden grid of triangles projected on a wall, with the shadow of an arm reaching across it."
     caption: "*Invernautas*, 2017."
   - src: assets/projects/c3d/14.jpg
-    alt: "A dense projection of colorful wireframe diamonds on black, crossed by two wide beams of rainbow light."
+    alt: "A dense projection of colorful wireframe diamonds on black, crossed by two wide beams of rainbow light, with a glowing diamond where they meet."
     caption: "*Invernautas*, 2017."
   - src: assets/projects/c3d/15.jpg
     alt: "A dark room with a large projection on the wall: soft overlapping circles of light and a bright half-moon at the bottom."
     caption: The installation room, *Invernautas*, 2017.
+  - src: assets/projects/c3d/16.jpg
+    alt: "A wall projection of colorful wireframe diamonds on black, crossed by two wide beams of rainbow light that meet near the center."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/17.jpg
+    alt: "Green, pink and white wireframe diamonds float across a dark projection, crossed by rainbow beams along the top and from top to bottom."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/18.jpg
+    alt: "Two smiling people with dark hair and scarves give a thumbs-up, their faces covered in projected lines and colors."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/19.jpg
+    alt: "A black 3D-printed sphere with hexagonal openings glows orange-red in the dark from the lights inside it."
+    caption: "The C3D, lit from inside, *Invernautas*, 2017."
+  - src: assets/projects/c3d/20.jpg
+    alt: "A purple projection of a curved grid of squares and diagonals over a soft yellow shape."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/21.jpg
+    alt: "Close-up of the projection: bright green grid lines over a glowing sphere drawn in dots, with stripes of color below."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/22.jpg
+    alt: "A green projected grid of triangles, with a dark octagonal shape and a pale blue circle in its upper left."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/23.jpg
+    alt: "The dark silhouette of a small child, in profile, against a pale green projection of a fine grid."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/24.jpg
+    alt: "A small child in a striped sweater, seen from behind on an adult's shoulders, faces a wall crossed by green lines."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/25.jpg
+    alt: "A small child, seen from behind, raises a fist toward a bright projection of colored stripes, yellow triangles and wireframe spheres, beside a man also seen from behind."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/26.jpg
+    alt: "The silhouette of a child against a projection of pink and yellow triangles, rainbow stripes and colorful wireframe spheres."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/27.jpg
+    alt: "A woman with a long ponytail, seen from behind, faces a green projected grid of triangles."
+    caption: "*Invernautas*, 2017."
 ---
 The 3D controller (C3D) is an interface developed entirely by the Intercambios Transorgánicos team, which I led as designer. It works as a therapeutic aid for patients with diagnoses ranging from neurological conditions with motor after-effects to genetic conditions. Together with other devices, it turns the user's movements into images and sounds that can be projected onto different surfaces.
 
