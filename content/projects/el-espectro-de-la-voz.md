@@ -3,10 +3,12 @@ title: El espectro de la voz
 years: "2021"
 summary: "*The Spectrum of the Voice*, an interactive installation made with AudioStellar at Tecnópolis: visitors recorded everyday Argentine words, and artificial intelligence placed their voices in a constellation they could explore with their bodies, grouped by something other than gender, age, health or other traditional, normatively defined characteristics."
 order: 1
+cover: assets/projects/el-espectro-de-la-voz/cover.jpg
+cover_alt: "A girl with curly hair and a mint-green bow, seen from behind in a pink jacket, raises her hand toward a screen filled with clusters of colored dots."
 hero:
-  src: assets/projects/el-espectro-de-la-voz/hero.jpg
-  alt: "A girl with curly hair and a mint-green bow, seen from behind in a pink jacket, raises her hand toward a screen filled with clusters of colored dots, on a gray wall painted with a network of colored circles and lines."
-  caption: A visitor moves through the constellation of voices, Tecnópolis, 2021.
+  src: assets/projects/el-espectro-de-la-voz/05-palabras.jpg
+  alt: "A dark page dotted with colored points, headed “Recitá las siguientes palabras al micrófono” (Say the following words into the microphone), with the words: pa, ma, estás flasheando, ahre, bancame un toque, ¿todo bien?, ni idea, ¿entendés?, ¿qué onda?, ¿viste?, ¿qué hacés?, buenardo, escuchá, cualca, che, metele, buenas, qué sé yo, hola, amiga, mirá vos, amigo, dale, no, sí, ok, and the vowels a, e, i, o, u."
+  caption: "The page of words visitors read when they recorded their voices: everyday Argentine expressions, from *che* and *dale* to *bancame un toque*, and the five vowels."
 videos:
   - url: assets/projects/el-espectro-de-la-voz/anuncio.mp4
     poster: assets/projects/el-espectro-de-la-voz/anuncio-poster.jpg
@@ -27,9 +29,9 @@ details:
   Shown at: "Espacio MUNTREF, Tecnópolis, Buenos Aires, from October 2021, as part of BIENALSUR"
   Software: "[AudioStellar](https://audiostellar.xyz/), free software for sound experimentation"
 images:
-  - src: assets/projects/el-espectro-de-la-voz/05-palabras.jpg
-    alt: "A dark page dotted with colored points, headed “Recitá las siguientes palabras al micrófono” (Say the following words into the microphone), with the words: pa, ma, estás flasheando, ahre, bancame un toque, ¿todo bien?, ni idea, ¿entendés?, ¿qué onda?, ¿viste?, ¿qué hacés?, buenardo, escuchá, cualca, che, metele, buenas, qué sé yo, hola, amiga, mirá vos, amigo, dale, no, sí, ok, and the vowels a, e, i, o, u."
-    caption: "The page of words visitors read when they recorded their voices: everyday Argentine expressions, from *che* and *dale* to *bancame un toque*, and the five vowels."
+  - src: assets/projects/el-espectro-de-la-voz/cover.jpg
+    alt: "A girl with curly hair and a mint-green bow, seen from behind in a pink jacket, raises her hand toward a screen filled with clusters of colored dots, on a gray wall painted with a network of colored circles and lines."
+    caption: A visitor moves through the constellation of voices, Tecnópolis, 2021.
   - src: assets/projects/el-espectro-de-la-voz/02.jpg
     alt: A visitor, seen from behind, raises a hand toward a screen filled with clusters of colored dots.
     caption: Each point is a recorded voice; close points sound alike.
