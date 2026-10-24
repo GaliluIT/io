@@ -77,8 +77,14 @@
       {% for im in project.images %}
       <li{% if im.wide %} class="is-wide"{% endif %}>
         <figure>
+          {% if im.video %}
+          <video src="{{ im.video }}"{% if im.poster %} poster="{{ im.poster }}"{% endif %} controls preload="metadata" playsinline
+                 aria-label="{{ im.title }}"{% if im.description %} aria-describedby="gallery-video-{{ loop.index }}"{% endif %}></video>
+          <figcaption>{% if im.title %}{{ im.title }}. {% endif %}{% if im.description %}<span id="gallery-video-{{ loop.index }}">{{ im.description }}</span>{% endif %}</figcaption>
+          {% else %}
           <a href="{{ im.src }}" data-viewer><img src="{{ im.src }}" alt="{{ im.alt }}" loading="lazy"></a>
           {% if im.caption %}<figcaption>{{ im.caption }}</figcaption>{% endif %}
+          {% endif %}
         </figure>
       </li>
       {% endfor %}

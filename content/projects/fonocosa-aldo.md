@@ -3,13 +3,10 @@ title: Fonocosa Aldo
 years: "2023"
 summary: A 3D-printed sculpture based on deformations of the anatomy of the human larynx, with a sound piece made from the voice of a person who lost their larynx.
 order: 4
+gallery: by-shape
 videos:
   - url: https://youtu.be/L-kwkI7Hb78
     title: "Fonocosa Aldo, short documentary"
-  - url: assets/projects/fonocosa-aldo/visita.mp4
-    poster: assets/projects/fonocosa-aldo/visita-poster.jpg
-    title: Visitors at the opening, June 2023
-    description: "A 7-second vertical video with room sound: visitors walk through the gallery toward the wall where the sculpture hangs, one of them puts on the headphones and listens, standing still in front of the work."
 details:
   Year: "2023"
   Artist: Gala Lucia Gonzalez Barrios
@@ -22,16 +19,6 @@ images:
   - src: assets/projects/fonocosa-aldo/01.jpg
     alt: "Fonocosa Aldo against a white wall: a dark grey, glittering 3D print with a mouthpiece at the bottom, a ribbed, throat-like body, and horns and curling tendrils at the top. Its blurred shadow falls on the wall to the right."
     caption: Fonocosa Aldo.
-    wide: true
-  - src: assets/projects/fonocosa-aldo/06.jpg
-    alt: "Fonocosa Aldo installed in a gallery: the black, glittering sculpture hangs in the air in front of a white wall. To its right, on the wall, a small framed image of the piece, white headphones hanging from a hook, and a wall label."
-    caption: Fonocosa Aldo installed, with the headphones for the sound piece.
-  - src: assets/projects/fonocosa-aldo/02.jpg
-    alt: A gloved hand holds a curved grey piece of the print while it is being finished.
-    caption: Finishing the 3D print.
-  - src: assets/projects/fonocosa-aldo/03.jpg
-    alt: Close-up of the unfinished grey print, with thin, flowing tendrils branching out from a ribbed center.
-    caption: Detail of the 3D print.
   - src: assets/projects/fonocosa-aldo/07.jpg
     alt: "Fonocosa Aldo hanging on a white gallery wall: the black, glittering sculpture with horns and curling tendrils at the top and a mouthpiece at the bottom; below it, its pale shadow spreads on the wall like a branching tree."
     caption: Fonocosa Aldo and its shadow, June 2023.
@@ -41,6 +28,9 @@ images:
   - src: assets/projects/fonocosa-aldo/09.jpg
     alt: "Seen over the shoulder of a man wearing large white headphones, the sculpture hangs on the white wall ahead, with its shadow below."
     caption: The voice in the headphones, the sculpture on the wall.
+  - src: assets/projects/fonocosa-aldo/06.jpg
+    alt: "Fonocosa Aldo installed in a gallery: the black, glittering sculpture hangs in the air in front of a white wall. To its right, on the wall, a small framed image of the piece, white headphones hanging from a hook, and a wall label."
+    caption: Fonocosa Aldo installed, with the headphones for the sound piece.
   - src: assets/projects/fonocosa-aldo/10.jpg
     alt: "A wide view of the gallery: a large brown ceramic vessel on a white plinth in the foreground, works hanging on the walls behind, and Fonocosa Aldo small and dark on the white wall to the right."
     caption: Fonocosa Aldo in the exhibition, June 2023.
@@ -50,6 +40,16 @@ images:
   - src: assets/projects/fonocosa-aldo/12.jpg
     alt: "Five people stand smiling together in the corner of the gallery, under the hanging sculpture; to the right, the small framed image and the headphones on the wall."
     caption: At the opening, June 15, 2023.
+  - video: assets/projects/fonocosa-aldo/visita.mp4
+    poster: assets/projects/fonocosa-aldo/visita-poster.jpg
+    title: Visitors at the opening, June 2023
+    description: "A 7-second vertical video with room sound: visitors walk through the gallery toward the wall where the sculpture hangs, one of them puts on the headphones and listens, standing still in front of the work."
+  - src: assets/projects/fonocosa-aldo/02.jpg
+    alt: A gloved hand holds a curved grey piece of the print while it is being finished.
+    caption: Finishing the 3D print.
+  - src: assets/projects/fonocosa-aldo/03.jpg
+    alt: Close-up of the unfinished grey print, with thin, flowing tendrils branching out from a ribbed center.
+    caption: Detail of the 3D print.
 links:
   - label: Short documentary on YouTube
     url: https://youtu.be/L-kwkI7Hb78

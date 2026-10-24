@@ -60,6 +60,38 @@ def is_external(path):
     return re.match(r"^(https?:|mailto:|tel:|#|data:)", str(path)) is not None
 
 
+def image_size(path):
+    """Width and height of a JPEG or PNG in the repo, read from its header (no extra libraries)."""
+    try:
+        with open(ROOT / str(path).lstrip("/"), "rb") as f:
+            head = f.read(24)
+            if head[:8] == b"\x89PNG\r\n\x1a\n":
+                return int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+            if head[:2] != b"\xff\xd8":
+                return None
+            f.seek(2)
+            while True:
+                byte = f.read(1)
+                while byte and byte != b"\xff":
+                    byte = f.read(1)
+                while byte == b"\xff":
+                    byte = f.read(1)
+                if not byte:
+                    return None
+                marker = byte[0]
+                if marker == 0x01 or 0xD0 <= marker <= 0xD9:
+                    continue
+                length = int.from_bytes(f.read(2), "big")
+                if 0xC0 <= marker <= 0xCF and marker not in (0xC4, 0xC8, 0xCC):
+                    f.read(1)
+                    h = int.from_bytes(f.read(2), "big")
+                    w = int.from_bytes(f.read(2), "big")
+                    return w, h
+                f.seek(length - 2, 1)
+    except OSError:
+        return None
+
+
 def asset(path, root, where):
     """Link to a file inside the site, relative to the current page."""
     if not path:
@@ -199,24 +231,42 @@ def project_view(p, root, press=()):
     title = m.get("title", p["slug"])
     videos = m.get("videos") or ([m["video"]] if m.get("video") else [])
     images = []
+    # gallery: by-shape = horizontal pictures take the full width, vertical ones sit three in a row
+    by_shape = str(m.get("gallery") or "").strip().lower() == "by-shape"
     for im in m.get("images") or []:
         if isinstance(im, str):
             im = {"src": im}
+        if im.get("video"):
+            # A short video inside the gallery: video, poster (a still), title, description
+            size = image_size(im.get("poster")) if im.get("poster") else None
+            if not im.get("description"):
+                note(where, f"add a description of what happens in {im.get('video')}")
+            images.append({
+                "video": asset(im.get("video"), root, where),
+                "poster": asset(im.get("poster"), root, where) if im.get("poster") else "",
+                "title": im.get("title") or "",
+                "description": im.get("description") or "",
+                "wide": bool(im.get("wide")) or (by_shape and bool(size) and size[0] > size[1] * 1.05),
+            })
+            continue
         alt = im.get("alt") or plain(im.get("caption"))
         if not alt:
             note(where, f"add an alt (a description for people who can't see it) to {im.get('src')}")
+        size = image_size(im.get("src")) if by_shape else None
         images.append({
             "src": asset(im.get("src"), root, where),
             "caption": md_inline(im.get("caption")),
             "alt": alt,
-            "wide": bool(im.get("wide")),  # wide: true = the full width of the page
+            # wide: true = the full width of the page
+            "wide": bool(im.get("wide")) or (by_shape and bool(size) and size[0] > size[1] * 1.05),
         })
     if m.get("cover"):
         cover = {"src": asset(m["cover"], root, where), "alt": m.get("cover_alt") or ""}
         if not cover["alt"]:
             note(where, "add cover_alt, a description of the cover image")
-    elif images:
-        cover = {"src": images[0]["src"], "alt": images[0]["alt"]}
+    elif any(i.get("src") for i in images):
+        first = next(i for i in images if i.get("src"))
+        cover = {"src": first["src"], "alt": first["alt"]}
     else:
         cover = None
     links = []
