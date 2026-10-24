@@ -149,6 +149,9 @@
     - when: "2019"
       what: "Two micro-talks: *Hiperstición* and *Intemperie*"
       where: MicroCharlas, Parque Paradigma, Museo Sívori, Buenos Aires
+    - when: "2018"
+      what: "Talk on [*Naturaleza Muerta*](projects/naturaleza-muerta.html) with Julián Manzelli and Orilo Blandini (DOMA), in conversation with curator Rodrigo Alonso"
+      where: Art Basel Cities Week, Centro Cultural Recoleta, Buenos Aires, September 9, 2018
     - when: 2017 – 2019
       what: "C3D: A Novel Tool for Physical Therapy Focused on Motivation and Identity Restoration Through Digital Art"
       where: "Iberdiscap; INVAP; Metabody; Expo Medical, Salud Innova Tech (2019; talk: *El futuro de la rehabilitación*); XIV Jornada de Salud e Informática, Hospital Italiano (2019)"

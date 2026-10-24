@@ -47,6 +47,15 @@
   projects: [laboratorio-de-artes-electronicas]
 
 - year: "2019"
+  outlet: Art Basel
+  title: "Art Basel Cities: Buenos Aires"
+  kind: With a photograph of our talk with DOMA and curator Rodrigo Alonso, p. 67
+  lang: en
+  url: https://galalucia.com/assets/projects/naturaleza-muerta/art-basel-cities-buenos-aires.pdf
+  projects: [naturaleza-muerta]
+  check: Check the year and the name of the Art Basel publication (the PDF was made in January 2019).
+
+- year: "2019"
   outlet: La Nación
   title: "Rehabilitación: en la Universidad de Tres de Febrero usan el arte y la ciencia para mejores terapias"
   kind: On C3D and Intercambios Transorgánicos
