@@ -1,7 +1,7 @@
 ---
 title: El espectro de la voz
 years: "2021"
-summary: "*The Spectrum of the Voice*, an interactive installation made with AudioStellar at Tecnópolis: visitors recorded everyday Argentine words, and artificial intelligence placed their voices in a constellation they could explore with their bodies, grouped by something other than gender or health."
+summary: "*The Spectrum of the Voice*, an interactive installation made with AudioStellar at Tecnópolis: visitors recorded everyday Argentine words, and artificial intelligence placed their voices in a constellation they could explore with their bodies, grouped by something other than gender, age, health or other traditional, normatively defined characteristics."
 order: 1
 hero:
   src: assets/projects/el-espectro-de-la-voz/hero.jpg
