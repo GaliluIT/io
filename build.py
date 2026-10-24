@@ -260,6 +260,21 @@ def project_view(p, root, press=()):
             # wide: true = the full width of the page
             "wide": bool(im.get("wide")) or (by_shape and bool(size) and size[0] > size[1] * 1.05),
         })
+    # process: a contact sheet of small pictures of how the work was made.
+    # Each opens large in the viewer. A file next to it ending in -t.jpg is used as the small version.
+    process = []
+    for im in m.get("process") or []:
+        if isinstance(im, str):
+            im = {"src": im}
+        src = str(im.get("src") or "")
+        alt = im.get("alt") or plain(im.get("caption"))
+        if not alt:
+            note(where, f"add an alt to the process picture {src}")
+        thumb = im.get("thumb") or (src[:-4] + "-t.jpg" if src.endswith(".jpg") else "")
+        if not thumb or not (ROOT / thumb.lstrip("/")).exists():
+            thumb = src
+        process.append({"src": asset(src, root, where), "thumb": asset(thumb, root, where),
+                        "alt": alt, "caption": md_inline(im.get("caption"))})
     if m.get("cover"):
         cover = {"src": asset(m["cover"], root, where), "alt": m.get("cover_alt") or ""}
         if not cover["alt"]:
@@ -303,6 +318,9 @@ def project_view(p, root, press=()):
         "details": [(k, md_inline(v)) for k, v in (m.get("details") or {}).items()],
         "links": links,
         "downloads": downloads,
+        "process": process,
+        "process_title": m.get("process_title") or "Process",
+        "process_intro": md_inline(m.get("process_intro")),
         "hero": hero,
         "press": [x for x in press if p["slug"] in x["projects"]],
         "model": model,

@@ -681,6 +681,23 @@ html.lb-open { overflow: hidden; }
 :root[data-theme="contrast"] .lb button { border: 2px solid #FFFFFF; background: #000000; }
 :root[data-theme="contrast"] .lb-caption, :root[data-theme="contrast"] .lb-count { color: #FFFFFF; }
 
+/* Process: a contact sheet of small pictures; each opens large in the viewer */
+.process-section { padding: 0 0 clamp(28px, 4vw, 48px); }
+.process-section h2 { margin: 0 0 0.4rem; font-family: var(--font-body); font-weight: 700; font-size: var(--s0); }
+.process-intro { margin: 0 0 1rem; max-width: var(--measure); font-size: var(--s-1); color: var(--muted); }
+.process-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(30%, 160px), 1fr));
+  gap: 8px;
+}
+.process-grid figure { margin: 0; }
+.process-grid a { display: block; cursor: zoom-in; }
+.process-grid img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.process-grid a:hover img { opacity: 0.88; }
+
 .pager {
   display: flex;
   justify-content: space-between;

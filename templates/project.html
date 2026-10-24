@@ -92,6 +92,23 @@
   </section>
   {% endif %}
 
+  {% if project.process %}
+  <section class="process-section" aria-labelledby="process-heading">
+    <h2 id="process-heading">{{ project.process_title }}</h2>
+    {% if project.process_intro %}<p class="process-intro">{{ project.process_intro }}</p>{% endif %}
+    <ul class="process-grid">
+      {% for im in project.process %}
+      <li>
+        <figure>
+          <a href="{{ im.src }}" data-viewer><img src="{{ im.thumb }}" alt="{{ im.alt }}" loading="lazy"></a>
+          {% if im.caption %}<figcaption class="visually-hidden">{{ im.caption }}</figcaption>{% endif %}
+        </figure>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {% if previous or next %}
   <nav class="pager" aria-label="More projects">
     {% if previous %}
