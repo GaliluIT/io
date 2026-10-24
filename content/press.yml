@@ -38,6 +38,14 @@
   url: https://andigital.com.ar/nota/136785/archivoz-un-proyecto-que-rescata-el-acento-argentino-en-la-ia/
   projects: [archivoz]
 
+- year: "2022"
+  outlet: Argentina.gob.ar, Presidencia de la Nación
+  title: Festival de Artes Electrónicas en Tecnópolis
+  kind: "News: Lupear, at the Laboratorio de Artes Electrónicas"
+  lang: es
+  url: https://www.argentina.gob.ar/noticias/festival-de-artes-electronicas-en-tecnopolis
+  projects: [laboratorio-de-artes-electronicas]
+
 - year: "2019"
   outlet: La Nación
   title: "Rehabilitación: en la Universidad de Tres de Febrero usan el arte y la ciencia para mejores terapias"

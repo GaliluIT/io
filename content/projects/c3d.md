@@ -36,6 +36,33 @@ images:
   - src: assets/projects/c3d/06.jpg
     alt: Two young people work at a desk with a laptop and two monitors.
     caption: Developing the companion software.
+  - src: assets/projects/c3d/07.jpg
+    alt: "In a dark room, a woman in a red jacket gives a thumbs-up in front of a wall covered in colorful wireframe diamonds and beams of light; in the foreground, the C3D sphere glows with red and green lights."
+    caption: The C3D, glowing in the foreground, at *Invernautas*, Club Cultural Matienzo, July 2017.
+  - src: assets/projects/c3d/08.jpg
+    alt: "A visitor in a knitted hat, seen from behind, raises a hand toward a large pale-green projection of interlaced lines on the wall of a small room."
+    caption: Testing the interface with projected images, *Invernautas*, 2017.
+  - src: assets/projects/c3d/09.jpg
+    alt: "Two small children, seen from behind in the dark, stretch their arms toward a blue projection of a grid and a glowing polyhedron."
+    caption: Children play with the projections, *Invernautas*, 2017.
+  - src: assets/projects/c3d/10.jpg
+    alt: "A small child, seen from behind on an adult's shoulders, faces a wall crossed by bright pink lines."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/11.jpg
+    alt: "The silhouette of a child, from behind, against a pale wall crossed by beams of rainbow light and small glowing diamonds."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/12.jpg
+    alt: "The dark silhouette of a person with curly hair, seen from behind, against a projection of colorful stripes and grids."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/13.jpg
+    alt: "A golden grid of triangles projected on a wall, with the shadow of an arm reaching across it."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/14.jpg
+    alt: "A dense projection of colorful wireframe diamonds on black, crossed by two wide beams of rainbow light."
+    caption: "*Invernautas*, 2017."
+  - src: assets/projects/c3d/15.jpg
+    alt: "A dark room with a large projection on the wall: soft overlapping circles of light and a bright half-moon at the bottom."
+    caption: The installation room, *Invernautas*, 2017.
 ---
 The 3D controller (C3D) is an interface developed entirely by the Intercambios Transorgánicos team, which I led as designer. It works as a therapeutic aid for patients with diagnoses ranging from neurological conditions with motor after-effects to genetic conditions. Together with other devices, it turns the user's movements into images and sounds that can be projected onto different surfaces.
 
@@ -43,4 +70,6 @@ The interface combines a playful, creative approach with real-time measurement o
 
 We started from a concrete problem: growing demand for neurorehabilitation and a lack of motivation among patients and professionals. Stroke is the leading cause of disability worldwide, and in Argentina, according to the national study on the profile of people with disabilities (INDEC, 2018), motor disabilities are the most common.
 
-The C3D was first shown in 2016, with a performance open to the public at the Ciclo Delectro in Buenos Aires, and was installed at *Invernautas*, at the Club Cultural Matienzo, in July 2017.
+The C3D was first shown in 2016, with a performance open to the public at the Ciclo Delectro in Buenos Aires.
+
+In July 2017 we took it to *Invernautas*, a cultural program for families in Buenos Aires during the winter school break, at the Club Cultural Matienzo. We set it up as interactive exhibitions and activities to test the interface with several visual and sound components: children and adults played with the controller, and the projections and sounds in the room answered their movements.
