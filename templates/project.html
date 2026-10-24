@@ -20,7 +20,7 @@
 
   {% if project.hero %}
   <figure class="project-hero">
-    <img src="{{ project.hero.src }}" alt="{{ project.hero.alt }}">
+    <a href="{{ project.hero.src }}" data-viewer><img src="{{ project.hero.src }}" alt="{{ project.hero.alt }}"></a>
     {% if project.hero.caption %}<figcaption>{{ project.hero.caption }}</figcaption>{% endif %}
   </figure>
   {% endif %}
@@ -77,7 +77,7 @@
       {% for im in project.images %}
       <li>
         <figure>
-          <a href="{{ im.src }}"><img src="{{ im.src }}" alt="{{ im.alt }}" loading="lazy"></a>
+          <a href="{{ im.src }}" data-viewer><img src="{{ im.src }}" alt="{{ im.alt }}" loading="lazy"></a>
           {% if im.caption %}<figcaption>{{ im.caption }}</figcaption>{% endif %}
         </figure>
       </li>
