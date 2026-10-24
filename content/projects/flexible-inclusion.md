@@ -3,6 +3,8 @@ title: Inclusion program at Flexible
 years: From 2016
 summary: "A program I created and coordinated at Flexible, a laboratory of art, play, science and technology in Buenos Aires, that builds on new teaching models to welcome mixed groups of children."
 order: 3
+cover: assets/projects/flexible-inclusion/cover.jpg
+cover_alt: "The Flexible + Inclusion poster: a geometric eye in pink, yellow and blue over a green circle, with dashed rays around it, above the words FLEXIBLE + INCLUSION on purple."
 details:
   Role: Creator and general coordinator; designer and coordinator of the teaching content
   Where: "[Flexible](https://flexiblelab.wordpress.com/), a laboratory of art, play, science and technology, Buenos Aires"
