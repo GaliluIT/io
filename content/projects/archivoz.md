@@ -13,6 +13,12 @@ images:
   - src: assets/projects/archivoz/01.jpg
     alt: "The Archivoz title screen: the word ARCHIVOZ and, below it, “Archivo de voces diversas”, over a green to purple gradient with small sound waveforms."
     caption: Archivoz, an archive of diverse voices.
+  - src: assets/projects/archivoz/02.jpg
+    alt: "Four people stand behind a wooden table under the INARIA sign (Instituto Argentino de Inteligencia Artificial); one holds up the award certificate. On the table, a gift bag; at the back, a display of books, lit in blue."
+    caption: Receiving the INARIA National Artificial Intelligence Award, 2025.
+  - src: assets/projects/archivoz/03.jpg
+    alt: "The INARIA award: an angular glass trophy engraved with the INARIA logo, on a base with a plaque that reads “Premio INARIA a la Inteligencia Artificial 2025”, against a blue background."
+    caption: The INARIA award trophy, 2025.
 links:
   - label: "Archivoz website: archivoz.org"
     url: https://archivoz.org/
