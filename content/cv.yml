@@ -8,13 +8,17 @@
 # A section with "from: publications" lists everything in publications.yml,
 # and one with "from: press" everything in press.yml.
 # Markdown works in what/where/note, e.g. [link text](https://...).
+#
+# The order and wording follow the CVs for the NYU and Cornell applications
+# (November 2026). Each thing appears once: a talk that is also a paper is
+# listed under Publications only, an award under Awards only, and so on.
 
 - title: Education
   items:
     - when: 2023 – May 2027 (expected)
-      what: PhD, Individualized Interdisciplinary PhD Program (IIPD)
+      what: PhD, Individualized Interdisciplinary PhD Program (IPhD)
       where: Virginia Tech
-      note: "Dissertation on voice, identity and disability-led technology design after total laryngectomy; preliminary examination passed. Advisor, Dr. Ashley Shew. Committee includes Dr. Fabián Prieto-Ñañez (STS) and Dr. Vrushali Angadi (Communication Sciences and Disorders, Radford University). Graduate certificates in Human-Computer Interaction (Department of Computer Science) and Science, Technology & Engineering in Public Policy (STEP)."
+      note: "Dissertation (working title): *Voice After Voice: Art, Technology and Politics After Total Laryngectomy*, on voice, identity and disability-led technology design after total laryngectomy. Advisor, Dr. Ashley Shew. Graduate certificates in Human-Computer Interaction (Department of Computer Science) and Science, Technology & Engineering in Public Policy (Department of Political Science)."
     - when: Sept – Dec 2025
       what: Visiting Scholar, Institute for Innovation and Public Purpose (IIPP)
       where: University College London
@@ -22,7 +26,6 @@
     - when: "2021"
       what: Licenciatura in Electronic Arts
       where: Universidad Nacional de Tres de Febrero (UNTREF), Buenos Aires
-      note: "Thesis: *Novel Methods in the Intersection of Art, Science, and Technology from a Complexity Paradigm: The Case of Intercambios Transorgánicos.*"
     - when: "2017"
       what: Diploma in Transdisciplinary Integral Neurorehabilitation
       where: Universidad del Museo Social Argentino (UMSA)
@@ -36,28 +39,190 @@
       where: Colegio Nacional de Música Juan Pedro Esnaola, Buenos Aires
       note: Secondary school diploma; flute and piano.
 
-- title: Publications
-  from: publications
+- title: Positions
+  items:
+    - when: 2015 – present
+      what: Founder and director, [Intercambios Transorgánicos](intercambios/index.html)
+      where: MUNTREF Centro de Arte y Ciencia (UNTREF), Buenos Aires
+      note: "Transdisciplinary arts–science research program (projects include Archivoz and Fonocosa); 40+ students supervised. Professor and researcher, leading a team of five, until 2023; ad honorem since then. [Profile at MUNTREF Arte y Ciencia](http://arteyciencia.untref.edu.ar/gala-lucia-gonzalez)."
+    - when: 2023 – present
+      what: Graduate Research Assistant
+      where: Virginia Tech
+    - when: 2021 – 2022
+      what: Science & Technology Advisor, Tecnópolis
+      where: Ministry of Culture, Argentina
+      note: "Produced large-scale public science exhibitions for 50,000+ daily visitors; coordinated Argentina–China and Argentina–France cultural and scientific cooperation projects. Co-created the [Laboratorio de Artes Electrónicas](projects/laboratorio-de-artes-electronicas.html) with Gala Cacchione and Mariana Albornoz."
+    - when: "2018"
+      what: Artist's assistant and production of works for Sebastián Tedesco
+      where: Buenos Aires
+    - when: 2014 – 2015
+      what: Art therapist, transdisciplinary neurorehabilitation
+      where: "[AlunCo Internacional](http://www.aluncointernacional.org/), Buenos Aires"
+      note: Therapeutic education program for children and adolescents, after art therapy internships at Fundación AlunCo (2007 – 2012).
+
+- title: Teaching and mentoring
+  items:
+    - when: "2026"
+      what: Research Supervisor, Singing Machine
+      where: Virginia Tech
+      note: Recruited (multi-round process, ~50 applicants) and supervise two undergraduate computer science research assistants.
+    - when: 2024, 2025
+      what: Director, PD-L2Ork Hackathons for HBCUs and MSIs
+      where: Virginia Tech
+      note: Designed and ran two consecutive annual hackathons to broaden participation from Historically Black Colleges and Universities and minority-serving institutions in the region.
+    - when: 2025 – present
+      what: Graduate School Application Mentor
+      where: Científico Latino
+    - when: 2015 – present
+      what: Mentor and Instructor
+      where: UNTREF, Buenos Aires
+      note: "Mentor undergraduates in electronic arts, computer engineering and sound engineering toward interdisciplinary research careers; teach interactive systems and interface design. Created and directed MUNTREF's [Art and Science Project Mentoring Program](http://untref.edu.ar/muntref/es/noticias/la-universidad-promueve-la-pasion-por-la-ciencia-y-la-investigacion-entre-los-jovenes-estudiantes/) ([information session, 2019](http://untref.edu.ar/muntref/es/noticias/charla-informativa-programa-de-mentorias-y-desarrollo/))."
+    - when: "2017"
+      what: Teacher, ICT and Technology
+      where: Colegio Alas, El Palomar, Buenos Aires
+      check: Add the end year.
+    - when: "2017"
+      what: Coordinator and teacher, technology summer camp
+      where: Escuela de Diseño Multimedial Da Vinci, with iLab, Buenos Aires
+    - when: "2016"
+      what: "Creator and general coordinator, [Inclusion program](projects/flexible-inclusion.html)"
+      where: "[Flexible](https://flexiblelab.wordpress.com/), a laboratory of art, play, science and technology, Buenos Aires"
+      note: "Also designed and coordinated its teaching content. [About the Inclusion program](https://flexiblelab.wordpress.com/2016/02/19/flexible-inclusion/)."
+      check: Add the end year (the program started in March 2016).
+    - when: "2016"
+      what: Workshop leader, Art and Electronics days, iLab
+      where: Colegio Alas, El Palomar (with Arduino), and Newlands School, Adrogué
+    - when: "2014"
+      what: Workshop leader, building Núcleo modular synthesizer systems
+      where: University extension program, UNTREF
+      note: With Francisco Tripodi Arley and Santiago Villa.
+    - when: 2012 – 2013
+      what: Early childhood music teacher
+      where: Tempo Escuela de Música, Buenos Aires
+    - when: 2011 – 2012
+      what: Bilingual teacher (art, music, play and learning)
+      where: Gymboree Play & Music, Buenos Aires
+
+- title: Exhibitions and performances
+  items:
+    - when: "2025"
+      what: "[*Interstellar*](https://nime.org/web_archive/2025/proceedings/17.html), NIME 2025 concert program"
+      where: International Conference on New Interfaces for Musical Expression, Australian National University, Canberra
+      note: Remote telematic performance by the L2Ork Tweeter International Ensemble.
+    - when: "2025"
+      what: "*Interstellar*, Virginia Tech New Music + Technology Festival"
+      where: The Cube, ICAT, Virginia Tech, April 4, 2025
+      note: With performers on site, in Buenos Aires and in North Carolina.
+    - when: "2024"
+      what: "[*Interstellar*](https://www.alexandriava.gov/go/5253), premiere"
+      where: Waterfront Park, Old Town Alexandria, Virginia, October 19, 2024
+      note: "Co-creator and performer. L2Ork International Ensemble, performers over 5,000 miles apart, with projection mapping by Thomas Tucker and Ivica Ico Bukvic. Commissioned by the City of Alexandria's Office of the Arts and inspired by StudioKCA's public artwork *Interstellar Influencer (Make an Impact)*."
+    - when: "2024"
+      what: "*Territorio Prismático*, telematic performance across three continents"
+      where: New Star Highball, Seoul, with performers in the Eastern US and Buenos Aires
+      note: Over 12,000 miles apart, the L2Ork International Ensemble's longest-distance performance.
+    - when: "2024"
+      what: "*8-bit Petal* and *Territorio Prismático*, International Conference on Auditory Display (ICAD 2024)"
+      where: EMPAC, Rensselaer Polytechnic Institute, Troy, NY
+      note: Telematic with Buenos Aires.
+    - when: "2024"
+      what: "*8-bit Petal*, New York City Electroacoustic Music Festival (NYCEMF 2024)"
+      where: New York
+      note: Co-creator and performer. L2Ork International Ensemble, telematic.
+    - when: "2023"
+      what: "[*Territorio Prismático*](https://www.youtube.com/live/Phr-F7VK-Gg), premiere"
+      where: L2Ork fall concert, Virginia Tech, December 5, 2023, telematic with UNTREF, Buenos Aires
+      note: Co-creator and performer.
+    - when: "2023"
+      what: "[*Fonocosa Aldo*](projects/fonocosa-aldo.html), Itaú National Award, finalist"
+      where: Córdoba, Argentina
+    - when: "2023"
+      what: "[*Transcontinental Grapevine*](https://nime.org/proceedings/2023/nime2023_music_1110.pdf), NIME 2023 music program"
+      where: International Conference on New Interfaces for Musical Expression, Mexico City
+      note: Virginia Tech L2Ork and UNTREF, telematic.
+    - when: "2023"
+      what: "*Transcontinental Grapevine*, Earth Day Model online festival"
+      where: April 22, 2023
+    - when: "2022"
+      what: "[*Transcontinental Grapevine*](https://youtu.be/u7vI-jbOju0), premiere (co-director, with Ivica Ico Bukvic)"
+      where: Virginia Tech and UNTREF, Buenos Aires, December 6, 2022
+      note: Telematic studio takes, December 9, 2022.
+    - when: "2021"
+      what: "[*El espectro de la voz*](projects/el-espectro-de-la-voz.html), interactive installation with AudioStellar"
+      where: Tecnópolis, BIENALSUR, Buenos Aires
+    - when: "2020"
+      what: Podcast Intercambios Transorgánicos, pandemic edition
+    - when: "2019"
+      what: "Performance [*Disponible*](projects/disponible.html), in *Sinfonía Big Data*, Colectivo Dominio Público"
+      where: "[Laboratorio de Periodismo Performático](http://www.revistaanfibia.com/laboratorio-periodismo-performatico/portfolio/sinfonia-big-data/), Revista Anfibia: Fundación Cazadores, Buenos Aires, and Festival de Pensamiento Contemporáneo, Rosario"
+    - when: "2018"
+      what: "Performance [*Esperando que vuelvan las utopías*](projects/esperando-que-vuelvan-las-utopias.html), as a selected artist and fellow of the *Fronteras Suspendidas* production clinic"
+      where: "[MAR Museo de Arte Contemporáneo](https://www.gba.gob.ar/museomar/cl%C3%ADnica_de_producci%C3%B3n_fronteras_suspendidas_2018), Mar del Plata"
+      note: Site-specific durational performance at the clinic's final exhibition at the museum, November 24, 2018.
+    - when: "2018"
+      what: "Curator, [*Naturaleza Muerta*](projects/naturaleza-muerta.html), GRUPO DOMA"
+      where: "[Sala Cronopios, Centro Cultural Recoleta](http://centroculturalrecoleta.org/agenda/naturaleza-muerta), Buenos Aires, May – September 2018"
+      note: Concept, texts for the works and the exhibition catalogue.
+    - when: "2017"
+      what: "[C3D](projects/c3d.html) installation by Intercambios Transorgánicos, *Invernautas*"
+      where: Club Cultural Matienzo, Buenos Aires
+    - when: "2016"
+      what: "*Influence*, immersive installation by Intercambios Transorgánicos"
+      where: Expo 3F Innova, Caseros, Buenos Aires
+    - when: "2016"
+      what: "*Intercambios Transorgánicos*, exhibition"
+      where: MUNTREF Arte y Ciencia, Tecnópolis, Buenos Aires, July – October 2016
+    - when: "2016"
+      what: "Installation and performance launching the C3D controller"
+      where: Ciclo Delectro, Casa Temenos, Buenos Aires
+      note: "[Video](https://youtu.be/s8OdWUvlXhc)."
+    - when: "2016"
+      what: Interactive video and text installation, FLISoL 2016
+      where: Buenos Aires
+      note: With Martín Aranda.
+    - when: "2014"
+      what: Lighting for ceramic sculptures by Mayra Heras Levy, exhibition *Fueron sueños*
+    - when: "2013"
+      what: Dancer, video dance *Bóveda compartida*
+      note: Directed by Javier Orellano.
+    - when: 2012, 2013
+      what: Coordinator of interactive artworks, Ponele electronic music festival
+      where: Buenos Aires
+      note: "Benefit festival: for the En Polleras reading and writing recovery workshop at Hospital Moyano (2012) and for Un Minuto de Vos (2013)."
 
 - title: Research and creative projects
   items:
     - when: 2025 – present
       what: "[Singing Machine](projects/singing-machine.html), lead researcher"
       note: Browser-based vocal instrument that lets people who have lost their larynx sing through mouth and hand movements captured by an ordinary webcam. Technical collaboration with Dr. Ivica Bukvic (Indiana University).
-    - when: Ongoing
+    - when: 2019 – present
       what: "[Archivoz](projects/archivoz.html), director"
-      note: Community-governed voice corpus and speech infrastructure responding to data extraction in speech synthesis. INARIA National AI Award, 2025.
+      note: Community-governed voice corpus and speech infrastructure responding to data extraction in speech synthesis.
     - when: 2026 – 2027
       what: "[Returning Sound](projects/returning-sound.html), collaborator"
-      note: With Shout at Cancer (UK), the Education University of Hong Kong and ICAT (Virginia Tech); premiere at the Hong Kong Academy for Performing Arts, March 2027.
+      note: With Shout at Cancer (UK), Hong Kong Baptist University and ICAT (Virginia Tech); premiere at the Hong Kong Academy for Performing Arts, March 2027; adaptation for the Cube (ICAT, Virginia Tech) with Uhura Bionics (Poland), planned for September 2027.
     - when: "2024"
       what: "[Shore Thing](projects/shore-thing.html), co-creator"
       note: Board game on sea level rise and shorelines for classrooms; 2024 a2RU Emerging Creatives Challenge Grant, with Abby Tuckett (RISD); A2RU Annual Conference, Rochester Institute of Technology.
     - when: 2019 – present
-      what: "[Fonocosa](projects/fonocosa.html), including Fonocosa Aldo and Fonocosa Furinge (2023)"
+      what: "[Fonocosa](projects/fonocosa.html), director"
+      note: An assistive speech interface for people who have had a laryngectomy that grew into research on the voice as a marker of identity, and into a series of works, including Fonocosa Aldo and Fonocosa Furinge (2023).
     - when: 2017 – 2019
       what: "[C3D](projects/c3d.html), lead designer"
-      note: Digital-art tool for physical therapy focused on motivation and identity restoration; national awards in 2017 and 2018.
+      note: Digital-art tool for physical therapy focused on motivation and identity restoration.
+
+- title: Publications
+  from: publications
+
+- title: Manuscripts in preparation
+  items:
+    - when: "2026"
+      what: "From Participatory Methods to the DisCoTec: Singing After Total Laryngectomy"
+      where: G. L. Gonzalez Barrios, A. Shew, O. Shuey, I. Bukvic and D. Merchant
+    - when: "2026"
+      what: Exploring Identity Restoration and Quality of Life After Total Laryngectomy
+      where: G. L. Gonzalez Barrios, L. Maxfield and V. Angadi
+      note: Scoping review; protocol registered on OSF (May 2026), screening in progress.
 
 - title: Awards, fellowships and funding
   items:
@@ -68,13 +233,11 @@
       what: Labs for Liberation Summer Institute Fellow, disability and design
       note: Selected from 300+ applicants.
     - when: "2025"
-      what: Visiting Scholarship, UCL Institute for Innovation and Public Purpose
-    - when: "2025"
       what: CFWPP Future of Work Student Summer Research Grant
       where: Virginia Tech (Singing Machine)
     - when: 2024, 2025
       what: ICAT–ICTAS Grants
-      where: Virginia Tech, PD-L2Ork hackathons for HBCUs and MSIs
+      where: Virginia Tech, for the PD-L2Ork hackathons
     - when: "2024"
       what: A2RU Grant for Transformative Cultural Change (team award)
     - when: "2023"
@@ -106,31 +269,18 @@
       what: Metropolitan Fund of Arts, Culture and Science, research grant
       where: Buenos Aires
       note: "To make the [Inclusion program at Flexible](projects/flexible-inclusion.html) replicable in other institutions."
-      check: Your older CV gives this grant as August 2018. If it is the same grant as the 2017 award below, merge the two.
-    - when: "2017"
-      what: Metropolitan Fund of Arts, Culture and Science Award
-      where: Buenos Aires
     - when: "2017"
       what: Innovation in Critical Technology Research Award
       where: UNTREF
 
-- title: Press
-  from: press
-
 - title: Selected presentations
   items:
-    - when: "2026"
-      what: "Re-voicing identity: Care ethics and the politics of unsilencing after total laryngectomy"
-      where: DRS2026, Edinburgh, UK
     - when: "2026"
       what: Invited seminar
       where: Institute of Visual Computing and Human-Centered Technology, Technische Universität Wien (TU Wien), Vienna, Austria
     - when: "2026"
       what: Invited seminar
       where: Seminar on Public Culture, Territory and Sustainable Development, Master's in Public Culture, Universidad Nacional de las Artes (UNA), Argentina
-    - when: "2025"
-      what: "Singing without a larynx: A vowel-based real-time interface for embodied vocal performance"
-      where: CMMR 2025, London, UK
     - when: "2025"
       what: Invited seminar
       where: UCL Interaction Centre (UCLIC), University College London, UK
@@ -155,13 +305,9 @@
     - when: 2017 – 2019
       what: "C3D: A Novel Tool for Physical Therapy Focused on Motivation and Identity Restoration Through Digital Art"
       where: "Iberdiscap; INVAP; Metabody; Expo Medical, Salud Innova Tech (2019; talk: *El futuro de la rehabilitación*); XIV Jornada de Salud e Informática, Hospital Italiano (2019)"
-      note: "[Interview at Expo Medical, 2019 (video)](https://www.youtube.com/watch?v=X6vigr5jd0U)"
-    - when: "2016"
-      what: "Electromechanical Non-functional Prosthetics: Augmented Post-humanities"
-      where: "8th Conference on Posthumanism and Control Technologies, Friedrich Nietzsche International Conference (Congreso Nietzsche Complutense), Universidad Complutense de Madrid, Spain"
     - when: "2016"
       what: Foro Internacional Metabody, with Jaime del Val
-      where: Centros Culturales de España in Buenos Aires and Montevideo
+      where: Centros Culturales de España in Buenos Aires, Argentina, and Montevideo, Uruguay
     - when: "2015"
       what: "Symposium ¿Descolonizando cuerpos? Cuerpo común y tecnologías plurales"
       where: Centro Cultural de España, Santiago de Chile
@@ -172,82 +318,23 @@
       what: Foro de Sociedades Digitales SD#12
       where: Paraná, Entre Ríos, Argentina
 
-- title: Positions
+- title: Leadership and service
   items:
-    - when: 2015 – present
-      what: Founder and director, [Intercambios Transorgánicos](intercambios/index.html)
-      where: MUNTREF Centro de Arte y Ciencia (UNTREF), Buenos Aires
-      note: "Lead a transdisciplinary arts–science research program (projects include Archivoz and Fonocosa); supervised 40+ interdisciplinary students; facilitate international workshops on technology, art and social justice. Researcher at MUNTREF Arte y Ciencia since November 2014, with a standing art and science research fellowship; led a team of five and handled R&D, management and funding. [Profile at MUNTREF Arte y Ciencia](http://arteyciencia.untref.edu.ar/gala-lucia-gonzalez)."
-    - when: 2023 – present
-      what: Graduate Research Assistant
+    - when: 2025 – 2026
+      what: President, Latin American and Iberian Graduate Student Association (LAIGSA)
       where: Virginia Tech
-    - when: 2021 – 2022
-      what: Science & Technology Consultant, Tecnópolis
-      where: Ministry of Culture, Argentina
-      note: "Produced large-scale public science exhibitions for 50,000+ daily visitors; coordinated Argentina–China and Argentina–France cultural and scientific cooperation projects. Advisor and producer of the [Laboratorio de Artes Electrónicas](projects/laboratorio-de-artes-electronicas.html) (2021–2022), with Gala Cacchione and Mariana Albornoz."
-    - when: "2018"
-      what: Artist's assistant and production of works for Sebastián Tedesco
-      where: Buenos Aires
-    - when: 2014 – 2015
-      what: Art therapist, transdisciplinary neurorehabilitation
-      where: "[AlunCo Internacional](http://www.aluncointernacional.org/), Buenos Aires"
-      note: Therapeutic education program for children and adolescents, after art therapy internships at Fundación AlunCo (2007 – 2012).
-
-- title: Exhibitions and performances
-  items:
-    - when: "2023"
-      what: Premiere of *Territorio Prismático*, L2Ork fall concert
-      where: Virginia Tech and UNTREF (telematic)
-    - when: "2023"
-      what: "[Fonocosa Aldo](projects/fonocosa-aldo.html) and Fonocosa Furinge"
+    - when: 2021 – present
+      what: Director, [L2Ork International Community](projects/l2ork.html)
+      note: Telematic performance network, Argentina–Mexico–USA.
+    - when: "2025"
+      what: Member and Annual Summit Mentor
+      where: Alliance for the Arts in Research Universities (A2RU)
     - when: "2022"
-      what: "*Transcontinental Grapevines*, telematic laptop orchestra (co-director, with Ivica Ico Bukvic)"
-      where: UNTREF and Virginia Tech
-    - when: "2021"
-      what: "[*El espectro de la voz*](projects/el-espectro-de-la-voz.html), interactive installation with AudioStellar"
-      where: Tecnópolis, BIENALSUR, Buenos Aires
-    - when: "2020"
-      what: Podcast Intercambios Transorgánicos, pandemic edition
-    - when: "2019"
-      what: "Performance [*Disponible*](projects/disponible.html), in *Sinfonía Big Data*, Colectivo Dominio Público"
-      where: "[Laboratorio de Periodismo Performático](http://www.revistaanfibia.com/laboratorio-periodismo-performatico/portfolio/sinfonia-big-data/), Revista Anfibia: Fundación Cazadores, Buenos Aires, and Festival de Pensamiento Contemporáneo, Rosario"
-    - when: "2018"
-      what: "Performance [*Esperando que vuelvan las utopías*](projects/esperando-que-vuelvan-las-utopias.html)"
-      where: MAR Museo de Arte Contemporáneo, Mar del Plata
-      note: Site-specific durational performance at the final exhibition of the *Fronteras Suspendidas* production clinic.
-    - when: "2018"
-      what: Selected artist and fellow, *Fronteras Suspendidas* production clinic
-      where: "[MAR Museo de Arte Contemporáneo](https://www.gba.gob.ar/museomar/cl%C3%ADnica_de_producci%C3%B3n_fronteras_suspendidas_2018), Mar del Plata"
-      note: The clinic ended with an exhibition at the museum on November 24, 2018.
-    - when: "2018"
-      what: "Curator, [*Naturaleza Muerta*](projects/naturaleza-muerta.html), GRUPO DOMA"
-      where: "[Sala Cronopios, Centro Cultural Recoleta](http://centroculturalrecoleta.org/agenda/naturaleza-muerta), Buenos Aires, May – September 2018"
-      note: Concept, texts for the works and the exhibition catalogue.
-    - when: "2017"
-      what: "[C3D](projects/c3d.html) installation by Intercambios Transorgánicos, *Invernautas*"
-      where: Club Cultural Matienzo, Buenos Aires
-    - when: "2016"
-      what: "*Influence*, immersive installation by Intercambios Transorgánicos"
-      where: Expo 3F Innova, Caseros, Buenos Aires
-    - when: "2016"
-      what: "*Intercambios Transorgánicos*, exhibition"
-      where: MUNTREF Arte y Ciencia, Tecnópolis, Buenos Aires, July – October 2016
-    - when: "2016"
-      what: "Installation and performance launching the [C3D](projects/c3d.html) controller"
-      where: Ciclo Delectro, Casa Temenos, Buenos Aires
-    - when: "2016"
-      what: Interactive video and text installation, FLISoL 2016
-      where: Buenos Aires
-      note: With Martín Aranda.
-    - when: "2014"
-      what: Lighting for ceramic sculptures by Mayra Heras Levy, exhibition *Fueron sueños*
-    - when: "2013"
-      what: Dancer, video dance *Bóveda compartida*
-      note: Directed by Javier Orellano.
-    - when: 2012, 2013
-      what: Coordinator of interactive artworks, Ponele electronic music festival
-      where: Buenos Aires
-      note: "Benefit festival: for the En Polleras reading and writing recovery workshop at Hospital Moyano (2012) and for Un Minuto de Vos (2013)."
+      what: Organizer, First Young Researchers' Day
+      where: Department of Art and Culture, UNTREF
+
+- title: Press
+  from: press
 
 - title: Music
   items:
@@ -261,65 +348,6 @@
     - when: 2004 – 2006
       what: Second flute, wind ensemble of the Escuela de Música Juan Pedro Esnaola
       note: Tangos and classical music.
-
-- title: Teaching and mentoring
-  items:
-    - when: "2026"
-      what: Research Supervisor, Singing Machine
-      where: Virginia Tech
-      note: Recruited (multi-round process, ~50 applicants) and supervise two undergraduate computer science research assistants.
-    - when: 2024, 2025
-      what: Director, PD-L2Ork Hackathons for HBCUs and MSIs
-      where: Virginia Tech (ICAT–ICTAS funded)
-      note: Designed and ran two consecutive annual hackathons to broaden participation from Historically Black Colleges and Universities and minority-serving institutions in the region.
-    - when: Current
-      what: Graduate School Application Mentor
-      where: Científico Latino
-    - when: 2015 – present
-      what: Mentor and Instructor
-      where: UNTREF, Buenos Aires
-      note: "Mentor undergraduates in electronic arts, computer engineering and sound engineering toward interdisciplinary research careers; teach interactive systems and interface design. Created and directed MUNTREF's [Art and Science Project Mentoring Program](http://untref.edu.ar/muntref/es/noticias/la-universidad-promueve-la-pasion-por-la-ciencia-y-la-investigacion-entre-los-jovenes-estudiantes/) ([information session, 2019](http://untref.edu.ar/muntref/es/noticias/charla-informativa-programa-de-mentorias-y-desarrollo/))."
-    - when: "2017"
-      what: Teacher, ICT and Technology
-      where: Colegio Alas, El Palomar, Buenos Aires
-      check: Add the end year.
-    - when: "2017"
-      what: Coordinator and teacher, technology summer camp
-      where: Escuela de Diseño Multimedial Da Vinci, with iLab, Buenos Aires
-    - when: "2016"
-      what: "Creator and general coordinator, [Inclusion program](projects/flexible-inclusion.html)"
-      where: "[Flexible](https://flexiblelab.wordpress.com/), a laboratory of art, play, science and technology, Buenos Aires"
-      note: "Also designed and coordinated its teaching content. [About the Inclusion program](https://flexiblelab.wordpress.com/2016/02/19/flexible-inclusion/)."
-      check: Add the end year (the program started in March 2016).
-    - when: "2016"
-      what: Workshop leader, Art and Electronics days, iLab
-      where: Colegio Alas, El Palomar (with Arduino), and Newlands School, Adrogué
-    - when: "2014"
-      what: Workshop leader, building Núcleo modular systems
-      where: University extension program, UNTREF
-      note: With Francisco Tripodi Arley and Santiago Villa.
-    - when: 2012 – 2013
-      what: Early childhood music teacher
-      where: Tempo Escuela de Música, Buenos Aires
-    - when: 2011 – 2012
-      what: Bilingual teacher (art, music, play and learning)
-      where: Gymboree Play & Music, Buenos Aires
-
-- title: Leadership and service
-  items:
-    - when: Current
-      what: President, Latin American and Iberian Graduate Student Association (LAIGSA)
-      where: Virginia Tech
-    - when: 2024 – present
-      what: Director, L2Ork International Community
-      note: Telematic performance network, Argentina–Mexico–USA.
-    - what: Member and Annual Summit Mentor
-      where: Alliance for the Arts in Research Universities (A2RU)
-    - what: Member, PD-L2Ork Laptop Orchestra
-      where: Virginia Tech
-    - when: "2022"
-      what: Organizer, First Young Researchers' Day
-      where: Department of Art and Culture, UNTREF
 
 - title: Workshops and further training
   items:
@@ -353,20 +381,3 @@
     - when: "2012"
       what: Stretching instructor certification
       where: CIENSA
-
-- title: Skills
-  items:
-    - what: Research methods
-      note: Participatory and disability-led design, co-design workshops, photovoice, scoping reviews (Covidence, inter-rater reliability), qualitative analysis, policy analysis, human-subjects protocol design.
-    - what: Design and transfer
-      note: Design of experiences, technologies, applications and programs; knowledge-transfer strategies; art, science and technology content for health, education and environmental impact; interactive content and products for the private sector; team coordination, teaching and mentoring.
-    - what: Technical
-      note: Python, JavaScript, HTML, CSS, Pure Data / PD-L2Ork / WebPd, Max, Processing, Hydra, VSynth, MediaPipe, TensorFlow.js, speech audio preprocessing (voice activity detection, dereverberation evaluation), Arduino and analog and digital electronics, 3D modeling and printing.
-    - what: Sound and video
-      note: Composition, sound production and post-production (Ableton Live, Cubase, Nuendo, Audacity); video editing and post-production (Premiere, Photoshop); flute, piano and voice.
-    - what: Educational technology
-      note: Scratch, LEGO Mindstorms, Arduino, littleBits.
-    - what: Project management
-      note: Agile methods, Trello, Miro, Excel, Google Drive.
-    - what: Languages
-      note: Spanish (native), English (fluent).

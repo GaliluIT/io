@@ -8,14 +8,14 @@
 #   lang:     es or en
 #   check:    optional note to yourself, shown only with --drafts
 
-- year: ""
+- year: "2026"
   outlet: Clarín, Revista Ñ
   title: Archivoz redefine la preservación de las voces
   kind: Interview
   lang: es
   url: https://www.clarin.com/revista-n/tecnologia-cultura-archivoz-redefine-preservacion-voces_0_RNPwMz0yvN.html
   projects: [archivoz]
-  check: Add the date, and check the headline (taken from the article's address).
+  check: Check the headline (taken from the article's address).
 
 - year: "2025"
   outlet: Mundo UNTREF
